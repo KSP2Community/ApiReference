@@ -1,5 +1,6 @@
-# schlosrat.github.io
-**KSP2 Unofficial API**
+# ksp2community.github.io
+
+## KSP2 Unofficial API
 
 This repo contains all the files necessary to build a GitHub Pages site using DocFX to document the KSP2 Application Programming Interface (API). The documentation is composed of two parts: The auto-generated API documentation based on a stripped version of the game's actual source code, plus various articles that relate to understanding and using this documentation.
 
