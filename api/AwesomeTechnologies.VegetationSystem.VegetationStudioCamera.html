@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -137,13 +148,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -259,8 +270,8 @@
 
 
 
-  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_BillboardJobCullingGroup" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.BillboardJobCullingGroup">
-  BillboardJobCullingGroup
+  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_BILLBOARD_GRID" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.BILLBOARD_GRID">
+  BILLBOARD_GRID
   
   </h3>
 
@@ -268,7 +279,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public JobCullingGroup BillboardJobCullingGroup</code></pre>
+    <pre><code class="lang-csharp hljs">public const int BILLBOARD_GRID = 1</code></pre>
   </div>
 
 
@@ -276,7 +287,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="AwesomeTechnologies.Utility.Culling.JobCullingGroup.html">JobCullingGroup</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -319,6 +330,36 @@
 
 
 
+  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_CameraGrids" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.CameraGrids">
+  CameraGrids
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraGrid[] CameraGrids</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="AwesomeTechnologies.VegetationSystem.CameraGrid.html">CameraGrid</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_CurrentPotentialBillboardArea" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.CurrentPotentialBillboardArea">
   CurrentPotentialBillboardArea
   
@@ -349,8 +390,8 @@
 
 
 
-  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_HeroJobCullingGroup" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.HeroJobCullingGroup">
-  HeroJobCullingGroup
+  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_HERO_GRID" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.HERO_GRID">
+  HERO_GRID
   
   </h3>
 
@@ -358,7 +399,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public JobCullingGroup HeroJobCullingGroup</code></pre>
+    <pre><code class="lang-csharp hljs">public const int HERO_GRID = 2</code></pre>
   </div>
 
 
@@ -366,37 +407,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="AwesomeTechnologies.Utility.Culling.JobCullingGroup.html">JobCullingGroup</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_JobCullingGroup" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.JobCullingGroup">
-  JobCullingGroup
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public JobCullingGroup JobCullingGroup</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="AwesomeTechnologies.Utility.Culling.JobCullingGroup.html">JobCullingGroup</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -517,96 +528,6 @@
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.html">VegetationStudioCamera</a>.<a class="xref" href="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.MultiOnVegetationCellVisibityChangedDelegate.html">MultiOnVegetationCellVisibityChangedDelegate</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_PotentialVisibleBillboardCellList" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.PotentialVisibleBillboardCellList">
-  PotentialVisibleBillboardCellList
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;VegetationCell&gt; PotentialVisibleBillboardCellList</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="AwesomeTechnologies.VegetationSystem.VegetationCell.html">VegetationCell</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_PotentialVisibleHeroCellList" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.PotentialVisibleHeroCellList">
-  PotentialVisibleHeroCellList
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;VegetationCell&gt; PotentialVisibleHeroCellList</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="AwesomeTechnologies.VegetationSystem.VegetationCell.html">VegetationCell</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_PotentialVisibleVegetationCellList" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.PotentialVisibleVegetationCellList">
-  PotentialVisibleVegetationCellList
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;VegetationCell&gt; PotentialVisibleVegetationCellList</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="AwesomeTechnologies.VegetationSystem.VegetationCell.html">VegetationCell</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -769,8 +690,8 @@
 
 
 
-  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_VegetationStudioCameraRenderList" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.VegetationStudioCameraRenderList">
-  VegetationStudioCameraRenderList
+  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_VEGETATION_GRID" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.VEGETATION_GRID">
+  VEGETATION_GRID
   
   </h3>
 
@@ -778,7 +699,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;VegetationStudioCameraRenderList&gt; VegetationStudioCameraRenderList</code></pre>
+    <pre><code class="lang-csharp hljs">public const int VEGETATION_GRID = 0</code></pre>
   </div>
 
 
@@ -786,7 +707,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="AwesomeTechnologies.VegetationSystem.VegetationStudioCameraRenderList.html">VegetationStudioCameraRenderList</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -892,6 +813,37 @@
 </h2>
 
 
+  <a id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_BillboardJobCullingGroup_" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.BillboardJobCullingGroup*"></a>
+
+  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_BillboardJobCullingGroup" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.BillboardJobCullingGroup">
+  BillboardJobCullingGroup
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JobCullingGroup BillboardJobCullingGroup { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="AwesomeTechnologies.Utility.Culling.JobCullingGroup.html">JobCullingGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_Enabled_" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.Enabled*"></a>
 
   <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_Enabled" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.Enabled">
@@ -913,6 +865,161 @@
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_HeroJobCullingGroup_" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.HeroJobCullingGroup*"></a>
+
+  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_HeroJobCullingGroup" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.HeroJobCullingGroup">
+  HeroJobCullingGroup
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JobCullingGroup HeroJobCullingGroup { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="AwesomeTechnologies.Utility.Culling.JobCullingGroup.html">JobCullingGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_JobCullingGroup_" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.JobCullingGroup*"></a>
+
+  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_JobCullingGroup" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.JobCullingGroup">
+  JobCullingGroup
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JobCullingGroup JobCullingGroup { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="AwesomeTechnologies.Utility.Culling.JobCullingGroup.html">JobCullingGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_PotentialVisibleBillboardCellList_" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.PotentialVisibleBillboardCellList*"></a>
+
+  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_PotentialVisibleBillboardCellList" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.PotentialVisibleBillboardCellList">
+  PotentialVisibleBillboardCellList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;VegetationCell&gt; PotentialVisibleBillboardCellList { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="AwesomeTechnologies.VegetationSystem.VegetationCell.html">VegetationCell</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_PotentialVisibleHeroCellList_" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.PotentialVisibleHeroCellList*"></a>
+
+  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_PotentialVisibleHeroCellList" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.PotentialVisibleHeroCellList">
+  PotentialVisibleHeroCellList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;VegetationCell&gt; PotentialVisibleHeroCellList { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="AwesomeTechnologies.VegetationSystem.VegetationCell.html">VegetationCell</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_PotentialVisibleVegetationCellList_" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.PotentialVisibleVegetationCellList*"></a>
+
+  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_PotentialVisibleVegetationCellList" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.PotentialVisibleVegetationCellList">
+  PotentialVisibleVegetationCellList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;VegetationCell&gt; PotentialVisibleVegetationCellList { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="AwesomeTechnologies.VegetationSystem.VegetationCell.html">VegetationCell</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -1031,42 +1138,6 @@
 
 
 
-  <a id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_GetBoundingSphereInfo_" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.GetBoundingSphereInfo*"></a>
-
-  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_GetBoundingSphereInfo_System_Int32_" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.GetBoundingSphereInfo(System.Int32)">
-  GetBoundingSphereInfo(int)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BoundingSphereInfo GetBoundingSphereInfo(int potentialVisibleVegetationCellIndex)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>potentialVisibleVegetationCellIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="AwesomeTechnologies.Utility.Culling.BoundingSphereInfo.html">BoundingSphereInfo</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_PreCullVegetation_" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.PreCullVegetation*"></a>
 
   <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_PreCullVegetation_System_Boolean_" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.PreCullVegetation(System.Boolean)">
@@ -1084,37 +1155,6 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>forceUpdate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_PrepareRenderLists_" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.PrepareRenderLists*"></a>
-
-  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_PrepareRenderLists_System_Collections_Generic_List_AwesomeTechnologies_VegetationSystem_VegetationPackagePro__" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.PrepareRenderLists(System.Collections.Generic.List{AwesomeTechnologies.VegetationSystem.VegetationPackagePro})">
-  PrepareRenderLists(List&lt;VegetationPackagePro&gt;)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void PrepareRenderLists(List&lt;VegetationPackagePro&gt; vegetationSystemProList)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>vegetationSystemProList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="AwesomeTechnologies.VegetationSystem.VegetationPackagePro.html">VegetationPackagePro</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -1286,32 +1326,6 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void UpdateBillboardCullingGroup()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_UpdateHeroCullingGroup_" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.UpdateHeroCullingGroup*"></a>
-
-  <h3 id="AwesomeTechnologies_VegetationSystem_VegetationStudioCamera_UpdateHeroCullingGroup" data-uid="AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.UpdateHeroCullingGroup">
-  UpdateHeroCullingGroup()
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateHeroCullingGroup()</code></pre>
   </div>
 
 

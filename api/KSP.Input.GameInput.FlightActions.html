@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -127,13 +138,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -322,6 +333,37 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public InputAction CameraYawGamepad { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">InputAction</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="KSP_Input_GameInput_FlightActions_CameraZoom_" data-uid="KSP.Input.GameInput.FlightActions.CameraZoom*"></a>
+
+  <h3 id="KSP_Input_GameInput_FlightActions_CameraZoom" data-uid="KSP.Input.GameInput.FlightActions.CameraZoom">
+  CameraZoom
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputAction CameraZoom { get; }</code></pre>
   </div>
 
 
@@ -775,10 +817,10 @@
 
 
 
-  <a id="KSP_Input_GameInput_FlightActions_ToggleFlightHUD_" data-uid="KSP.Input.GameInput.FlightActions.ToggleFlightHUD*"></a>
+  <a id="KSP_Input_GameInput_FlightActions_ToggleFreeCamera_" data-uid="KSP.Input.GameInput.FlightActions.ToggleFreeCamera*"></a>
 
-  <h3 id="KSP_Input_GameInput_FlightActions_ToggleFlightHUD" data-uid="KSP.Input.GameInput.FlightActions.ToggleFlightHUD">
-  ToggleFlightHUD
+  <h3 id="KSP_Input_GameInput_FlightActions_ToggleFreeCamera" data-uid="KSP.Input.GameInput.FlightActions.ToggleFreeCamera">
+  ToggleFreeCamera
   
   </h3>
 
@@ -786,7 +828,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public InputAction ToggleFlightHUD { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public InputAction ToggleFreeCamera { get; }</code></pre>
   </div>
 
 
@@ -1004,6 +1046,37 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public InputAction ToggleSAS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">InputAction</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="KSP_Input_GameInput_FlightActions_ToggleVesselLabels_" data-uid="KSP.Input.GameInput.FlightActions.ToggleVesselLabels*"></a>
+
+  <h3 id="KSP_Input_GameInput_FlightActions_ToggleVesselLabels" data-uid="KSP.Input.GameInput.FlightActions.ToggleVesselLabels">
+  ToggleVesselLabels
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputAction ToggleVesselLabels { get; }</code></pre>
   </div>
 
 
@@ -1581,37 +1654,6 @@
 
 
 
-  <a id="KSP_Input_GameInput_FlightActions_activeCameraZoom_" data-uid="KSP.Input.GameInput.FlightActions.activeCameraZoom*"></a>
-
-  <h3 id="KSP_Input_GameInput_FlightActions_activeCameraZoom" data-uid="KSP.Input.GameInput.FlightActions.activeCameraZoom">
-  activeCameraZoom
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public InputAction activeCameraZoom { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">InputAction</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="KSP_Input_GameInput_FlightActions_cameraPan_" data-uid="KSP.Input.GameInput.FlightActions.cameraPan*"></a>
 
   <h3 id="KSP_Input_GameInput_FlightActions_cameraPan" data-uid="KSP.Input.GameInput.FlightActions.cameraPan">
@@ -1860,8 +1902,70 @@
 
 
 
+  <a id="KSP_Input_GameInput_FlightActions_toggleCameraZoom_" data-uid="KSP.Input.GameInput.FlightActions.toggleCameraZoom*"></a>
+
+  <h3 id="KSP_Input_GameInput_FlightActions_toggleCameraZoom" data-uid="KSP.Input.GameInput.FlightActions.toggleCameraZoom">
+  toggleCameraZoom
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputAction toggleCameraZoom { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">InputAction</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
+
+
+  <a id="KSP_Input_GameInput_FlightActions_AddCallbacks_" data-uid="KSP.Input.GameInput.FlightActions.AddCallbacks*"></a>
+
+  <h3 id="KSP_Input_GameInput_FlightActions_AddCallbacks_KSP_Input_GameInput_IFlightActions_" data-uid="KSP.Input.GameInput.FlightActions.AddCallbacks(KSP.Input.GameInput.IFlightActions)">
+  AddCallbacks(IFlightActions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddCallbacks(GameInput.IFlightActions instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="KSP.Input.GameInput.html">GameInput</a>.<a class="xref" href="KSP.Input.GameInput.IFlightActions.html">IFlightActions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="KSP_Input_GameInput_FlightActions_Disable_" data-uid="KSP.Input.GameInput.FlightActions.Disable*"></a>
@@ -1936,6 +2040,37 @@
     <dt><span class="xref">InputActionMap</span></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Input_GameInput_FlightActions_RemoveCallbacks_" data-uid="KSP.Input.GameInput.FlightActions.RemoveCallbacks*"></a>
+
+  <h3 id="KSP_Input_GameInput_FlightActions_RemoveCallbacks_KSP_Input_GameInput_IFlightActions_" data-uid="KSP.Input.GameInput.FlightActions.RemoveCallbacks(KSP.Input.GameInput.IFlightActions)">
+  RemoveCallbacks(IFlightActions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveCallbacks(GameInput.IFlightActions instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="KSP.Input.GameInput.html">GameInput</a>.<a class="xref" href="KSP.Input.GameInput.IFlightActions.html">IFlightActions</a></dt>
+    <dd></dd>
+  </dl>
+
 
 
 

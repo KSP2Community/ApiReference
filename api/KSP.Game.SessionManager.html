@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -137,13 +148,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -3514,68 +3525,6 @@ public static ControllerBinding ZOOM_OUT</code></pre>
 
 
 
-  <a id="KSP_Game_SessionManager_ActiveCampaignDifficultyLevel_" data-uid="KSP.Game.SessionManager.ActiveCampaignDifficultyLevel*"></a>
-
-  <h3 id="KSP_Game_SessionManager_ActiveCampaignDifficultyLevel" data-uid="KSP.Game.SessionManager.ActiveCampaignDifficultyLevel">
-  ActiveCampaignDifficultyLevel
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DifficultyLevel ActiveCampaignDifficultyLevel { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.DifficultyLevel.html">DifficultyLevel</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="KSP_Game_SessionManager_ActiveCampaignMode_" data-uid="KSP.Game.SessionManager.ActiveCampaignMode*"></a>
-
-  <h3 id="KSP_Game_SessionManager_ActiveCampaignMode" data-uid="KSP.Game.SessionManager.ActiveCampaignMode">
-  ActiveCampaignMode
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CampaignMode ActiveCampaignMode { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.CampaignMode.html">CampaignMode</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="KSP_Game_SessionManager_ActiveCampaignName_" data-uid="KSP.Game.SessionManager.ActiveCampaignName*"></a>
 
   <h3 id="KSP_Game_SessionManager_ActiveCampaignName" data-uid="KSP.Game.SessionManager.ActiveCampaignName">
@@ -3681,6 +3630,37 @@ public static ControllerBinding ZOOM_OUT</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string ActiveGalaxyDefinitionKey { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_SessionManager_ActiveGameMode_" data-uid="KSP.Game.SessionManager.ActiveGameMode*"></a>
+
+  <h3 id="KSP_Game_SessionManager_ActiveGameMode" data-uid="KSP.Game.SessionManager.ActiveGameMode">
+  ActiveGameMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ActiveGameMode { get; }</code></pre>
   </div>
 
 
@@ -3917,37 +3897,6 @@ public static ControllerBinding ZOOM_OUT</code></pre>
 
 
 
-  <a id="KSP_Game_SessionManager_NewGameSetupInfo_" data-uid="KSP.Game.SessionManager.NewGameSetupInfo*"></a>
-
-  <h3 id="KSP_Game_SessionManager_NewGameSetupInfo" data-uid="KSP.Game.SessionManager.NewGameSetupInfo">
-  NewGameSetupInfo
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NewGameSetupInfo NewGameSetupInfo { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.NewGameSetupInfo.html">NewGameSetupInfo</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="KSP_Game_SessionManager_NewPlayerSetupInfo_" data-uid="KSP.Game.SessionManager.NewPlayerSetupInfo*"></a>
 
   <h3 id="KSP_Game_SessionManager_NewPlayerSetupInfo" data-uid="KSP.Game.SessionManager.NewPlayerSetupInfo">
@@ -4000,37 +3949,6 @@ public static ControllerBinding ZOOM_OUT</code></pre>
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="KSP_Game_SessionManager_TravelLogManager_" data-uid="KSP.Game.SessionManager.TravelLogManager*"></a>
-
-  <h3 id="KSP_Game_SessionManager_TravelLogManager" data-uid="KSP.Game.SessionManager.TravelLogManager">
-  TravelLogManager
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TravelLogManager TravelLogManager { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.TravelLogManager.html">TravelLogManager</a></dt>
     <dd></dd>
   </dl>
 
@@ -4436,8 +4354,8 @@ public static ControllerBinding ZOOM_OUT</code></pre>
 
   <a id="KSP_Game_SessionManager_ImportSerializedSessionManager_" data-uid="KSP.Game.SessionManager.ImportSerializedSessionManager*"></a>
 
-  <h3 id="KSP_Game_SessionManager_ImportSerializedSessionManager_KSP_Sim_SerializedSessionManager_" data-uid="KSP.Game.SessionManager.ImportSerializedSessionManager(KSP.Sim.SerializedSessionManager)">
-  ImportSerializedSessionManager(SerializedSessionManager)
+  <h3 id="KSP_Game_SessionManager_ImportSerializedSessionManager_KSP_Sim_SerializedSessionManager_KSP_Game_LoadOrSaveCampaignTicket_" data-uid="KSP.Game.SessionManager.ImportSerializedSessionManager(KSP.Sim.SerializedSessionManager,KSP.Game.LoadOrSaveCampaignTicket)">
+  ImportSerializedSessionManager(SerializedSessionManager, LoadOrSaveCampaignTicket)
   
   </h3>
 
@@ -4445,12 +4363,14 @@ public static ControllerBinding ZOOM_OUT</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ImportSerializedSessionManager(SerializedSessionManager serializedSessionManager)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool ImportSerializedSessionManager(SerializedSessionManager serializedSessionManager, LoadOrSaveCampaignTicket loadOrSaveCampaignTicket)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>serializedSessionManager</code> <a class="xref" href="KSP.Sim.SerializedSessionManager.html">SerializedSessionManager</a></dt>
+    <dd></dd>
+    <dt><code>loadOrSaveCampaignTicket</code> <a class="xref" href="KSP.Game.LoadOrSaveCampaignTicket.html">LoadOrSaveCampaignTicket</a></dt>
     <dd></dd>
   </dl>
 
@@ -4459,39 +4379,6 @@ public static ControllerBinding ZOOM_OUT</code></pre>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Game_SessionManager_InitializeSessionData_" data-uid="KSP.Game.SessionManager.InitializeSessionData*"></a>
-
-  <h3 id="KSP_Game_SessionManager_InitializeSessionData_KSP_Game_LoadOrSaveCampaignTicket_KSP_Sim_SerializedSaveGameMetadata_" data-uid="KSP.Game.SessionManager.InitializeSessionData(KSP.Game.LoadOrSaveCampaignTicket,KSP.Sim.SerializedSaveGameMetadata)">
-  InitializeSessionData(LoadOrSaveCampaignTicket, SerializedSaveGameMetadata)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InitializeSessionData(LoadOrSaveCampaignTicket loadOrSaveCampaignTicket, SerializedSaveGameMetadata sessionData)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>loadOrSaveCampaignTicket</code> <a class="xref" href="KSP.Game.LoadOrSaveCampaignTicket.html">LoadOrSaveCampaignTicket</a></dt>
-    <dd></dd>
-    <dt><code>sessionData</code> <a class="xref" href="KSP.Sim.SerializedSaveGameMetadata.html">SerializedSaveGameMetadata</a></dt>
-    <dd></dd>
-  </dl>
-
 
 
 
@@ -4792,37 +4679,6 @@ public static ControllerBinding ZOOM_OUT</code></pre>
 
 
 
-  <a id="KSP_Game_SessionManager_SetActiveCampaignDefaultDifficultyOptions_" data-uid="KSP.Game.SessionManager.SetActiveCampaignDefaultDifficultyOptions*"></a>
-
-  <h3 id="KSP_Game_SessionManager_SetActiveCampaignDefaultDifficultyOptions_KSP_Game_DifficultyOptionsData_" data-uid="KSP.Game.SessionManager.SetActiveCampaignDefaultDifficultyOptions(KSP.Game.DifficultyOptionsData)">
-  SetActiveCampaignDefaultDifficultyOptions(DifficultyOptionsData)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetActiveCampaignDefaultDifficultyOptions(DifficultyOptionsData difficultyOptionsData)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>difficultyOptionsData</code> <a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="KSP_Game_SessionManager_SetActiveCampaignDescription_" data-uid="KSP.Game.SessionManager.SetActiveCampaignDescription*"></a>
 
   <h3 id="KSP_Game_SessionManager_SetActiveCampaignDescription_System_String_" data-uid="KSP.Game.SessionManager.SetActiveCampaignDescription(System.String)">
@@ -4854,37 +4710,6 @@ public static ControllerBinding ZOOM_OUT</code></pre>
 
 
 
-  <a id="KSP_Game_SessionManager_SetActiveCampaignDifficultyLevel_" data-uid="KSP.Game.SessionManager.SetActiveCampaignDifficultyLevel*"></a>
-
-  <h3 id="KSP_Game_SessionManager_SetActiveCampaignDifficultyLevel_KSP_Game_DifficultyLevel_" data-uid="KSP.Game.SessionManager.SetActiveCampaignDifficultyLevel(KSP.Game.DifficultyLevel)">
-  SetActiveCampaignDifficultyLevel(DifficultyLevel)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetActiveCampaignDifficultyLevel(DifficultyLevel activeCampaignDifficultyLevel)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>activeCampaignDifficultyLevel</code> <a class="xref" href="KSP.Game.DifficultyLevel.html">DifficultyLevel</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="KSP_Game_SessionManager_SetActiveCampaignDifficultyOptions_" data-uid="KSP.Game.SessionManager.SetActiveCampaignDifficultyOptions*"></a>
 
   <h3 id="KSP_Game_SessionManager_SetActiveCampaignDifficultyOptions_KSP_Game_DifficultyOptionsData_" data-uid="KSP.Game.SessionManager.SetActiveCampaignDifficultyOptions(KSP.Game.DifficultyOptionsData)">
@@ -4902,37 +4727,6 @@ public static ControllerBinding ZOOM_OUT</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>difficultyOptions</code> <a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Game_SessionManager_SetActiveCampaignMode_" data-uid="KSP.Game.SessionManager.SetActiveCampaignMode*"></a>
-
-  <h3 id="KSP_Game_SessionManager_SetActiveCampaignMode_KSP_Game_CampaignMode_" data-uid="KSP.Game.SessionManager.SetActiveCampaignMode(KSP.Game.CampaignMode)">
-  SetActiveCampaignMode(CampaignMode)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetActiveCampaignMode(CampaignMode activeCampaignMode)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>activeCampaignMode</code> <a class="xref" href="KSP.Game.CampaignMode.html">CampaignMode</a></dt>
     <dd></dd>
   </dl>
 
@@ -5026,6 +4820,37 @@ public static ControllerBinding ZOOM_OUT</code></pre>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>activeCampaignType</code> <a class="xref" href="KSP.Game.CampaignType.html">CampaignType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_SessionManager_SetActiveGameMode_" data-uid="KSP.Game.SessionManager.SetActiveGameMode*"></a>
+
+  <h3 id="KSP_Game_SessionManager_SetActiveGameMode_System_String_" data-uid="KSP.Game.SessionManager.SetActiveGameMode(System.String)">
+  SetActiveGameMode(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetActiveGameMode(string activeGameMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>activeGameMode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 

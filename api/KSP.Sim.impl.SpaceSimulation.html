@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -147,13 +158,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -787,42 +798,6 @@
 
 
 
-  <a id="KSP_Sim_impl_SpaceSimulation_CreateVesselSimObjectFromPart_" data-uid="KSP.Sim.impl.SpaceSimulation.CreateVesselSimObjectFromPart*"></a>
-
-  <h3 id="KSP_Sim_impl_SpaceSimulation_CreateVesselSimObjectFromPart_KSP_Sim_impl_PartComponent_" data-uid="KSP.Sim.impl.SpaceSimulation.CreateVesselSimObjectFromPart(KSP.Sim.impl.PartComponent)">
-  CreateVesselSimObjectFromPart(PartComponent)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SimulationObjectModel CreateVesselSimObjectFromPart(PartComponent rootPart)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>rootPart</code> <a class="xref" href="KSP.Sim.impl.PartComponent.html">PartComponent</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Sim.impl.SimulationObjectModel.html">SimulationObjectModel</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="KSP_Sim_impl_SpaceSimulation_CreateVesselSimObjectInternal_" data-uid="KSP.Sim.impl.SpaceSimulation.CreateVesselSimObjectInternal*"></a>
 
   <h3 id="KSP_Sim_impl_SpaceSimulation_CreateVesselSimObjectInternal_KSP_Sim_SerializedAssembly_System_String_System_Byte_System_Byte_System_UInt64_System_String_" data-uid="KSP.Sim.impl.SpaceSimulation.CreateVesselSimObjectInternal(KSP.Sim.SerializedAssembly,System.String,System.Byte,System.Byte,System.UInt64,System.String)">
@@ -850,6 +825,50 @@
     <dt><code>vesselObjectId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
     <dd></dd>
     <dt><code>debuggingName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="KSP.Sim.impl.SimulationObjectModel.html">SimulationObjectModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Sim_impl_SpaceSimulation_CreateWaypointSimObject_" data-uid="KSP.Sim.impl.SpaceSimulation.CreateWaypointSimObject*"></a>
+
+  <h3 id="KSP_Sim_impl_SpaceSimulation_CreateWaypointSimObject_KSP_Sim_Definitions_WaypointComponentDefinition_KSP_Sim_impl_CelestialBodyComponent_System_Double_System_Double_System_Double_" data-uid="KSP.Sim.impl.SpaceSimulation.CreateWaypointSimObject(KSP.Sim.Definitions.WaypointComponentDefinition,KSP.Sim.impl.CelestialBodyComponent,System.Double,System.Double,System.Double)">
+  CreateWaypointSimObject(WaypointComponentDefinition, CelestialBodyComponent, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimulationObjectModel CreateWaypointSimObject(WaypointComponentDefinition waypointDefinition, CelestialBodyComponent body, double latitude, double longitude, double altitudeFromRadius)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>waypointDefinition</code> <a class="xref" href="KSP.Sim.Definitions.WaypointComponentDefinition.html">WaypointComponentDefinition</a></dt>
+    <dd></dd>
+    <dt><code>body</code> <a class="xref" href="KSP.Sim.impl.CelestialBodyComponent.html">CelestialBodyComponent</a></dt>
+    <dd></dd>
+    <dt><code>latitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>longitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>altitudeFromRadius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
     <dd></dd>
   </dl>
 

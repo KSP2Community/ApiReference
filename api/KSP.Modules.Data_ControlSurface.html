@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -231,13 +242,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -305,6 +316,68 @@ public float ActuatorSpeedNormalScale</code></pre>
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="KSP_Modules_Data_ControlSurface_AllowControl" data-uid="KSP.Modules.Data_ControlSurface.AllowControl">
+  AllowControl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[KSPState]
+public bool AllowControl</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="KSP_Modules_Data_ControlSurface_AllowMinimumDeplyAngle" data-uid="KSP.Modules.Data_ControlSurface.AllowMinimumDeplyAngle">
+  AllowMinimumDeplyAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[KSPState]
+public bool AllowMinimumDeplyAngle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -454,10 +527,10 @@ public bool ApplyLiftSurfaceForceAtPivotMidpoint</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 9)]
-[SteppedRange(0, 15, 0.5)]
-[KSPState(CopyToSymmetrySet = true)]
+    <pre><code class="lang-csharp hljs">[SteppedRange(0, 15, 0.5)]
 [LocalizedField(&quot;PartModules/ControlSurface/AuthorityLimiter&quot;)]
+[PAMDisplayControl(SortIndex = 9)]
+[KSPState(CopyToSymmetrySet = true)]
 public ModuleProperty&lt;float&gt; AuthorityLimiter</code></pre>
   </div>
 
@@ -529,6 +602,68 @@ public float CtrlSurfaceArea</code></pre>
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="KSP_Modules_Data_ControlSurface_CtrlSurfaceMinimumLockAngleForControl" data-uid="KSP.Modules.Data_ControlSurface.CtrlSurfaceMinimumLockAngleForControl">
+  CtrlSurfaceMinimumLockAngleForControl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[KSPDefinition]
+public float CtrlSurfaceMinimumLockAngleForControl</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="KSP_Modules_Data_ControlSurface_CtrlSurfacePivotDeployAxis" data-uid="KSP.Modules.Data_ControlSurface.CtrlSurfacePivotDeployAxis">
+  CtrlSurfacePivotDeployAxis
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[KSPDefinition]
+public string CtrlSurfacePivotDeployAxis</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -727,6 +862,37 @@ public float CtrlTransformSign</code></pre>
 
 
 
+  <h3 id="KSP_Modules_Data_ControlSurface_DefaultActionGroup" data-uid="KSP.Modules.Data_ControlSurface.DefaultActionGroup">
+  DefaultActionGroup
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[KSPDefinition]
+public KSPActionGroup DefaultActionGroup</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="KSP.Sim.KSPActionGroup.html">KSPActionGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="KSP_Modules_Data_ControlSurface_Deploy" data-uid="KSP.Modules.Data_ControlSurface.Deploy">
   Deploy
   
@@ -769,10 +935,10 @@ public ModuleProperty&lt;bool&gt; Deploy</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[SteppedRange(-15, 15, 0.5)]
+    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 3)]
+[SteppedRange(-15, 15, 0.5)]
 [KSPState(CopyToSymmetrySet = true)]
 [LocalizedField(&quot;PartModules/ControlSurface/DeployAngle&quot;)]
-[PAMDisplayControl(SortIndex = 3)]
 public ModuleProperty&lt;float&gt; DeployAngle</code></pre>
   </div>
 
@@ -900,9 +1066,9 @@ public ModuleProperty&lt;float&gt; DragScalarParent</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 6)]
+    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/ControlSurface/PitchEnabled&quot;)]
 [KSPState(CopyToSymmetrySet = true)]
-[LocalizedField(&quot;PartModules/ControlSurface/PitchEnabled&quot;)]
+[PAMDisplayControl(SortIndex = 6)]
 public ModuleProperty&lt;bool&gt; EnablePitch</code></pre>
   </div>
 
@@ -967,8 +1133,8 @@ public ModuleProperty&lt;bool&gt; EnableRoll</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 7)]
-[KSPState(CopyToSymmetrySet = true)]
 [LocalizedField(&quot;PartModules/ControlSurface/YawEnabled&quot;)]
+[KSPState(CopyToSymmetrySet = true)]
 public ModuleProperty&lt;bool&gt; EnableYaw</code></pre>
   </div>
 
@@ -999,9 +1165,9 @@ public ModuleProperty&lt;bool&gt; EnableYaw</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/ControlSurface/Invert&quot;)]
+    <pre><code class="lang-csharp hljs">[KSPState(CopyToSymmetrySet = true)]
 [PAMDisplayControl(SortIndex = 3)]
-[KSPState(CopyToSymmetrySet = true)]
+[LocalizedField(&quot;PartModules/ControlSurface/Invert&quot;)]
 public ModuleProperty&lt;bool&gt; InvertControl</code></pre>
   </div>
 
@@ -1128,9 +1294,9 @@ public ModuleProperty&lt;float&gt; LiftDragRatioParent</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/ControlSurface/Lift&quot;)]
+    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 13)]
+[LocalizedField(&quot;PartModules/ControlSurface/Lift&quot;)]
 [KSPState]
-[PAMDisplayControl(SortIndex = 13)]
 public ModuleProperty&lt;float&gt; LiftScalar</code></pre>
   </div>
 
@@ -1161,9 +1327,9 @@ public ModuleProperty&lt;float&gt; LiftScalar</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/LiftingSurface/Lift&quot;)]
+    <pre><code class="lang-csharp hljs">[KSPState]
+[LocalizedField(&quot;PartModules/LiftingSurface/Lift&quot;)]
 [PAMDisplayControl(SortIndex = 10)]
-[KSPState]
 public ModuleProperty&lt;float&gt; LiftScalarParent</code></pre>
   </div>
 
@@ -1227,6 +1393,37 @@ public float LiftingCtrlSurfaceArea</code></pre>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[KSPDefinition]
 public float MeshAreaLiftMultiplier</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="KSP_Modules_Data_ControlSurface_MinimumDeployAngle" data-uid="KSP.Modules.Data_ControlSurface.MinimumDeployAngle">
+  MinimumDeployAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[KSPDefinition]
+public float MinimumDeployAngle</code></pre>
   </div>
 
 

@@ -1,6 +1,5 @@
 {
-  "homepages": [],
-  "source_base_path": "C:/KSP2/gh_pages/schlosrat.github.io/docfx_project",
+  "source_base_path": "C:/KSP2/Mods/ksp2community.github.io/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -239,6 +238,26 @@
       "output": {
         ".html": {
           "relative_path": "api/AmplifyImpostors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Assets.Scripts.Missions.Definitions.MissionGranter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Assets.Scripts.Missions.Definitions.MissionGranter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Assets.Scripts.Missions.Definitions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Assets.Scripts.Missions.Definitions.html"
         }
       },
       "version": ""
@@ -529,26 +548,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AwesomeTechnologies.BillboardSystem.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.Billboards.BillboardGenerator.CreateBillboardMeshJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.Billboards.BillboardGenerator.CreateBillboardMeshJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.Billboards.BillboardGenerator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.Billboards.BillboardGenerator.html"
         }
       },
       "version": ""
@@ -2355,16 +2354,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.Utility.VegetationItemLODSplitAndFrustumCullingJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.Utility.VegetationItemLODSplitAndFrustumCullingJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/AwesomeTechnologies.Utility.VegetationItemSelector.MultiOnVegetationCellVisibilityChangeDelegate.yml",
       "output": {
         ".html": {
@@ -2805,16 +2794,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.AddSpawnLocations.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.AddSpawnLocations.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.AddToInstanceListJob.yml",
       "output": {
         ".html": {
@@ -2849,26 +2828,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AwesomeTechnologies.VegetationSystem.BillboardRenderMode.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.BiomeEdgeDistanceIncludeRuleJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.BiomeEdgeDistanceIncludeRuleJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.BiomeEdgeDistanceScaleRuleJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.BiomeEdgeDistanceScaleRuleJob.html"
         }
       },
       "version": ""
@@ -2975,16 +2934,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.CalculateCellSpawnLocationsWideJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.CalculateCellSpawnLocationsWideJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.CalculateVisibilityAndLODJob.yml",
       "output": {
         ".html": {
@@ -3015,10 +2964,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.ClearInstanceMemoryJob.yml",
+      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.CameraGrid.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.ClearInstanceMemoryJob.html"
+          "relative_path": "api/AwesomeTechnologies.VegetationSystem.CameraGrid.html"
         }
       },
       "version": ""
@@ -3045,40 +2994,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.ComputeInstance.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.ComputeInstance.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.ConcaveMode.yml",
       "output": {
         ".html": {
           "relative_path": "api/AwesomeTechnologies.VegetationSystem.ConcaveMode.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.CreateInstanceMatrixJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.CreateInstanceMatrixJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.CreateInstancedIndirectInstancesJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.CreateInstancedIndirectInstancesJob.html"
         }
       },
       "version": ""
@@ -3105,16 +3024,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.CreateVSPInstanceDataMatrixJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.CreateVSPInstanceDataMatrixJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.DependencyMode.yml",
       "output": {
         ".html": {
@@ -3125,50 +3034,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.DistanceFalloffJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.DistanceFalloffJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.EnvironmentSettings.yml",
       "output": {
         ".html": {
           "relative_path": "api/AwesomeTechnologies.VegetationSystem.EnvironmentSettings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.FilterBiomeTextureMaskNoSpawnJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.FilterBiomeTextureMaskNoSpawnJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.FilterBiomeTextureMaskSpawnLocationsJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.FilterBiomeTextureMaskSpawnLocationsJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.FilterIncludeMaskJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.FilterIncludeMaskJob.html"
         }
       },
       "version": ""
@@ -3225,50 +3094,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.IndirectInstanceInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.IndirectInstanceInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.IndirectInstanceListInfo.yml",
       "output": {
         ".html": {
           "relative_path": "api/AwesomeTechnologies.VegetationSystem.IndirectInstanceListInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.InitInstanceData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.InitInstanceData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.InstanceHeightRuleJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.InstanceHeightRuleJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.InstanceSteepnessRuleJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.InstanceSteepnessRuleJob.html"
         }
       },
       "version": ""
@@ -3305,120 +3134,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.LoadPersistentStorageToMatrixJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.LoadPersistentStorageToMatrixJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.LoadPersistentStorageToMatrixWideJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.LoadPersistentStorageToMatrixWideJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.MatrixInstance.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.MatrixInstance.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.MergeBillboardCellInstancesJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.MergeBillboardCellInstancesJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.MergeCellInstancesJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.MergeCellInstancesJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.MergeVegetationCellsToBillboardCellInstancesJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.MergeVegetationCellsToBillboardCellInstancesJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.NavMeshObstacleType.yml",
       "output": {
         ".html": {
           "relative_path": "api/AwesomeTechnologies.VegetationSystem.NavMeshObstacleType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.NewCreateInstanceMatrixJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.NewCreateInstanceMatrixJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.OffsetAndRotateScaleVegetationInstanceMathJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.OffsetAndRotateScaleVegetationInstanceMathJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.PerlinNoiseCutoffJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.PerlinNoiseCutoffJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.PerlinNoiseDensityJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.PerlinNoiseDensityJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.PerlinNoiseScaleJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.PerlinNoiseScaleJob.html"
         }
       },
       "version": ""
@@ -3469,16 +3188,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AwesomeTechnologies.VegetationSystem.PredictiveCellLoader.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.PrepareInstancedIndirectBillboardInstanceListJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.PrepareInstancedIndirectBillboardInstanceListJob.html"
         }
       },
       "version": ""
@@ -3555,6 +3264,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.ScatterInstance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AwesomeTechnologies.VegetationSystem.ScatterInstance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.SerializedControlerPropertyType.yml",
       "output": {
         ".html": {
@@ -3569,6 +3288,16 @@
       "output": {
         ".html": {
           "relative_path": "api/AwesomeTechnologies.VegetationSystem.SerializedControllerProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.SpawnedPositionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AwesomeTechnologies.VegetationSystem.SpawnedPositionData.html"
         }
       },
       "version": ""
@@ -3595,30 +3324,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.TerrainSourceExcludeRuleJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.TerrainSourceExcludeRuleJob.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.TerrainSourceID.yml",
       "output": {
         ".html": {
           "relative_path": "api/AwesomeTechnologies.VegetationSystem.TerrainSourceID.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.TerrainSourceIncludeRuleJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.TerrainSourceIncludeRuleJob.html"
         }
       },
       "version": ""
@@ -3709,16 +3418,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AwesomeTechnologies.VegetationSystem.TextureMaskRule.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.TransformToPolatSphereJob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.TransformToPolatSphereJob.html"
         }
       },
       "version": ""
@@ -4099,16 +3798,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AwesomeTechnologies.VegetationSystem.VegetationStudioCamera.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AwesomeTechnologies.VegetationSystem.VegetationStudioCameraRenderList.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AwesomeTechnologies.VegetationSystem.VegetationStudioCameraRenderList.html"
         }
       },
       "version": ""
@@ -5625,6 +5314,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Game.Data.StateReversionTracker.ResetRevertDataAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Game.Data.StateReversionTracker.ResetRevertDataAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Game.Data.StateReversionTracker.yml",
       "output": {
         ".html": {
@@ -6865,6 +6564,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Animation.AnimationManager_SimpleTimewarpSubscriber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Animation.AnimationManager_SimpleTimewarpSubscriber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Animation.CutsceneManager.yml",
       "output": {
         ".html": {
@@ -7725,6 +7434,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Assets.AssetAddressableLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Assets.AssetAddressableLoader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Assets.AssetLoadProperty-1.yml",
       "output": {
         ".html": {
@@ -7765,6 +7484,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Assets.AsyncFlowHandleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Assets.AsyncFlowHandleData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Assets.DestructionNotification.yml",
       "output": {
         ".html": {
@@ -7779,6 +7508,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Assets.IAssetPreparer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Assets.IAsyncHandleAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Assets.IAsyncHandleAccess.html"
         }
       },
       "version": ""
@@ -8099,16 +7838,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Audio.BiomeSwitchPair.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Audio.IKSPAudioInitializer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.Audio.IKSPAudioInitializer.html"
         }
       },
       "version": ""
@@ -8545,6 +8274,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.DebugTools.FlightTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.DebugTools.FlightTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.DebugTools.JointInspector.JointDirectionEnum.yml",
       "output": {
         ".html": {
@@ -8675,20 +8414,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.DebugTools.SimObjectItem.yml",
+      "source_relative_path": "api/KSP.DebugTools.RenderingDebugToolWindow.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KSP.DebugTools.SimObjectItem.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.DebugTools.SimObjectTools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.DebugTools.SimObjectTools.html"
+          "relative_path": "api/KSP.DebugTools.RenderingDebugToolWindow.html"
         }
       },
       "version": ""
@@ -8699,16 +8428,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.DebugTools.TeleportWindow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.DebugTools.ThermalDebugToolWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.DebugTools.ThermalDebugToolWindow.html"
         }
       },
       "version": ""
@@ -9265,36 +8984,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Game.AgencyEvent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.Game.AgencyEvent.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Game.AgencyEventInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.Game.AgencyEventInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Game.AgencyField.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.Game.AgencyField.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Game.AgencyFlag.yml",
       "output": {
         ".html": {
@@ -9319,6 +9008,36 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Game.AgencyFlagManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.AgencyMPAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.AgencyMPAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.AgencyMPActionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.AgencyMPActionData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.AgencyMPActionField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.AgencyMPActionField.html"
         }
       },
       "version": ""
@@ -9405,16 +9124,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Game.CampaignMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.Game.CampaignMode.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Game.CampaignPlayerEntry.yml",
       "output": {
         ".html": {
@@ -9425,40 +9134,40 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Game.CampaignPlayerEntryEvent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.Game.CampaignPlayerEntryEvent.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Game.CampaignPlayerEntryEventData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.Game.CampaignPlayerEntryEventData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Game.CampaignPlayerEntryField.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.Game.CampaignPlayerEntryField.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Game.CampaignPlayerEntryLoopCallback.yml",
       "output": {
         ".html": {
           "relative_path": "api/KSP.Game.CampaignPlayerEntryLoopCallback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.CampaignPlayerMPAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.CampaignPlayerMPAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.CampaignPlayerMPActionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.CampaignPlayerMPActionData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.CampaignPlayerMPActionField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.CampaignPlayerMPActionField.html"
         }
       },
       "version": ""
@@ -9735,10 +9444,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Game.DifficultyModeAndLevel.yml",
+      "source_relative_path": "api/KSP.Game.DifficultyLevelOptionStates.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KSP.Game.DifficultyModeAndLevel.html"
+          "relative_path": "api/KSP.Game.DifficultyLevelOptionStates.html"
         }
       },
       "version": ""
@@ -9749,16 +9458,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Game.DifficultyOption.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Game.DifficultyOptionHoverInformation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.Game.DifficultyOptionHoverInformation.html"
         }
       },
       "version": ""
@@ -10025,10 +9724,50 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Game.GameModesManager.yml",
+      "source_relative_path": "api/KSP.Game.GameMode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KSP.Game.GameModesManager.html"
+          "relative_path": "api/KSP.Game.GameMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.GameModeButtonContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.GameModeButtonContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.GameModeFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.GameModeFeature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.GameModeManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.GameModeManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.GameModePicker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.GameModePicker.html"
         }
       },
       "version": ""
@@ -10295,6 +10034,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.KerbalOriginType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.KerbalOriginType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Game.KerbalPhotoBooth.yml",
       "output": {
         ".html": {
@@ -10379,16 +10128,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Game.Load.CollectMetadataFlowAction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Game.Load.CollectMissionProgressFlowAction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.Game.Load.CollectMissionProgressFlowAction.html"
         }
       },
       "version": ""
@@ -11035,6 +10774,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.Missions.ActivateMissionAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.Missions.ActivateMissionAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Game.Missions.Condition.yml",
       "output": {
         ".html": {
@@ -11059,6 +10808,26 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Game.Missions.ConditionTypes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.Missions.Definitions.ActiveMissions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.Missions.Definitions.ActiveMissions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.Missions.Definitions.CompletedStages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.Missions.Definitions.CompletedStages.html"
         }
       },
       "version": ""
@@ -11115,6 +10884,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.Missions.Definitions.MissionReward.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.Missions.Definitions.MissionReward.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.Missions.Definitions.MissionRewardDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.Missions.Definitions.MissionRewardDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.Missions.Definitions.MissionRewardType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.Missions.Definitions.MissionRewardType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.Missions.Definitions.MissionSaveData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.Missions.Definitions.MissionSaveData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Game.Missions.Definitions.MissionStage.yml",
       "output": {
         ".html": {
@@ -11149,6 +10958,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Game.Missions.Definitions.MissionType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.Missions.Definitions.TrackedMissions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.Missions.Definitions.TrackedMissions.html"
         }
       },
       "version": ""
@@ -11219,16 +11038,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Game.Missions.KSP2MissionManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Game.Missions.KSP2MissionUI.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.Game.Missions.KSP2MissionUI.html"
         }
       },
       "version": ""
@@ -11469,6 +11278,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Game.Missions.PropertyOperator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.Missions.SaveLoadMissionUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.Missions.SaveLoadMissionUtils.html"
         }
       },
       "version": ""
@@ -11725,20 +11544,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Game.OnAgencyEventCallback.yml",
+      "source_relative_path": "api/KSP.Game.OnAgencyMPActionCallback.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KSP.Game.OnAgencyEventCallback.html"
+          "relative_path": "api/KSP.Game.OnAgencyMPActionCallback.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Game.OnCampaignPlayerEntryEventCallback.yml",
+      "source_relative_path": "api/KSP.Game.OnCampaignPlayerMPActionCallback.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KSP.Game.OnCampaignPlayerEntryEventCallback.html"
+          "relative_path": "api/KSP.Game.OnCampaignPlayerMPActionCallback.html"
         }
       },
       "version": ""
@@ -11755,20 +11574,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Game.PDLoginMenu.yml",
+      "source_relative_path": "api/KSP.Game.OptionValueType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KSP.Game.PDLoginMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Game.PDLoginSubmenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.Game.PDLoginSubmenu.html"
+          "relative_path": "api/KSP.Game.OptionValueType.html"
         }
       },
       "version": ""
@@ -12065,6 +11874,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.PredefinedKerbalData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.PredefinedKerbalData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Game.PrevisGameInstance.yml",
       "output": {
         ".html": {
@@ -12179,6 +11998,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Game.SaveLoadGameUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.SaveLoadManager.AutoSaveEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.SaveLoadManager.AutoSaveEvents.html"
         }
       },
       "version": ""
@@ -12549,6 +12378,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Game.UIAction_IGGuid_MouseOver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Game.UIAction_String_Mouseover.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Game.UIAction_String_Mouseover.html"
         }
       },
       "version": ""
@@ -13145,20 +12984,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Input.GameInput.IOABActions.yml",
+      "source_relative_path": "api/KSP.Input.GameInput.IRDActions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KSP.Input.GameInput.IOABActions.html"
+          "relative_path": "api/KSP.Input.GameInput.IRDActions.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Input.GameInput.IRDActions.yml",
+      "source_relative_path": "api/KSP.Input.GameInput.IVABActions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KSP.Input.GameInput.IRDActions.html"
+          "relative_path": "api/KSP.Input.GameInput.IVABActions.html"
         }
       },
       "version": ""
@@ -13245,20 +13084,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Input.GameInput.OABActions.yml",
+      "source_relative_path": "api/KSP.Input.GameInput.RDActions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KSP.Input.GameInput.OABActions.html"
+          "relative_path": "api/KSP.Input.GameInput.RDActions.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Input.GameInput.RDActions.yml",
+      "source_relative_path": "api/KSP.Input.GameInput.VABActions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KSP.Input.GameInput.RDActions.html"
+          "relative_path": "api/KSP.Input.GameInput.VABActions.html"
         }
       },
       "version": ""
@@ -15575,6 +15414,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Messages.DeployableActionAvailabilityChanged.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Messages.DeployableActionAvailabilityChanged.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Messages.DeployablePartStatusChanged.yml",
       "output": {
         ".html": {
@@ -15955,6 +15804,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Messages.GameLoadFinishedMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Messages.GameLoadFinishedMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Messages.GamePauseToggledMessage.yml",
       "output": {
         ".html": {
@@ -16089,6 +15948,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Messages.HighestSpeedRecordMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Messages.IMessageCenter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Messages.IMessageCenter.html"
         }
       },
       "version": ""
@@ -18295,6 +18164,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Messages.PropertyWatchers.OABLastPartSelectedInStagingStackPropertyWatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Messages.PropertyWatchers.OABLastPartSelectedInStagingStackPropertyWatcher.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Messages.PropertyWatchers.OABLastPartSelectedPropertyWatcher.yml",
       "output": {
         ".html": {
@@ -19169,6 +19048,26 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Messages.RecordMessageBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Messages.ReentryEffectBeginMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Messages.ReentryEffectBeginMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Messages.ReentryEffectEndMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Messages.ReentryEffectEndMessage.html"
         }
       },
       "version": ""
@@ -20155,6 +20054,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Messages.VesselLandedAfterFlight.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Messages.VesselLandedAfterFlight.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Messages.VesselLandedGroundAtRestMessage.yml",
       "output": {
         ".html": {
@@ -20395,6 +20304,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Messages.WaypointAddedMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Messages.WaypointAddedMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Messages.WaypointRemovedMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Messages.WaypointRemovedMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Messages.WorkspaceLoadedMessage.yml",
       "output": {
         ".html": {
@@ -20595,6 +20524,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Modding.Variety.JSONFriendlyWeightedOptionArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Modding.Variety.JSONFriendlyWeightedOptionArray.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Modding.Variety.KerbalBiography.yml",
       "output": {
         ".html": {
@@ -20639,6 +20578,26 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Modding.Variety.VarietyRangeType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Modding.Variety.WeightedOptionsArray.WeightedOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Modding.Variety.WeightedOptionsArray.WeightedOption.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Modding.Variety.WeightedOptionsArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Modding.Variety.WeightedOptionsArray.html"
         }
       },
       "version": ""
@@ -21615,6 +21574,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Modules.Data_ScienceExperiment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Modules.Data_ScienceExperiment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Modules.Data_SolarPanel.yml",
       "output": {
         ".html": {
@@ -21639,6 +21608,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Modules.Data_Strut.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Modules.Data_ThermalOcclusionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Modules.Data_ThermalOcclusionData.html"
         }
       },
       "version": ""
@@ -21789,6 +21768,26 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Modules.EngineType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Modules.ExperimentConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Modules.ExperimentConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Modules.ExperimentPAMItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Modules.ExperimentPAMItem.html"
         }
       },
       "version": ""
@@ -22255,6 +22254,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Modules.Module_ScienceExperiment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Modules.Module_ScienceExperiment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Modules.Module_SolarPanel.yml",
       "output": {
         ".html": {
@@ -22459,6 +22468,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Modules.ResourceConverterFormulaDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Modules.ThrustTransformGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Modules.ThrustTransformGroup.html"
         }
       },
       "version": ""
@@ -23105,6 +23124,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.MP.BoolVarStringFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.MP.BoolVarStringFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Networking.MP.ClientMode.yml",
       "output": {
         ".html": {
@@ -23145,10 +23174,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Networking.MP.DebugVars.yml",
+      "source_relative_path": "api/KSP.Networking.MP.GameClient.GameClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KSP.Networking.MP.DebugVars.html"
+          "relative_path": "api/KSP.Networking.MP.GameClient.GameClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.MP.GameClient.Local.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.MP.GameClient.Local.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.MP.GameClient.Remote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.MP.GameClient.Remote.html"
         }
       },
       "version": ""
@@ -23265,6 +23314,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.MP.IGNet.DeferredActionCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.MP.IGNet.DeferredActionCallback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.MP.IGNet.DeferredActionEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.MP.IGNet.DeferredActionEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.MP.IGNet.DeferredActionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.MP.IGNet.DeferredActionManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.MP.IGNet.LoopThroughAllChunkEntriesCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.MP.IGNet.LoopThroughAllChunkEntriesCallback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Networking.MP.IGNet.yml",
       "output": {
         ".html": {
@@ -23295,6 +23384,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.MP.MPVars.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.MP.MPVars.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.MP.Message.MissionMPAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.MP.Message.MissionMPAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.MP.Message.MissionMPActionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.MP.Message.MissionMPActionData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.MP.Message.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.MP.Message.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Networking.MP.MultiplayerCompileFlagsUtil.yml",
       "output": {
         ".html": {
@@ -23309,6 +23438,36 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Networking.MP.PartDetails.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.MP.Route.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.MP.Route.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.MP.RouteFlag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.MP.RouteFlag.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.MP.RouteTo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.MP.RouteTo.html"
         }
       },
       "version": ""
@@ -24045,6 +24204,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.OnlineServices.Authentication.AuthVars.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.OnlineServices.Authentication.AuthVars.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Networking.OnlineServices.Authentication.AuthenticationManager.LoginEvent.yml",
       "output": {
         ".html": {
@@ -24055,20 +24224,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Networking.OnlineServices.Authentication.AuthenticationManager.yml",
+      "source_relative_path": "api/KSP.Networking.OnlineServices.Authentication.AuthenticationManager.LoginProvider.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KSP.Networking.OnlineServices.Authentication.AuthenticationManager.html"
+          "relative_path": "api/KSP.Networking.OnlineServices.Authentication.AuthenticationManager.LoginProvider.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Networking.OnlineServices.Authentication.DebugVars.yml",
+      "source_relative_path": "api/KSP.Networking.OnlineServices.Authentication.AuthenticationManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/KSP.Networking.OnlineServices.Authentication.DebugVars.html"
+          "relative_path": "api/KSP.Networking.OnlineServices.Authentication.AuthenticationManager.html"
         }
       },
       "version": ""
@@ -24119,6 +24288,26 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Networking.OnlineServices.Authentication.Models.GetPlayerCombinedInfoRequestParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.OnlineServices.Authentication.Models.LinkCustomIDRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.OnlineServices.Authentication.Models.LinkCustomIDRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Networking.OnlineServices.Authentication.Models.LinkSteamAccountRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Networking.OnlineServices.Authentication.Models.LinkSteamAccountRequest.html"
         }
       },
       "version": ""
@@ -24995,16 +25184,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.OAB.AssemblyPartsPicker.GetFilterColorDelegate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.OAB.AssemblyPartsPicker.GetFilterColorDelegate.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KSP.OAB.AssemblyPartsPicker.yml",
       "output": {
         ".html": {
@@ -25169,6 +25348,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.OAB.EngineeringReportFlawItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.OAB.EngineeringReportFlawListCheckConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.OAB.EngineeringReportFlawListCheckConfig.html"
         }
       },
       "version": ""
@@ -26365,16 +26554,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.OAB.ObjectAssemblyFlexibleModal.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.OAB.ObjectAssemblyFlexibleModal.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KSP.OAB.ObjectAssemblyHeader.yml",
       "output": {
         ".html": {
@@ -27275,26 +27454,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.OcclusionCone.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.OcclusionCone.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.OcclusionCylinder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.OcclusionCylinder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Outline.yml",
       "output": {
         ".html": {
@@ -27745,6 +27904,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Rendering.DrawMeshRendererToRawImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Rendering.DrawMeshRendererToRawImage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Rendering.DynamicAmbientLight.yml",
       "output": {
         ".html": {
@@ -27839,6 +28008,26 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Rendering.LightData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Rendering.LightLOD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Rendering.LightLOD.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Rendering.LightLODGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Rendering.LightLODGroup.html"
         }
       },
       "version": ""
@@ -28099,6 +28288,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Rendering.Planets.EdgeState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Rendering.Planets.IPQSOverlay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Rendering.Planets.IPQSOverlay.html"
         }
       },
       "version": ""
@@ -28665,6 +28864,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Rendering.Planets.ReentryEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Rendering.Planets.ReentryEffect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Rendering.Planets.ReentryManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Rendering.Planets.ReentryManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Rendering.Planets.ReentryVFXRenderer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Rendering.Planets.ReentryVFXRenderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Rendering.Planets.UnderWaterGodRayQuality.yml",
       "output": {
         ".html": {
@@ -28685,6 +28914,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Rendering.Planets.WaitWaterDetectionAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Rendering.Planets.WaitWaterDetectionAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Rendering.Planets.WaterInitPerFrameAction.yml",
       "output": {
         ".html": {
@@ -28699,6 +28938,26 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Rendering.Planets.WaterManager.IWaterDetectObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Rendering.Planets.WaterManager.UnderLandBasedWaterDetectJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Rendering.Planets.WaterManager.UnderLandBasedWaterDetectJob.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Rendering.Planets.WaterManager.UnderWaterDetectJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Rendering.Planets.WaterManager.UnderWaterDetectJob.html"
         }
       },
       "version": ""
@@ -31035,100 +31294,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.ScriptUI.ScriptUIButtonControl.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.ScriptUI.ScriptUIButtonControl.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.ScriptUI.ScriptUICheckboxControl.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.ScriptUI.ScriptUICheckboxControl.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.ScriptUI.ScriptUIControl.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.ScriptUI.ScriptUIControl.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.ScriptUI.ScriptUIDropListControl.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.ScriptUI.ScriptUIDropListControl.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.ScriptUI.ScriptUIHorizontalSliderControl.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.ScriptUI.ScriptUIHorizontalSliderControl.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.ScriptUI.ScriptUILabelControl.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.ScriptUI.ScriptUILabelControl.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.ScriptUI.ScriptUIMgr.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.ScriptUI.ScriptUIMgr.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KSP.ScriptUI.ScriptUIStyles.yml",
       "output": {
         ".html": {
           "relative_path": "api/KSP.ScriptUI.ScriptUIStyles.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.ScriptUI.ScriptUITextFieldControl.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.ScriptUI.ScriptUITextFieldControl.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.ScriptUI.ScriptUIWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.ScriptUI.ScriptUIWindow.html"
         }
       },
       "version": ""
@@ -32365,6 +32534,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Sim.Definitions.TransformDirAxis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Sim.Definitions.TransformDirAxis.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Sim.Definitions.UniverseDefinition.yml",
       "output": {
         ".html": {
@@ -32379,6 +32558,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Sim.Definitions.VesselControlState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Sim.Definitions.WaypointComponentDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Sim.Definitions.WaypointComponentDefinition.html"
         }
       },
       "version": ""
@@ -33165,6 +33354,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Sim.IMultiJointScaleModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Sim.IMultiJointScaleModifier.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Sim.IOrbit.yml",
       "output": {
         ".html": {
@@ -33389,16 +33588,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Sim.IUniverseTime.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Sim.IUniverseTimeCommandEntry.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.Sim.IUniverseTimeCommandEntry.html"
         }
       },
       "version": ""
@@ -34725,6 +34914,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Sim.SerializedTravelFirsts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Sim.SerializedTravelFirsts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Sim.SerializedTravelLog.yml",
       "output": {
         ".html": {
@@ -34749,6 +34948,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Sim.SerializedTravelObjectEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Sim.SerializedTravelSimObjectFirst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Sim.SerializedTravelSimObjectFirst.html"
         }
       },
       "version": ""
@@ -35275,16 +35484,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Sim.TimeScaleValues.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.Sim.TimeScaleValues.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Sim.TransformFrameType.yml",
       "output": {
         ".html": {
@@ -35309,6 +35508,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Sim.TravelEventFlightReportData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Sim.TravelFirsts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Sim.TravelFirsts.html"
         }
       },
       "version": ""
@@ -35355,10 +35564,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Sim.TravelSimObjectFirst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Sim.TravelSimObjectFirst.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Sim.Util.CelestialBodyThermalJobData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Sim.Util.CelestialBodyThermalJobData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Sim.Util.GuidIdentityComparer.yml",
       "output": {
         ".html": {
           "relative_path": "api/KSP.Sim.Util.GuidIdentityComparer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Sim.Util.ThermalComponentJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Sim.Util.ThermalComponentJob.html"
         }
       },
       "version": ""
@@ -36125,6 +36364,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Sim.impl.HandOfKraken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Sim.impl.HandOfKraken.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Sim.impl.HeatsinkType.yml",
       "output": {
         ".html": {
@@ -36219,6 +36468,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Sim.impl.IVAPortraitEVAObstacleDetector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Sim.impl.IWorldLabelData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Sim.impl.IWorldLabelData.html"
         }
       },
       "version": ""
@@ -36369,6 +36628,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Sim.impl.KeyboardInputAdapter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Sim.impl.LabelCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Sim.impl.LabelCategory.html"
         }
       },
       "version": ""
@@ -37135,6 +37404,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Sim.impl.PartComponentModule_ScienceExperiment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Sim.impl.PartComponentModule_ScienceExperiment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Sim.impl.PartComponentModule_SolarPanel.yml",
       "output": {
         ".html": {
@@ -37675,6 +37954,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Sim.impl.SimUniverseTime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Sim.impl.SimUniverseTime.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Sim.impl.SimulationObjectModel.yml",
       "output": {
         ".html": {
@@ -37825,6 +38114,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Sim.impl.TimeScaleValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Sim.impl.TimeScaleValues.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.Sim.impl.TimeWarp.TimeWarpLevel.yml",
       "output": {
         ".html": {
@@ -37899,16 +38198,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Sim.impl.UniverseObserver.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.Sim.impl.UniverseTime.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.Sim.impl.UniverseTime.html"
         }
       },
       "version": ""
@@ -38089,6 +38378,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Sim.impl.WaterDetectKerbalCharacterStateHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Sim.impl.WaypointComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Sim.impl.WaypointComponent.html"
         }
       },
       "version": ""
@@ -38399,16 +38698,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.ThermalData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.ThermalOcclusionData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.ThermalOcclusionData.html"
         }
       },
       "version": ""
@@ -38769,26 +39058,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.UI.AppBarButton_Data.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.UI.ApplySettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.UI.ApplySettings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.UI.AudioSettingsMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.UI.AudioSettingsMenu.html"
         }
       },
       "version": ""
@@ -39335,6 +39604,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.UI.Binding.Core.UIValue_ReadEnum_MaterialSet.MaterialEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.UI.Binding.Core.UIValue_ReadEnum_MaterialSet.MaterialEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.UI.Binding.Core.UIValue_ReadEnum_MaterialSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.UI.Binding.Core.UIValue_ReadEnum_MaterialSet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.UI.Binding.Core.UIValue_ReadEnum_ObjectSet.FallbackEntry.yml",
       "output": {
         ".html": {
@@ -39359,6 +39648,26 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.UI.Binding.Core.UIValue_ReadEnum_ObjectSet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.UI.Binding.Core.UIValue_ReadEnum_SelectableColorSet.SelectableEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.UI.Binding.Core.UIValue_ReadEnum_SelectableColorSet.SelectableEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.UI.Binding.Core.UIValue_ReadEnum_SelectableColorSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.UI.Binding.Core.UIValue_ReadEnum_SelectableColorSet.html"
         }
       },
       "version": ""
@@ -39729,6 +40038,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.UI.Binding.UIValue_Bool_SetImageColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.UI.Binding.UIValue_HoveredListMoveIndex_Visible.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.UI.Binding.UIValue_HoveredListMoveIndex_Visible.html"
         }
       },
       "version": ""
@@ -41075,6 +41394,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.UI.ContextBoundTooltip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.UI.ContextBoundTooltip.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.UI.ContextPanel.yml",
       "output": {
         ".html": {
@@ -41289,6 +41618,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.UI.ExtendedTooltip-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.UI.FPSUIManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.UI.FPSUIManager.html"
         }
       },
       "version": ""
@@ -41835,16 +42174,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.UI.GameplaySettingsMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.UI.GameplaySettingsMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KSP.UI.GameplaySettingsMenuManager.yml",
       "output": {
         ".html": {
@@ -41859,16 +42188,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.UI.GeneralSettingsMenuManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.UI.GraphicsSettingsMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.UI.GraphicsSettingsMenu.html"
         }
       },
       "version": ""
@@ -42005,16 +42324,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.UI.InGameSettingsMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.UI.InGameSettingsMenu.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KSP.UI.Indicator.yml",
       "output": {
         ".html": {
@@ -42029,6 +42338,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.UI.IndicatorButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.UI.IndicatorCanvasType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.UI.IndicatorCanvasType.html"
         }
       },
       "version": ""
@@ -42085,16 +42404,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.UI.InfoPanelMissionAccordion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.UI.InfoPanelMissionAccordion.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KSP.UI.InfoPanelStickyHeader.yml",
       "output": {
         ".html": {
@@ -42119,16 +42428,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.UI.InputFieldExtendedEventsVisualizer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.UI.InputSettingsMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.UI.InputSettingsMenu.html"
         }
       },
       "version": ""
@@ -42555,40 +42854,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/KSP.UI.MissionControlAction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.UI.MissionControlAction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.UI.Missionlogic.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.UI.Missionlogic.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/KSP.UI.MultiDragDropLogic.yml",
       "output": {
         ".html": {
           "relative_path": "api/KSP.UI.MultiDragDropLogic.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.UI.MultiplayerSettingsMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.UI.MultiplayerSettingsMenu.html"
         }
       },
       "version": ""
@@ -42605,10 +42874,70 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.UI.OptionSliderContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.UI.OptionSliderContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.UI.OptionToggleContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.UI.OptionToggleContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.UI.OrbitalReadoutInstrumentManager.yml",
       "output": {
         ".html": {
           "relative_path": "api/KSP.UI.OrbitalReadoutInstrumentManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.UI.PartInfoContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.UI.PartInfoContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.UI.PartInfoLineContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.UI.PartInfoLineContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.UI.PartInfoOverlay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.UI.PartInfoOverlay.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.UI.PartSizeColorData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.UI.PartSizeColorData.html"
         }
       },
       "version": ""
@@ -42695,6 +43024,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.UI.ResearchInventoryManagerUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.UI.ResearchInventoryManagerUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.UI.ResourceManagerContainerEntry.yml",
       "output": {
         ".html": {
@@ -42759,16 +43098,6 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.UI.SettingsElementDescriptionController.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/KSP.UI.SettingsMenu.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/KSP.UI.SettingsMenu.html"
         }
       },
       "version": ""
@@ -43385,6 +43714,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/KSP.UI.UIScaleController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.UI.UIScaleController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/KSP.UI.UITool_Indicator.yml",
       "output": {
         ".html": {
@@ -43649,6 +43988,26 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.Utilities.CelestialUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Utilities.ConvertKSCTrees.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Utilities.ConvertKSCTrees.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.Utilities.FowardSelectableEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.Utilities.FowardSelectableEvents.html"
         }
       },
       "version": ""
@@ -44149,6 +44508,16 @@
       "output": {
         ".html": {
           "relative_path": "api/KSP.VFX.RCSVFXManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/KSP.VFX.ReentryGlowLightAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/KSP.VFX.ReentryGlowLightAccess.html"
         }
       },
       "version": ""
@@ -48329,6 +48698,16 @@
       "output": {
         ".html": {
           "relative_path": "api/PrivateDivision.OnlineServices.Telemetry.Models.GameSessionEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PrivateDivision.OnlineServices.Telemetry.Models.PlayerLoggedInEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PrivateDivision.OnlineServices.Telemetry.Models.PlayerLoggedInEvent.html"
         }
       },
       "version": ""
@@ -56025,16 +56404,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UnityEngine.UI.MissionToggleExtended.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/UnityEngine.UI.MissionToggleExtended.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/UnityEngine.UI.MouseOverEventHandler.yml",
       "output": {
         ".html": {
@@ -56379,6 +56748,16 @@
       "output": {
         ".html": {
           "relative_path": "api/UnityEngine.UI.TransitionVisualizerBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.UILineRendererExtended.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.UILineRendererExtended.html"
         }
       },
       "version": ""
@@ -59558,6 +59937,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/HowMade.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/HowMade.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/intro.md",
       "output": {
         ".html": {
@@ -59603,7 +59992,6 @@
       "version": ""
     }
   ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

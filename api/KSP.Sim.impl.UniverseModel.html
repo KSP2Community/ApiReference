@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -91,7 +102,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UniverseModel : IUniverseModel, ISimulationModelMap, IFixedUpdate, IPriorityOverride</code></pre>
+    <pre><code class="lang-csharp hljs">public class UniverseModel : IUniverseModel, ISimulationModelMap, IFixedUpdate, IPriorityOverride, IUniverseTime</code></pre>
   </div>
 
 
@@ -112,6 +123,7 @@
       <div><a class="xref" href="KSP.Sim.ISimulationModelMap.html">ISimulationModelMap</a></div>
       <div><a class="xref" href="IFixedUpdate.html">IFixedUpdate</a></div>
       <div><a class="xref" href="IPriorityOverride.html">IPriorityOverride</a></div>
+      <div><a class="xref" href="KSP.Sim.IUniverseTime.html">IUniverseTime</a></div>
     </dd>
   </dl>
 
@@ -146,13 +158,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -172,8 +184,8 @@
 
   <a id="KSP_Sim_impl_UniverseModel__ctor_" data-uid="KSP.Sim.impl.UniverseModel.#ctor*"></a>
 
-  <h3 id="KSP_Sim_impl_UniverseModel__ctor_System_Double_KSP_Sim_impl_InertialFrame_ILateUpdateDriver_" data-uid="KSP.Sim.impl.UniverseModel.#ctor(System.Double,KSP.Sim.impl.InertialFrame,ILateUpdateDriver)">
-  UniverseModel(double, InertialFrame, ILateUpdateDriver)
+  <h3 id="KSP_Sim_impl_UniverseModel__ctor_System_Double_KSP_Sim_impl_InertialFrame_ILateUpdateDriver_KSP_Messages_MessageCenter_" data-uid="KSP.Sim.impl.UniverseModel.#ctor(System.Double,KSP.Sim.impl.InertialFrame,ILateUpdateDriver,KSP.Messages.MessageCenter)">
+  UniverseModel(double, InertialFrame, ILateUpdateDriver, MessageCenter)
   
   </h3>
 
@@ -181,7 +193,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UniverseModel(double universalTime, InertialFrame inertialReferenceFrame, ILateUpdateDriver lateUpdateDriver)</code></pre>
+    <pre><code class="lang-csharp hljs">public UniverseModel(double universalTime, InertialFrame inertialReferenceFrame, ILateUpdateDriver lateUpdateDriver, MessageCenter messageCenter)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -191,6 +203,8 @@
     <dt><code>inertialReferenceFrame</code> <a class="xref" href="KSP.Sim.impl.InertialFrame.html">InertialFrame</a></dt>
     <dd></dd>
     <dt><code>lateUpdateDriver</code> <a class="xref" href="ILateUpdateDriver.html">ILateUpdateDriver</a></dt>
+    <dd></dd>
+    <dt><code>messageCenter</code> <a class="xref" href="KSP.Messages.MessageCenter.html">MessageCenter</a></dt>
     <dd></dd>
   </dl>
 
@@ -364,6 +378,37 @@
 
 
 
+  <a id="KSP_Sim_impl_UniverseModel_IsTimePaused_" data-uid="KSP.Sim.impl.UniverseModel.IsTimePaused*"></a>
+
+  <h3 id="KSP_Sim_impl_UniverseModel_IsTimePaused" data-uid="KSP.Sim.impl.UniverseModel.IsTimePaused">
+  IsTimePaused
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTimePaused { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="KSP_Sim_impl_UniverseModel_ModelLookup_" data-uid="KSP.Sim.impl.UniverseModel.ModelLookup*"></a>
 
   <h3 id="KSP_Sim_impl_UniverseModel_ModelLookup" data-uid="KSP.Sim.impl.UniverseModel.ModelLookup">
@@ -488,10 +533,10 @@
 
 
 
-  <a id="KSP_Sim_impl_UniverseModel_UniversalTime_" data-uid="KSP.Sim.impl.UniverseModel.UniversalTime*"></a>
+  <a id="KSP_Sim_impl_UniverseModel_Time_" data-uid="KSP.Sim.impl.UniverseModel.Time*"></a>
 
-  <h3 id="KSP_Sim_impl_UniverseModel_UniversalTime" data-uid="KSP.Sim.impl.UniverseModel.UniversalTime">
-  UniversalTime
+  <h3 id="KSP_Sim_impl_UniverseModel_Time" data-uid="KSP.Sim.impl.UniverseModel.Time">
+  Time
   
   </h3>
 
@@ -499,7 +544,69 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double UniversalTime { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public SimUniverseTime Time { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="KSP.Sim.impl.SimUniverseTime.html">SimUniverseTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="KSP_Sim_impl_UniverseModel_TimeScale_" data-uid="KSP.Sim.impl.UniverseModel.TimeScale*"></a>
+
+  <h3 id="KSP_Sim_impl_UniverseModel_TimeScale" data-uid="KSP.Sim.impl.UniverseModel.TimeScale">
+  TimeScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TimeScale { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="KSP_Sim_impl_UniverseModel_UniverseTime_" data-uid="KSP.Sim.impl.UniverseModel.UniverseTime*"></a>
+
+  <h3 id="KSP_Sim_impl_UniverseModel_UniverseTime" data-uid="KSP.Sim.impl.UniverseModel.UniverseTime">
+  UniverseTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double UniverseTime { get; }</code></pre>
   </div>
 
 
@@ -519,10 +626,10 @@
 
 
 
-  <a id="KSP_Sim_impl_UniverseModel_UniversalTimeDelta_" data-uid="KSP.Sim.impl.UniverseModel.UniversalTimeDelta*"></a>
+  <a id="KSP_Sim_impl_UniverseModel_UniverseTimeDelta_" data-uid="KSP.Sim.impl.UniverseModel.UniverseTimeDelta*"></a>
 
-  <h3 id="KSP_Sim_impl_UniverseModel_UniversalTimeDelta" data-uid="KSP.Sim.impl.UniverseModel.UniversalTimeDelta">
-  UniversalTimeDelta
+  <h3 id="KSP_Sim_impl_UniverseModel_UniverseTimeDelta" data-uid="KSP.Sim.impl.UniverseModel.UniverseTimeDelta">
+  UniverseTimeDelta
   
   </h3>
 
@@ -530,7 +637,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double UniversalTimeDelta { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public double UniverseTimeDelta { get; }</code></pre>
   </div>
 
 
@@ -911,6 +1018,42 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>vessel</code> <a class="xref" href="KSP.Sim.impl.VesselComponent.html">VesselComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Sim_impl_UniverseModel_AddWaypoint_" data-uid="KSP.Sim.impl.UniverseModel.AddWaypoint*"></a>
+
+  <h3 id="KSP_Sim_impl_UniverseModel_AddWaypoint_KSP_Sim_impl_WaypointComponent_" data-uid="KSP.Sim.impl.UniverseModel.AddWaypoint(KSP.Sim.impl.WaypointComponent)">
+  AddWaypoint(WaypointComponent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddWaypoint(WaypointComponent waypoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>waypoint</code> <a class="xref" href="KSP.Sim.impl.WaypointComponent.html">WaypointComponent</a></dt>
     <dd></dd>
   </dl>
 
@@ -1645,6 +1788,42 @@
 
 
 
+  <a id="KSP_Sim_impl_UniverseModel_FindWaypointComponent_" data-uid="KSP.Sim.impl.UniverseModel.FindWaypointComponent*"></a>
+
+  <h3 id="KSP_Sim_impl_UniverseModel_FindWaypointComponent_KSP_Sim_impl_IGGuid_" data-uid="KSP.Sim.impl.UniverseModel.FindWaypointComponent(KSP.Sim.impl.IGGuid)">
+  FindWaypointComponent(IGGuid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WaypointComponent FindWaypointComponent(IGGuid globalId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>globalId</code> <a class="xref" href="KSP.Sim.impl.IGGuid.html">IGGuid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="KSP.Sim.impl.WaypointComponent.html">WaypointComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="KSP_Sim_impl_UniverseModel_FixedUpdateSimObjects_" data-uid="KSP.Sim.impl.UniverseModel.FixedUpdateSimObjects*"></a>
 
   <h3 id="KSP_Sim_impl_UniverseModel_FixedUpdateSimObjects" data-uid="KSP.Sim.impl.UniverseModel.FixedUpdateSimObjects">
@@ -2112,6 +2291,37 @@
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Sim_impl_UniverseModel_GetAllWaypoints_" data-uid="KSP.Sim.impl.UniverseModel.GetAllWaypoints*"></a>
+
+  <h3 id="KSP_Sim_impl_UniverseModel_GetAllWaypoints" data-uid="KSP.Sim.impl.UniverseModel.GetAllWaypoints">
+  GetAllWaypoints()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;WaypointComponent&gt; GetAllWaypoints()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="KSP.Sim.impl.WaypointComponent.html">WaypointComponent</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -3090,6 +3300,37 @@
 
 
 
+  <a id="KSP_Sim_impl_UniverseModel_RemoveWaypoint_" data-uid="KSP.Sim.impl.UniverseModel.RemoveWaypoint*"></a>
+
+  <h3 id="KSP_Sim_impl_UniverseModel_RemoveWaypoint_KSP_Sim_impl_WaypointComponent_" data-uid="KSP.Sim.impl.UniverseModel.RemoveWaypoint(KSP.Sim.impl.WaypointComponent)">
+  RemoveWaypoint(WaypointComponent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveWaypoint(WaypointComponent waypoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>waypoint</code> <a class="xref" href="KSP.Sim.impl.WaypointComponent.html">WaypointComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="KSP_Sim_impl_UniverseModel_Reset_" data-uid="KSP.Sim.impl.UniverseModel.Reset*"></a>
 
   <h3 id="KSP_Sim_impl_UniverseModel_Reset" data-uid="KSP.Sim.impl.UniverseModel.Reset">
@@ -3116,10 +3357,10 @@
 
 
 
-  <a id="KSP_Sim_impl_UniverseModel_SetUniversalTime_" data-uid="KSP.Sim.impl.UniverseModel.SetUniversalTime*"></a>
+  <a id="KSP_Sim_impl_UniverseModel_SetTimePaused_" data-uid="KSP.Sim.impl.UniverseModel.SetTimePaused*"></a>
 
-  <h3 id="KSP_Sim_impl_UniverseModel_SetUniversalTime_System_Double_" data-uid="KSP.Sim.impl.UniverseModel.SetUniversalTime(System.Double)">
-  SetUniversalTime(double)
+  <h3 id="KSP_Sim_impl_UniverseModel_SetTimePaused_System_Boolean_" data-uid="KSP.Sim.impl.UniverseModel.SetTimePaused(System.Boolean)">
+  SetTimePaused(bool)
   
   </h3>
 
@@ -3127,12 +3368,83 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetUniversalTime(double time)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool SetTimePaused(bool isPaused)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>time</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dt><code>isPaused</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Sim_impl_UniverseModel_SetTimeScale_" data-uid="KSP.Sim.impl.UniverseModel.SetTimeScale*"></a>
+
+  <h3 id="KSP_Sim_impl_UniverseModel_SetTimeScale_System_Single_System_Boolean_" data-uid="KSP.Sim.impl.UniverseModel.SetTimeScale(System.Single,System.Boolean)">
+  SetTimeScale(float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTimeScale(float timeScale, bool scalePhysics = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timeScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>scalePhysics</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Sim_impl_UniverseModel_SetUniverseTime_" data-uid="KSP.Sim.impl.UniverseModel.SetUniverseTime*"></a>
+
+  <h3 id="KSP_Sim_impl_UniverseModel_SetUniverseTime_System_Double_System_Double_" data-uid="KSP.Sim.impl.UniverseModel.SetUniverseTime(System.Double,System.Double)">
+  SetUniverseTime(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUniverseTime(double ut, double deltaUT)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ut</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>deltaUT</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
     <dd></dd>
   </dl>
 
@@ -3251,37 +3563,6 @@
 
 
 
-  <a id="KSP_Sim_impl_UniverseModel_UpdateState_" data-uid="KSP.Sim.impl.UniverseModel.UpdateState*"></a>
-
-  <h3 id="KSP_Sim_impl_UniverseModel_UpdateState_KSP_Sim_State_UniverseState_" data-uid="KSP.Sim.impl.UniverseModel.UpdateState(KSP.Sim.State.UniverseState)">
-  UpdateState(UniverseState)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateState(UniverseState state)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>state</code> <a class="xref" href="KSP.Sim.State.UniverseState.html">UniverseState</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="KSP_Sim_impl_UniverseModel_ZupAtUT_" data-uid="KSP.Sim.impl.UniverseModel.ZupAtUT*"></a>
 
   <h3 id="KSP_Sim_impl_UniverseModel_ZupAtUT_System_Double_KSP_Sim_impl_CelestialBodyComponent_KSP_Sim_CelestialFrame__" data-uid="KSP.Sim.impl.UniverseModel.ZupAtUT(System.Double,KSP.Sim.impl.CelestialBodyComponent,KSP.Sim.CelestialFrame@)">
@@ -3319,6 +3600,66 @@
 
   <h2 class="section" id="events">Events
 </h2>
+
+
+
+  <h3 id="KSP_Sim_impl_UniverseModel_PausedChanged" data-uid="KSP.Sim.impl.UniverseModel.PausedChanged">
+  PausedChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;bool&gt; PausedChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="KSP_Sim_impl_UniverseModel_TimescaleChanged" data-uid="KSP.Sim.impl.UniverseModel.TimescaleChanged">
+  TimescaleChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;bool, TimeScaleValues&gt; TimescaleChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="KSP.Sim.impl.TimeScaleValues.html">TimeScaleValues</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
 
 
 
@@ -3492,36 +3833,6 @@
   <h4 class="section">Event Type</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="KSP.Sim.impl.SimulationObjectModel.html">SimulationObjectModel</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h3 id="KSP_Sim_impl_UniverseModel_onUniverseStateUpdate" data-uid="KSP.Sim.impl.UniverseModel.onUniverseStateUpdate">
-  onUniverseStateUpdate
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;UniverseState&gt; onUniverseStateUpdate</code></pre>
-  </div>
-
-
-
-
-
-
-  <h4 class="section">Event Type</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="KSP.Sim.State.UniverseState.html">UniverseState</a>&gt;</dt>
     <dd></dd>
   </dl>
 

@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -231,13 +242,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -283,6 +294,37 @@
 
   <h2 class="section" id="fields">Fields
 </h2>
+
+
+
+  <h3 id="KSP_Modules_Data_Engine_DeployedModeAnimationStateShortName" data-uid="KSP.Modules.Data_Engine.DeployedModeAnimationStateShortName">
+  DeployedModeAnimationStateShortName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[KSPDefinition]
+public string DeployedModeAnimationStateShortName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
 
 
 
@@ -398,6 +440,70 @@ public FloatCurve EmissiveTemperatureCurve</code></pre>
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="FloatCurve.html">FloatCurve</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="KSP_Modules_Data_Engine_EngineAutoSwitchMode" data-uid="KSP.Modules.Data_Engine.EngineAutoSwitchMode">
+  EngineAutoSwitchMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 4)]
+[LocalizedField(&quot;PartModules/Engine/AutoSwitch&quot;)]
+[KSPState]
+public ModuleProperty&lt;bool&gt; EngineAutoSwitchMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="KSP.Sim.Definitions.ModuleProperty-1.html">ModuleProperty</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="KSP_Modules_Data_Engine_EngineChangingToMode" data-uid="KSP.Modules.Data_Engine.EngineChangingToMode">
+  EngineChangingToMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[KSPState(CopyToSymmetrySet = false)]
+public int EngineChangingToMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -536,6 +642,37 @@ public float EngineSpool</code></pre>
 
 
 
+  <h3 id="KSP_Modules_Data_Engine_EngineStatePriorChangeMode" data-uid="KSP.Modules.Data_Engine.EngineStatePriorChangeMode">
+  EngineStatePriorChangeMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[KSPState(CopyToSymmetrySet = false)]
+public EngineState EngineStatePriorChangeMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="KSP.Modules.EngineState.html">EngineState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="KSP_Modules_Data_Engine_FinalThrustValue" data-uid="KSP.Modules.Data_Engine.FinalThrustValue">
   FinalThrustValue
   
@@ -636,9 +773,9 @@ public bool Flameout</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[KSPState]
+    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 9)]
 [LocalizedField(&quot;PartModules/Engine/EngineHeat&quot;)]
-[PAMDisplayControl(SortIndex = 9)]
+[KSPState]
 public ModuleProperty&lt;float&gt; HeatProduced</code></pre>
   </div>
 
@@ -702,10 +839,10 @@ public ModuleProperty&lt;bool&gt; IndependentThrottle</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 13)]
+    <pre><code class="lang-csharp hljs">[SteppedRange(0, 100, 1)]
 [KSPState(CopyToSymmetrySet = true)]
-[SteppedRange(0, 100, 1)]
 [LocalizedField(&quot;PartModules/Engine/EngineThrottle&quot;)]
+[PAMDisplayControl(SortIndex = 13)]
 public ModuleProperty&lt;float&gt; IndependentThrottlePercentage</code></pre>
   </div>
 
@@ -1007,8 +1144,8 @@ public ModuleProperty&lt;float&gt; IndependentThrottlePercentage</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[KSPState]
-[PAMDisplayControl(SortIndex = 2)]
 [LocalizedField(&quot;PartModules/Engine/EngineISP&quot;)]
+[PAMDisplayControl(SortIndex = 2)]
 public ModuleProperty&lt;float&gt; StatusISPString</code></pre>
   </div>
 
@@ -1040,8 +1177,8 @@ public ModuleProperty&lt;float&gt; StatusISPString</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[KSPState]
-[LocalizedField(&quot;PartModules/Engine/EngineStatus&quot;)]
 [PAMDisplayControl(SortIndex = 1)]
+[LocalizedField(&quot;PartModules/Engine/EngineStatus&quot;)]
 public ModuleProperty&lt;string&gt; StatusString</code></pre>
   </div>
 
@@ -1164,8 +1301,8 @@ public bool UseEmissive</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[KSPState(CopyToSymmetrySet = true)]
-[LocalizedField(&quot;PartModules/Engine/EngineMode&quot;)]
+    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/Engine/EngineMode&quot;)]
+[KSPState(CopyToSymmetrySet = true)]
 [PAMDisplayControl(SortIndex = 2)]
 public ModuleProperty&lt;string&gt; activeEngineMode</code></pre>
   </div>
@@ -1321,8 +1458,8 @@ public bool staged</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[KSPState]
-[LocalizedField(&quot;PartModules/Engine/EngineStaging&quot;)]
+    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/Engine/EngineStaging&quot;)]
+[KSPState]
 [PAMDisplayControl(SortIndex = 11)]
 public ModuleProperty&lt;bool&gt; stagingOn</code></pre>
   </div>
@@ -1416,10 +1553,10 @@ public float thrustCurveRatio</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[KSPState(CopyToSymmetrySet = true)]
-[SteppedRange(0, 100, 1)]
-[LocalizedField(&quot;PartModules/Engine/EngineThrustLimiter&quot;)]
+    <pre><code class="lang-csharp hljs">[SteppedRange(0, 100, 1)]
+[KSPState(CopyToSymmetrySet = true)]
 [PAMDisplayControl(SortIndex = 7)]
+[LocalizedField(&quot;PartModules/Engine/EngineThrustLimiter&quot;)]
 public ModuleProperty&lt;float&gt; thrustPercentage</code></pre>
   </div>
 

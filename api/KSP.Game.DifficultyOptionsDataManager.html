@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -137,13 +148,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -197,8 +208,8 @@
 
 
 
-  <h3 id="KSP_Game_DifficultyOptionsDataManager_DEFAULT_GAME" data-uid="KSP.Game.DifficultyOptionsDataManager.DEFAULT_GAME">
-  DEFAULT_GAME
+  <h3 id="KSP_Game_DifficultyOptionsDataManager_DIFFICULTY_OPTION_LOC_SLUG" data-uid="KSP.Game.DifficultyOptionsDataManager.DIFFICULTY_OPTION_LOC_SLUG">
+  DIFFICULTY_OPTION_LOC_SLUG
   
   </h3>
 
@@ -206,7 +217,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const GameInstance DEFAULT_GAME = null</code></pre>
+    <pre><code class="lang-csharp hljs">public const string DIFFICULTY_OPTION_LOC_SLUG = &quot;Menu/Settings/&quot;</code></pre>
   </div>
 
 
@@ -214,45 +225,10 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.GameInstance.html">GameInstance</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
-  <a id="KSP_Game_DifficultyOptionsDataManager_Game_" data-uid="KSP.Game.DifficultyOptionsDataManager.Game*"></a>
-
-  <h3 id="KSP_Game_DifficultyOptionsDataManager_Game" data-uid="KSP.Game.DifficultyOptionsDataManager.Game">
-  Game
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GameInstance Game { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.GameInstance.html">GameInstance</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -317,10 +293,10 @@
 
 
 
-  <a id="KSP_Game_DifficultyOptionsDataManager_FindDefaultOptionCopy_" data-uid="KSP.Game.DifficultyOptionsDataManager.FindDefaultOptionCopy*"></a>
+  <a id="KSP_Game_DifficultyOptionsDataManager_GetAllDiffficultyOptionDefinitions_" data-uid="KSP.Game.DifficultyOptionsDataManager.GetAllDiffficultyOptionDefinitions*"></a>
 
-  <h3 id="KSP_Game_DifficultyOptionsDataManager_FindDefaultOptionCopy_KSP_Game_CampaignMode_KSP_Game_DifficultyLevel_" data-uid="KSP.Game.DifficultyOptionsDataManager.FindDefaultOptionCopy(KSP.Game.CampaignMode,KSP.Game.DifficultyLevel)">
-  FindDefaultOptionCopy(CampaignMode, DifficultyLevel)
+  <h3 id="KSP_Game_DifficultyOptionsDataManager_GetAllDiffficultyOptionDefinitions" data-uid="KSP.Game.DifficultyOptionsDataManager.GetAllDiffficultyOptionDefinitions">
+  GetAllDiffficultyOptionDefinitions()
   
   </h3>
 
@@ -328,130 +304,13 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DifficultyOptionsData FindDefaultOptionCopy(CampaignMode campaignMode, DifficultyLevel difficultyLevel)</code></pre>
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, DifficultyOption&gt; GetAllDiffficultyOptionDefinitions()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>campaignMode</code> <a class="xref" href="KSP.Game.CampaignMode.html">CampaignMode</a></dt>
-    <dd></dd>
-    <dt><code>difficultyLevel</code> <a class="xref" href="KSP.Game.DifficultyLevel.html">DifficultyLevel</a></dt>
-    <dd></dd>
-  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Game_DifficultyOptionsDataManager_FindDefaultOptionCopy_" data-uid="KSP.Game.DifficultyOptionsDataManager.FindDefaultOptionCopy*"></a>
-
-  <h3 id="KSP_Game_DifficultyOptionsDataManager_FindDefaultOptionCopy_KSP_Game_DifficultyModeAndLevel_" data-uid="KSP.Game.DifficultyOptionsDataManager.FindDefaultOptionCopy(KSP.Game.DifficultyModeAndLevel)">
-  FindDefaultOptionCopy(DifficultyModeAndLevel)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DifficultyOptionsData FindDefaultOptionCopy(DifficultyModeAndLevel difficultyModeAndLevel)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>difficultyModeAndLevel</code> <a class="xref" href="KSP.Game.DifficultyModeAndLevel.html">DifficultyModeAndLevel</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Game_DifficultyOptionsDataManager_FindDefaultOptionOriginalInstance_" data-uid="KSP.Game.DifficultyOptionsDataManager.FindDefaultOptionOriginalInstance*"></a>
-
-  <h3 id="KSP_Game_DifficultyOptionsDataManager_FindDefaultOptionOriginalInstance_KSP_Game_CampaignMode_KSP_Game_DifficultyLevel_" data-uid="KSP.Game.DifficultyOptionsDataManager.FindDefaultOptionOriginalInstance(KSP.Game.CampaignMode,KSP.Game.DifficultyLevel)">
-  FindDefaultOptionOriginalInstance(CampaignMode, DifficultyLevel)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DifficultyOptionsData FindDefaultOptionOriginalInstance(CampaignMode campaignMode, DifficultyLevel difficultyLevel)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>campaignMode</code> <a class="xref" href="KSP.Game.CampaignMode.html">CampaignMode</a></dt>
-    <dd></dd>
-    <dt><code>difficultyLevel</code> <a class="xref" href="KSP.Game.DifficultyLevel.html">DifficultyLevel</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Game_DifficultyOptionsDataManager_FindDefaultOptionOriginalInstance_" data-uid="KSP.Game.DifficultyOptionsDataManager.FindDefaultOptionOriginalInstance*"></a>
-
-  <h3 id="KSP_Game_DifficultyOptionsDataManager_FindDefaultOptionOriginalInstance_KSP_Game_DifficultyModeAndLevel_" data-uid="KSP.Game.DifficultyOptionsDataManager.FindDefaultOptionOriginalInstance(KSP.Game.DifficultyModeAndLevel)">
-  FindDefaultOptionOriginalInstance(DifficultyModeAndLevel)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DifficultyOptionsData FindDefaultOptionOriginalInstance(DifficultyModeAndLevel difficultyModeAndLevel)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>difficultyModeAndLevel</code> <a class="xref" href="KSP.Game.DifficultyModeAndLevel.html">DifficultyModeAndLevel</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="KSP.Game.DifficultyOption.html">DifficultyOption</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -498,8 +357,8 @@
 
   <a id="KSP_Game_DifficultyOptionsDataManager_GetDefaultOptionCopy_" data-uid="KSP.Game.DifficultyOptionsDataManager.GetDefaultOptionCopy*"></a>
 
-  <h3 id="KSP_Game_DifficultyOptionsDataManager_GetDefaultOptionCopy_KSP_Game_CampaignMode_KSP_Game_DifficultyLevel_" data-uid="KSP.Game.DifficultyOptionsDataManager.GetDefaultOptionCopy(KSP.Game.CampaignMode,KSP.Game.DifficultyLevel)">
-  GetDefaultOptionCopy(CampaignMode, DifficultyLevel)
+  <h3 id="KSP_Game_DifficultyOptionsDataManager_GetDefaultOptionCopy_KSP_Game_DifficultyLevel_" data-uid="KSP.Game.DifficultyOptionsDataManager.GetDefaultOptionCopy(KSP.Game.DifficultyLevel)">
+  GetDefaultOptionCopy(DifficultyLevel)
   
   </h3>
 
@@ -507,87 +366,11 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DifficultyOptionsData GetDefaultOptionCopy(CampaignMode campaignMode, DifficultyLevel difficultyLevel)</code></pre>
+    <pre><code class="lang-csharp hljs">public DifficultyOptionsData GetDefaultOptionCopy(DifficultyLevel difficultyLevel)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>campaignMode</code> <a class="xref" href="KSP.Game.CampaignMode.html">CampaignMode</a></dt>
-    <dd></dd>
-    <dt><code>difficultyLevel</code> <a class="xref" href="KSP.Game.DifficultyLevel.html">DifficultyLevel</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Game_DifficultyOptionsDataManager_GetDefaultOptionCopy_" data-uid="KSP.Game.DifficultyOptionsDataManager.GetDefaultOptionCopy*"></a>
-
-  <h3 id="KSP_Game_DifficultyOptionsDataManager_GetDefaultOptionCopy_KSP_Game_DifficultyModeAndLevel_" data-uid="KSP.Game.DifficultyOptionsDataManager.GetDefaultOptionCopy(KSP.Game.DifficultyModeAndLevel)">
-  GetDefaultOptionCopy(DifficultyModeAndLevel)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DifficultyOptionsData GetDefaultOptionCopy(DifficultyModeAndLevel difficultyModeAndLevel)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>difficultyModeAndLevel</code> <a class="xref" href="KSP.Game.DifficultyModeAndLevel.html">DifficultyModeAndLevel</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Game_DifficultyOptionsDataManager_GetDefaultOptionOriginalInstance_" data-uid="KSP.Game.DifficultyOptionsDataManager.GetDefaultOptionOriginalInstance*"></a>
-
-  <h3 id="KSP_Game_DifficultyOptionsDataManager_GetDefaultOptionOriginalInstance_KSP_Game_CampaignMode_KSP_Game_DifficultyLevel_" data-uid="KSP.Game.DifficultyOptionsDataManager.GetDefaultOptionOriginalInstance(KSP.Game.CampaignMode,KSP.Game.DifficultyLevel)">
-  GetDefaultOptionOriginalInstance(CampaignMode, DifficultyLevel)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DifficultyOptionsData GetDefaultOptionOriginalInstance(CampaignMode campaignMode, DifficultyLevel difficultyLevel)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>campaignMode</code> <a class="xref" href="KSP.Game.CampaignMode.html">CampaignMode</a></dt>
-    <dd></dd>
     <dt><code>difficultyLevel</code> <a class="xref" href="KSP.Game.DifficultyLevel.html">DifficultyLevel</a></dt>
     <dd></dd>
   </dl>
@@ -610,8 +393,8 @@
 
   <a id="KSP_Game_DifficultyOptionsDataManager_GetDefaultOptionOriginalInstance_" data-uid="KSP.Game.DifficultyOptionsDataManager.GetDefaultOptionOriginalInstance*"></a>
 
-  <h3 id="KSP_Game_DifficultyOptionsDataManager_GetDefaultOptionOriginalInstance_KSP_Game_DifficultyModeAndLevel_" data-uid="KSP.Game.DifficultyOptionsDataManager.GetDefaultOptionOriginalInstance(KSP.Game.DifficultyModeAndLevel)">
-  GetDefaultOptionOriginalInstance(DifficultyModeAndLevel)
+  <h3 id="KSP_Game_DifficultyOptionsDataManager_GetDefaultOptionOriginalInstance_KSP_Game_DifficultyLevel_" data-uid="KSP.Game.DifficultyOptionsDataManager.GetDefaultOptionOriginalInstance(KSP.Game.DifficultyLevel)">
+  GetDefaultOptionOriginalInstance(DifficultyLevel)
   
   </h3>
 
@@ -619,18 +402,54 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DifficultyOptionsData GetDefaultOptionOriginalInstance(DifficultyModeAndLevel difficultyModeAndLevel)</code></pre>
+    <pre><code class="lang-csharp hljs">public DifficultyOptionsData GetDefaultOptionOriginalInstance(DifficultyLevel difficultyLevel)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>difficultyModeAndLevel</code> <a class="xref" href="KSP.Game.DifficultyModeAndLevel.html">DifficultyModeAndLevel</a></dt>
+    <dt><code>difficultyLevel</code> <a class="xref" href="KSP.Game.DifficultyLevel.html">DifficultyLevel</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_DifficultyOptionsDataManager_GetDifficultyPreset_" data-uid="KSP.Game.DifficultyOptionsDataManager.GetDifficultyPreset*"></a>
+
+  <h3 id="KSP_Game_DifficultyOptionsDataManager_GetDifficultyPreset_KSP_Game_DifficultyLevel_" data-uid="KSP.Game.DifficultyOptionsDataManager.GetDifficultyPreset(KSP.Game.DifficultyLevel)">
+  GetDifficultyPreset(DifficultyLevel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, object&gt; GetDifficultyPreset(DifficultyLevel difficultyLevel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>difficultyLevel</code> <a class="xref" href="KSP.Game.DifficultyLevel.html">DifficultyLevel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -690,6 +509,44 @@
   </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_DifficultyOptionsDataManager_TryGetDifficultyOptionDefinition_" data-uid="KSP.Game.DifficultyOptionsDataManager.TryGetDifficultyOptionDefinition*"></a>
+
+  <h3 id="KSP_Game_DifficultyOptionsDataManager_TryGetDifficultyOptionDefinition_System_String_KSP_Game_DifficultyOption__" data-uid="KSP.Game.DifficultyOptionsDataManager.TryGetDifficultyOptionDefinition(System.String,KSP.Game.DifficultyOption@)">
+  TryGetDifficultyOptionDefinition(string, out DifficultyOption)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetDifficultyOptionDefinition(string difficultyOptionID, out DifficultyOption difficultyOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>difficultyOptionID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>difficultyOption</code> <a class="xref" href="KSP.Game.DifficultyOption.html">DifficultyOption</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

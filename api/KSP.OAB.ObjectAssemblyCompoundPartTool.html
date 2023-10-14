@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -380,13 +391,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -455,8 +466,8 @@
 
   <a id="KSP_OAB_ObjectAssemblyCompoundPartTool__ctor_" data-uid="KSP.OAB.ObjectAssemblyCompoundPartTool.#ctor*"></a>
 
-  <h3 id="KSP_OAB_ObjectAssemblyCompoundPartTool__ctor_KSP_OAB_ObjectAssemblyBuilderEvents_KSP_OAB_ObjectAssemblyUIEvents_KSP_OAB_ObjectAssemblyInputHandler_KSP_OAB_ObjectAssemblyPartTracker_KSP_OAB_OABSessionInformation_KSP_OAB_ObjectAssemblyCameraManager_KSP_OAB_IObjectAssemblyPart_KSP_OAB_ObjectAssemblyAssets_System_Collections_Generic_List_KSP_OAB_IObjectAssemblyRelationship__KSP_Sim_PartRelationshipType_System_Boolean_" data-uid="KSP.OAB.ObjectAssemblyCompoundPartTool.#ctor(KSP.OAB.ObjectAssemblyBuilderEvents,KSP.OAB.ObjectAssemblyUIEvents,KSP.OAB.ObjectAssemblyInputHandler,KSP.OAB.ObjectAssemblyPartTracker,KSP.OAB.OABSessionInformation,KSP.OAB.ObjectAssemblyCameraManager,KSP.OAB.IObjectAssemblyPart,KSP.OAB.ObjectAssemblyAssets,System.Collections.Generic.List{KSP.OAB.IObjectAssemblyRelationship},KSP.Sim.PartRelationshipType,System.Boolean)">
-  ObjectAssemblyCompoundPartTool(ObjectAssemblyBuilderEvents, ObjectAssemblyUIEvents, ObjectAssemblyInputHandler, ObjectAssemblyPartTracker, OABSessionInformation, ObjectAssemblyCameraManager, IObjectAssemblyPart, ObjectAssemblyAssets, List&lt;IObjectAssemblyRelationship&gt;, PartRelationshipType, bool)
+  <h3 id="KSP_OAB_ObjectAssemblyCompoundPartTool__ctor_KSP_OAB_ObjectAssemblyBuilderEvents_KSP_OAB_ObjectAssemblyUIEvents_KSP_OAB_ObjectAssemblyInputHandler_KSP_OAB_ObjectAssemblyPartTracker_KSP_OAB_OABSessionInformation_KSP_OAB_ObjectAssemblyCameraManager_KSP_OAB_IObjectAssemblyPart_KSP_OAB_ObjectAssemblyAssets_System_Collections_Generic_List_KSP_OAB_IObjectAssemblyRelationship__System_Boolean_" data-uid="KSP.OAB.ObjectAssemblyCompoundPartTool.#ctor(KSP.OAB.ObjectAssemblyBuilderEvents,KSP.OAB.ObjectAssemblyUIEvents,KSP.OAB.ObjectAssemblyInputHandler,KSP.OAB.ObjectAssemblyPartTracker,KSP.OAB.OABSessionInformation,KSP.OAB.ObjectAssemblyCameraManager,KSP.OAB.IObjectAssemblyPart,KSP.OAB.ObjectAssemblyAssets,System.Collections.Generic.List{KSP.OAB.IObjectAssemblyRelationship},System.Boolean)">
+  ObjectAssemblyCompoundPartTool(ObjectAssemblyBuilderEvents, ObjectAssemblyUIEvents, ObjectAssemblyInputHandler, ObjectAssemblyPartTracker, OABSessionInformation, ObjectAssemblyCameraManager, IObjectAssemblyPart, ObjectAssemblyAssets, List&lt;IObjectAssemblyRelationship&gt;, bool)
   
   </h3>
 
@@ -464,7 +475,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ObjectAssemblyCompoundPartTool(ObjectAssemblyBuilderEvents eventSystemToUse, ObjectAssemblyUIEvents uiEventsToUse, ObjectAssemblyInputHandler inputToUse, ObjectAssemblyPartTracker partTrackerToUse, OABSessionInformation stats, ObjectAssemblyCameraManager cameraManagerToUse, IObjectAssemblyPart heldPart, ObjectAssemblyAssets oabAssets, List&lt;IObjectAssemblyRelationship&gt; relationships, PartRelationshipType toolMode, bool reCreateSavedEnd)</code></pre>
+    <pre><code class="lang-csharp hljs">public ObjectAssemblyCompoundPartTool(ObjectAssemblyBuilderEvents eventSystemToUse, ObjectAssemblyUIEvents uiEventsToUse, ObjectAssemblyInputHandler inputToUse, ObjectAssemblyPartTracker partTrackerToUse, OABSessionInformation stats, ObjectAssemblyCameraManager cameraManagerToUse, IObjectAssemblyPart heldPart, ObjectAssemblyAssets oabAssets, List&lt;IObjectAssemblyRelationship&gt; relationships, bool reCreateSavedEnd)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -486,8 +497,6 @@
     <dt><code>oabAssets</code> <a class="xref" href="KSP.OAB.ObjectAssemblyAssets.html">ObjectAssemblyAssets</a></dt>
     <dd></dd>
     <dt><code>relationships</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="KSP.OAB.IObjectAssemblyRelationship.html">IObjectAssemblyRelationship</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>toolMode</code> <a class="xref" href="KSP.Sim.PartRelationshipType.html">PartRelationshipType</a></dt>
     <dd></dd>
     <dt><code>reCreateSavedEnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
@@ -527,36 +536,6 @@
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="KSP_OAB_ObjectAssemblyCompoundPartTool_ToolMode" data-uid="KSP.OAB.ObjectAssemblyCompoundPartTool.ToolMode">
-  ToolMode
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PartRelationshipType ToolMode</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Sim.PartRelationshipType.html">PartRelationshipType</a></dt>
     <dd></dd>
   </dl>
 

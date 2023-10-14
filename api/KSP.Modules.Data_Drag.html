@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -231,13 +242,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -357,9 +368,9 @@ public bool DragEnabled</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/Drag/DragDirection&quot;)]
+    <pre><code class="lang-csharp hljs">[KSPState]
+[LocalizedField(&quot;PartModules/Drag/DragDirection&quot;)]
 [PAMDisplayControl(SortIndex = 0)]
-[KSPState]
 public ModuleProperty&lt;Vector3&gt; DragForceDirection</code></pre>
   </div>
 
@@ -390,9 +401,9 @@ public ModuleProperty&lt;Vector3&gt; DragForceDirection</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[KSPState]
+    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/Drag/DragMagnitude&quot;)]
 [PAMDisplayControl(SortIndex = 1)]
-[LocalizedField(&quot;PartModules/Drag/DragMagnitude&quot;)]
+[KSPState]
 public ModuleProperty&lt;float&gt; DragForceMagnitude</code></pre>
   </div>
 
@@ -456,9 +467,9 @@ public ModuleProperty&lt;float&gt; ExposedArea</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[KSPState]
-[LocalizedField(&quot;PartModules/Drag/LiftDirection&quot;)]
+    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/Drag/LiftDirection&quot;)]
 [PAMDisplayControl(SortIndex = 2)]
+[KSPState]
 public ModuleProperty&lt;Vector3&gt; LiftForceDirection</code></pre>
   </div>
 
@@ -489,9 +500,9 @@ public ModuleProperty&lt;Vector3&gt; LiftForceDirection</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[KSPState]
+    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/Drag/LiftMagnitude&quot;)]
 [PAMDisplayControl(SortIndex = 3)]
-[LocalizedField(&quot;PartModules/Drag/LiftMagnitude&quot;)]
+[KSPState]
 public ModuleProperty&lt;float&gt; LiftForceMagnitude</code></pre>
   </div>
 
@@ -522,9 +533,9 @@ public ModuleProperty&lt;float&gt; LiftForceMagnitude</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[KSPState]
-[LocalizedField(&quot;PartModules/Drag/ReferenceArea&quot;)]
+    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/Drag/ReferenceArea&quot;)]
 [PAMDisplayControl(SortIndex = 4)]
+[KSPState]
 public ModuleProperty&lt;float&gt; ReferenceArea</code></pre>
   </div>
 
@@ -555,8 +566,8 @@ public ModuleProperty&lt;float&gt; ReferenceArea</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/Drag/TotalArea&quot;)]
-[PAMDisplayControl(SortIndex = 6)]
+    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 6)]
+[LocalizedField(&quot;PartModules/Drag/TotalArea&quot;)]
 [KSPState]
 public ModuleProperty&lt;float&gt; TotalArea</code></pre>
   </div>

@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -115,6 +126,9 @@
       <a class="xref" href="KSP.Game.KerbalMonoBehaviour.html#KSP_Game_KerbalMonoBehaviour_Game">KerbalMonoBehaviour.Game</a>
     </div>
     <div>
+      <a class="xref" href="KSP.Game.KerbalMonoBehaviour.html#KSP_Game_KerbalMonoBehaviour_Assets">KerbalMonoBehaviour.Assets</a>
+    </div>
+    <div>
       <a class="xref" href="KSP.Game.KerbalMonoBehaviour.html#KSP_Game_KerbalMonoBehaviour_Messages">KerbalMonoBehaviour.Messages</a>
     </div>
     <div>
@@ -129,13 +143,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -433,67 +447,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Property&lt;CampaignMode&gt; PropertyGameMode</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Api.CoreTypes.Property-1.html">Property</a>&lt;<a class="xref" href="KSP.Game.CampaignMode.html">CampaignMode</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="KSP_Game_UIManager_PropertyGameModeDescription" data-uid="KSP.Game.UIManager.PropertyGameModeDescription">
-  PropertyGameModeDescription
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Property&lt;string&gt; PropertyGameModeDescription</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Api.CoreTypes.Property-1.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="KSP_Game_UIManager_PropertyGameModeDisplayName" data-uid="KSP.Game.UIManager.PropertyGameModeDisplayName">
-  PropertyGameModeDisplayName
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Property&lt;string&gt; PropertyGameModeDisplayName</code></pre>
+    <pre><code class="lang-csharp hljs">public Property&lt;string&gt; PropertyGameMode</code></pre>
   </div>
 
 
@@ -703,7 +657,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Property&lt;long&gt; PropertyPlayerScience</code></pre>
+    <pre><code class="lang-csharp hljs">public Property&lt;float&gt; PropertyPlayerScience</code></pre>
   </div>
 
 
@@ -711,7 +665,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="KSP.Api.CoreTypes.Property-1.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dt><a class="xref" href="KSP.Api.CoreTypes.Property-1.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -772,36 +726,6 @@
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
     <dt><span class="xref">TextMeshProUGUI</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="KSP_Game_UIManager_UICamera" data-uid="KSP.Game.UIManager.UICamera">
-  UICamera
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Camera UICamera</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">Camera</span></dt>
     <dd></dd>
   </dl>
 
@@ -1281,6 +1205,37 @@
 
 
 
+  <a id="KSP_Game_UIManager_ScaleController_" data-uid="KSP.Game.UIManager.ScaleController*"></a>
+
+  <h3 id="KSP_Game_UIManager_ScaleController" data-uid="KSP.Game.UIManager.ScaleController">
+  ScaleController
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIScaleController ScaleController { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="KSP.UI.UIScaleController.html">UIScaleController</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="KSP_Game_UIManager_TooltipProvider_" data-uid="KSP.Game.UIManager.TooltipProvider*"></a>
 
   <h3 id="KSP_Game_UIManager_TooltipProvider" data-uid="KSP.Game.UIManager.TooltipProvider">
@@ -1528,32 +1483,6 @@
 
 
 
-  <a id="KSP_Game_UIManager_DoFlightMapHide_" data-uid="KSP.Game.UIManager.DoFlightMapHide*"></a>
-
-  <h3 id="KSP_Game_UIManager_DoFlightMapHide" data-uid="KSP.Game.UIManager.DoFlightMapHide">
-  DoFlightMapHide()
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void DoFlightMapHide()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="KSP_Game_UIManager_GetCurtainContextByLocation_" data-uid="KSP.Game.UIManager.GetCurtainContextByLocation*"></a>
 
   <h3 id="KSP_Game_UIManager_GetCurtainContextByLocation_KSP_Sim_SerializedLocation_" data-uid="KSP.Game.UIManager.GetCurtainContextByLocation(KSP.Sim.SerializedLocation)">
@@ -1671,6 +1600,47 @@
     <pre><code class="lang-csharp hljs">public TModule GetOrCreate&lt;TModule&gt;() where TModule : UIModule</code></pre>
   </div>
 
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TModule</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TModule</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_UIManager_GetOrCreate_" data-uid="KSP.Game.UIManager.GetOrCreate*"></a>
+
+  <h3 id="KSP_Game_UIManager_GetOrCreate__1_UnityEngine_Canvas_" data-uid="KSP.Game.UIManager.GetOrCreate``1(UnityEngine.Canvas)">
+  GetOrCreate&lt;TModule&gt;(Canvas)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TModule GetOrCreate&lt;TModule&gt;(Canvas targetCanvas) where TModule : UIModule</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetCanvas</code> <span class="xref">Canvas</span></dt>
+    <dd></dd>
+  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -1817,6 +1787,104 @@
 
 
 
+  <a id="KSP_Game_UIManager_GetScaledMainCanvas_" data-uid="KSP.Game.UIManager.GetScaledMainCanvas*"></a>
+
+  <h3 id="KSP_Game_UIManager_GetScaledMainCanvas" data-uid="KSP.Game.UIManager.GetScaledMainCanvas">
+  GetScaledMainCanvas()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Canvas GetScaledMainCanvas()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Canvas</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_UIManager_GetScaledPopupCanvas_" data-uid="KSP.Game.UIManager.GetScaledPopupCanvas*"></a>
+
+  <h3 id="KSP_Game_UIManager_GetScaledPopupCanvas" data-uid="KSP.Game.UIManager.GetScaledPopupCanvas">
+  GetScaledPopupCanvas()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Canvas GetScaledPopupCanvas()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Canvas</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_UIManager_GetViewportPositionFromUITransformInOverlayCanvas_" data-uid="KSP.Game.UIManager.GetViewportPositionFromUITransformInOverlayCanvas*"></a>
+
+  <h3 id="KSP_Game_UIManager_GetViewportPositionFromUITransformInOverlayCanvas_UnityEngine_Transform_" data-uid="KSP.Game.UIManager.GetViewportPositionFromUITransformInOverlayCanvas(UnityEngine.Transform)">
+  GetViewportPositionFromUITransformInOverlayCanvas(Transform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetViewportPositionFromUITransformInOverlayCanvas(Transform t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="KSP_Game_UIManager_Get_" data-uid="KSP.Game.UIManager.Get*"></a>
 
   <h3 id="KSP_Game_UIManager_Get__1" data-uid="KSP.Game.UIManager.Get``1">
@@ -1843,6 +1911,32 @@
     <dt><code>TModule</code></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_UIManager_HideMapIfVisible_" data-uid="KSP.Game.UIManager.HideMapIfVisible*"></a>
+
+  <h3 id="KSP_Game_UIManager_HideMapIfVisible" data-uid="KSP.Game.UIManager.HideMapIfVisible">
+  HideMapIfVisible()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HideMapIfVisible()</code></pre>
+  </div>
+
+
+
 
 
 
@@ -2465,8 +2559,8 @@
 
   <a id="KSP_Game_UIManager_ShowTutorialMessageBox_" data-uid="KSP.Game.UIManager.ShowTutorialMessageBox*"></a>
 
-  <h3 id="KSP_Game_UIManager_ShowTutorialMessageBox_System_String_System_String_System_String_System_Type_KSP_UI_TutorialMessageBoxButtonType_System_String_System_String_System_String_System_Boolean_KSP_UI_MessageDescriptions_" data-uid="KSP.Game.UIManager.ShowTutorialMessageBox(System.String,System.String,System.String,System.Type,KSP.UI.TutorialMessageBoxButtonType,System.String,System.String,System.String,System.Boolean,KSP.UI.MessageDescriptions)">
-  ShowTutorialMessageBox(string, string, string, Type, TutorialMessageBoxButtonType, string, string, string, bool, MessageDescriptions)
+  <h3 id="KSP_Game_UIManager_ShowTutorialMessageBox_System_String_System_String_System_String_System_Type_KSP_UI_TutorialMessageBoxButtonType_System_String_System_String_System_String_System_Boolean_KSP_UI_MessageDescriptions_System_Boolean_System_Boolean_UnityEngine_Vector2_System_Boolean_UnityEngine_Vector2_UnityEngine_Vector2_System_Boolean_UnityEngine_Vector2_" data-uid="KSP.Game.UIManager.ShowTutorialMessageBox(System.String,System.String,System.String,System.Type,KSP.UI.TutorialMessageBoxButtonType,System.String,System.String,System.String,System.Boolean,KSP.UI.MessageDescriptions,System.Boolean,System.Boolean,UnityEngine.Vector2,System.Boolean,UnityEngine.Vector2,UnityEngine.Vector2,System.Boolean,UnityEngine.Vector2)">
+  ShowTutorialMessageBox(string, string, string, Type, TutorialMessageBoxButtonType, string, string, string, bool, MessageDescriptions, bool, bool, Vector2, bool, Vector2, Vector2, bool, Vector2)
   
   </h3>
 
@@ -2474,7 +2568,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ShowTutorialMessageBox(string windowTitle, string title, string description, Type eventTypeDismiss, TutorialMessageBoxButtonType buttonType, string imageName, string playerClip, string nextMissionID, bool isMissionSummary, MessageDescriptions messageDescriptions)</code></pre>
+    <pre><code class="lang-csharp hljs">public void ShowTutorialMessageBox(string windowTitle, string title, string description, Type eventTypeDismiss, TutorialMessageBoxButtonType buttonType, string imageName, string playerClip, string nextMissionID, bool isMissionSummary, MessageDescriptions messageDescriptions, bool resetPositionToDefault = false, bool useCustomPosition = false, Vector2 customPosition = null, bool useCustomAnchor = false, Vector2 customAnchorMin = null, Vector2 customAnchorMax = null, bool useCustomPivot = false, Vector2 customPivot = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -2498,6 +2592,22 @@
     <dt><code>isMissionSummary</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
     <dt><code>messageDescriptions</code> <a class="xref" href="KSP.UI.MessageDescriptions.html">MessageDescriptions</a></dt>
+    <dd></dd>
+    <dt><code>resetPositionToDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>useCustomPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>customPosition</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>useCustomAnchor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>customAnchorMin</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>customAnchorMax</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>useCustomPivot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>customPivot</code> <span class="xref">Vector2</span></dt>
     <dd></dd>
   </dl>
 
@@ -2550,6 +2660,32 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ToggleEscapeVisible()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_UIManager_TransitionAwayFromMapState_" data-uid="KSP.Game.UIManager.TransitionAwayFromMapState*"></a>
+
+  <h3 id="KSP_Game_UIManager_TransitionAwayFromMapState" data-uid="KSP.Game.UIManager.TransitionAwayFromMapState">
+  TransitionAwayFromMapState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TransitionAwayFromMapState()</code></pre>
   </div>
 
 

@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -115,6 +126,9 @@
       <a class="xref" href="KSP.Game.KerbalMonoBehaviour.html#KSP_Game_KerbalMonoBehaviour_Game">KerbalMonoBehaviour.Game</a>
     </div>
     <div>
+      <a class="xref" href="KSP.Game.KerbalMonoBehaviour.html#KSP_Game_KerbalMonoBehaviour_Assets">KerbalMonoBehaviour.Assets</a>
+    </div>
+    <div>
       <a class="xref" href="KSP.Game.KerbalMonoBehaviour.html#KSP_Game_KerbalMonoBehaviour_Messages">KerbalMonoBehaviour.Messages</a>
     </div>
     <div>
@@ -129,13 +143,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -202,66 +216,6 @@
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="KSP.Api.CoreTypes.DataContext.html">DataContext</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="KSP_Game_CreateCampaignMenu_GAMEMODE_EXPLORATION" data-uid="KSP.Game.CreateCampaignMenu.GAMEMODE_EXPLORATION">
-  GAMEMODE_EXPLORATION
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string GAMEMODE_EXPLORATION = &quot;Menu/NewCampaign/Exploration&quot;</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="KSP_Game_CreateCampaignMenu_GAMEMODE_SANDBOX" data-uid="KSP.Game.CreateCampaignMenu.GAMEMODE_SANDBOX">
-  GAMEMODE_SANDBOX
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string GAMEMODE_SANDBOX = &quot;Menu/NewCampaign/Sandbox&quot;</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -393,6 +347,32 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void OnCampaignNameEndEdit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_CreateCampaignMenu_OnLocalizeEvent_" data-uid="KSP.Game.CreateCampaignMenu.OnLocalizeEvent*"></a>
+
+  <h3 id="KSP_Game_CreateCampaignMenu_OnLocalizeEvent" data-uid="KSP.Game.CreateCampaignMenu.OnLocalizeEvent">
+  OnLocalizeEvent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnLocalizeEvent()</code></pre>
   </div>
 
 
@@ -568,37 +548,6 @@
 
 
 
-  <a id="KSP_Game_CreateCampaignMenu_SetGameMode_" data-uid="KSP.Game.CreateCampaignMenu.SetGameMode*"></a>
-
-  <h3 id="KSP_Game_CreateCampaignMenu_SetGameMode_KSP_Game_CampaignMode_" data-uid="KSP.Game.CreateCampaignMenu.SetGameMode(KSP.Game.CampaignMode)">
-  SetGameMode(CampaignMode)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetGameMode(CampaignMode campaignMode)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>campaignMode</code> <a class="xref" href="KSP.Game.CampaignMode.html">CampaignMode</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="KSP_Game_CreateCampaignMenu_StartCampaignCreationFlow_" data-uid="KSP.Game.CreateCampaignMenu.StartCampaignCreationFlow*"></a>
 
   <h3 id="KSP_Game_CreateCampaignMenu_StartCampaignCreationFlow" data-uid="KSP.Game.CreateCampaignMenu.StartCampaignCreationFlow">
@@ -645,6 +594,42 @@
     <dd></dd>
   </dl>
 
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_CreateCampaignMenu_TrySetGameMode_" data-uid="KSP.Game.CreateCampaignMenu.TrySetGameMode*"></a>
+
+  <h3 id="KSP_Game_CreateCampaignMenu_TrySetGameMode_System_String_" data-uid="KSP.Game.CreateCampaignMenu.TrySetGameMode(System.String)">
+  TrySetGameMode(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TrySetGameMode(string campaignMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>campaignMode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

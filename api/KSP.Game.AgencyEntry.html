@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -137,13 +148,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -163,8 +174,8 @@
 
   <a id="KSP_Game_AgencyEntry__ctor_" data-uid="KSP.Game.AgencyEntry.#ctor*"></a>
 
-  <h3 id="KSP_Game_AgencyEntry__ctor_KSP_Game_AgencyManager_System_Int32_System_String_UnityEngine_Color_UnityEngine_Color_System_String_System_Collections_Generic_List_KSP_Game_Missions_Definitions_MissionData__" data-uid="KSP.Game.AgencyEntry.#ctor(KSP.Game.AgencyManager,System.Int32,System.String,UnityEngine.Color,UnityEngine.Color,System.String,System.Collections.Generic.List{KSP.Game.Missions.Definitions.MissionData})">
-  AgencyEntry(AgencyManager, int, string, Color, Color, string, List&lt;MissionData&gt;)
+  <h3 id="KSP_Game_AgencyEntry__ctor_KSP_Game_AgencyManager_System_Int32_System_String_UnityEngine_Color_UnityEngine_Color_System_String_System_Collections_Generic_List_KSP_Game_Missions_Definitions_MissionSaveData__" data-uid="KSP.Game.AgencyEntry.#ctor(KSP.Game.AgencyManager,System.Int32,System.String,UnityEngine.Color,UnityEngine.Color,System.String,System.Collections.Generic.List{KSP.Game.Missions.Definitions.MissionSaveData})">
+  AgencyEntry(AgencyManager, int, string, Color, Color, string, List&lt;MissionSaveData&gt;)
   
   </h3>
 
@@ -172,7 +183,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AgencyEntry(AgencyManager agencyManager, int agencyId, string agencyName, Color colorBase, Color colorAccent, string flagSpritelocation, List&lt;MissionData&gt; missions)</code></pre>
+    <pre><code class="lang-csharp hljs">public AgencyEntry(AgencyManager agencyManager, int agencyId, string agencyName, Color colorBase, Color colorAccent, string flagSpritelocation, List&lt;MissionSaveData&gt; missionSaveData)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -189,7 +200,7 @@
     <dd></dd>
     <dt><code>flagSpritelocation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>missions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="KSP.Game.Missions.Definitions.MissionData.html">MissionData</a>&gt;</dt>
+    <dt><code>missionSaveData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="KSP.Game.Missions.Definitions.MissionSaveData.html">MissionSaveData</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -377,36 +388,6 @@
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="KSP_Game_AgencyEntry_DEFAULT_FOUND_FLAG" data-uid="KSP.Game.AgencyEntry.DEFAULT_FOUND_FLAG">
-  DEFAULT_FOUND_FLAG
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const bool DEFAULT_FOUND_FLAG = false</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -670,37 +651,6 @@
 
 
 
-  <a id="KSP_Game_AgencyEntry_FoundFlag_" data-uid="KSP.Game.AgencyEntry.FoundFlag*"></a>
-
-  <h3 id="KSP_Game_AgencyEntry_FoundFlag" data-uid="KSP.Game.AgencyEntry.FoundFlag">
-  FoundFlag
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool FoundFlag { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="KSP_Game_AgencyEntry_Game_" data-uid="KSP.Game.AgencyEntry.Game*"></a>
 
   <h3 id="KSP_Game_AgencyEntry_Game" data-uid="KSP.Game.AgencyEntry.Game">
@@ -732,10 +682,10 @@
 
 
 
-  <a id="KSP_Game_AgencyEntry_Missions_" data-uid="KSP.Game.AgencyEntry.Missions*"></a>
+  <a id="KSP_Game_AgencyEntry_MissionSaveData_" data-uid="KSP.Game.AgencyEntry.MissionSaveData*"></a>
 
-  <h3 id="KSP_Game_AgencyEntry_Missions" data-uid="KSP.Game.AgencyEntry.Missions">
-  Missions
+  <h3 id="KSP_Game_AgencyEntry_MissionSaveData" data-uid="KSP.Game.AgencyEntry.MissionSaveData">
+  MissionSaveData
   
   </h3>
 
@@ -743,7 +693,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;MissionData&gt; Missions { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;MissionSaveData&gt; MissionSaveData { get; }</code></pre>
   </div>
 
 
@@ -752,7 +702,7 @@
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="KSP.Game.Missions.Definitions.MissionData.html">MissionData</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="KSP.Game.Missions.Definitions.MissionSaveData.html">MissionSaveData</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -834,6 +784,37 @@
   </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_AgencyEntry_GetDebugAgencyIdAndNameString_" data-uid="KSP.Game.AgencyEntry.GetDebugAgencyIdAndNameString*"></a>
+
+  <h3 id="KSP_Game_AgencyEntry_GetDebugAgencyIdAndNameString" data-uid="KSP.Game.AgencyEntry.GetDebugAgencyIdAndNameString">
+  GetDebugAgencyIdAndNameString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDebugAgencyIdAndNameString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -971,8 +952,8 @@
 
   <a id="KSP_Game_AgencyEntry_Init_" data-uid="KSP.Game.AgencyEntry.Init*"></a>
 
-  <h3 id="KSP_Game_AgencyEntry_Init_KSP_Game_AgencyManager_System_Int32_System_String_UnityEngine_Color_UnityEngine_Color_System_String_System_Collections_Generic_List_KSP_Game_Missions_Definitions_MissionData__" data-uid="KSP.Game.AgencyEntry.Init(KSP.Game.AgencyManager,System.Int32,System.String,UnityEngine.Color,UnityEngine.Color,System.String,System.Collections.Generic.List{KSP.Game.Missions.Definitions.MissionData})">
-  Init(AgencyManager, int, string, Color, Color, string, List&lt;MissionData&gt;)
+  <h3 id="KSP_Game_AgencyEntry_Init_KSP_Game_AgencyManager_System_Int32_System_String_UnityEngine_Color_UnityEngine_Color_System_String_System_Collections_Generic_List_KSP_Game_Missions_Definitions_MissionSaveData__" data-uid="KSP.Game.AgencyEntry.Init(KSP.Game.AgencyManager,System.Int32,System.String,UnityEngine.Color,UnityEngine.Color,System.String,System.Collections.Generic.List{KSP.Game.Missions.Definitions.MissionSaveData})">
+  Init(AgencyManager, int, string, Color, Color, string, List&lt;MissionSaveData&gt;)
   
   </h3>
 
@@ -980,7 +961,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Init(AgencyManager agencyManager, int agencyId, string agencyName, Color colorBase, Color colorAccent, string flagSpritelocation, List&lt;MissionData&gt; missions)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Init(AgencyManager agencyManager, int agencyId, string agencyName, Color colorBase, Color colorAccent, string flagSpritelocation, List&lt;MissionSaveData&gt; missionSaveData)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -997,7 +978,7 @@
     <dd></dd>
     <dt><code>flagSpritelocation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>missions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="KSP.Game.Missions.Definitions.MissionData.html">MissionData</a>&gt;</dt>
+    <dt><code>missionSaveData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="KSP.Game.Missions.Definitions.MissionSaveData.html">MissionSaveData</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -1014,8 +995,8 @@
 
   <a id="KSP_Game_AgencyEntry_OnFieldChanged_" data-uid="KSP.Game.AgencyEntry.OnFieldChanged*"></a>
 
-  <h3 id="KSP_Game_AgencyEntry_OnFieldChanged_KSP_Game_AgencyField_" data-uid="KSP.Game.AgencyEntry.OnFieldChanged(KSP.Game.AgencyField)">
-  OnFieldChanged(AgencyField)
+  <h3 id="KSP_Game_AgencyEntry_OnFieldChanged_KSP_Game_AgencyMPActionField_" data-uid="KSP.Game.AgencyEntry.OnFieldChanged(KSP.Game.AgencyMPActionField)">
+  OnFieldChanged(AgencyMPActionField)
   
   </h3>
 
@@ -1023,12 +1004,12 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnFieldChanged(AgencyField agencyField)</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnFieldChanged(AgencyMPActionField agencyMPActionField)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>agencyField</code> <a class="xref" href="KSP.Game.AgencyField.html">AgencyField</a></dt>
+    <dt><code>agencyMPActionField</code> <a class="xref" href="KSP.Game.AgencyMPActionField.html">AgencyMPActionField</a></dt>
     <dd></dd>
   </dl>
 
@@ -1187,41 +1168,10 @@
 
 
 
-  <a id="KSP_Game_AgencyEntry_SetFoundFlag_" data-uid="KSP.Game.AgencyEntry.SetFoundFlag*"></a>
-
-  <h3 id="KSP_Game_AgencyEntry_SetFoundFlag_System_Boolean_" data-uid="KSP.Game.AgencyEntry.SetFoundFlag(System.Boolean)">
-  SetFoundFlag(bool)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetFoundFlag(bool foundFlag)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>foundFlag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="KSP_Game_AgencyEntry_SetMissions_" data-uid="KSP.Game.AgencyEntry.SetMissions*"></a>
 
-  <h3 id="KSP_Game_AgencyEntry_SetMissions_System_Collections_Generic_List_KSP_Game_Missions_Definitions_MissionData__" data-uid="KSP.Game.AgencyEntry.SetMissions(System.Collections.Generic.List{KSP.Game.Missions.Definitions.MissionData})">
-  SetMissions(List&lt;MissionData&gt;)
+  <h3 id="KSP_Game_AgencyEntry_SetMissions_System_Collections_Generic_List_KSP_Game_Missions_Definitions_MissionSaveData__" data-uid="KSP.Game.AgencyEntry.SetMissions(System.Collections.Generic.List{KSP.Game.Missions.Definitions.MissionSaveData})">
+  SetMissions(List&lt;MissionSaveData&gt;)
   
   </h3>
 
@@ -1229,12 +1179,12 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetMissions(List&lt;MissionData&gt; src)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetMissions(List&lt;MissionSaveData&gt; src)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="KSP.Game.Missions.Definitions.MissionData.html">MissionData</a>&gt;</dt>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="KSP.Game.Missions.Definitions.MissionSaveData.html">MissionSaveData</a>&gt;</dt>
     <dd></dd>
   </dl>
 

@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -153,13 +164,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -179,8 +190,8 @@
 
   <a id="KSP_Game_ViewDataProvider__ctor_" data-uid="KSP.Game.ViewDataProvider.#ctor*"></a>
 
-  <h3 id="KSP_Game_ViewDataProvider__ctor_KSP_Sim_impl_ViewController_" data-uid="KSP.Game.ViewDataProvider.#ctor(KSP.Sim.impl.ViewController)">
-  ViewDataProvider(ViewController)
+  <h3 id="KSP_Game_ViewDataProvider__ctor_KSP_Sim_impl_ViewController_KSP_Game_GameInstance_" data-uid="KSP.Game.ViewDataProvider.#ctor(KSP.Sim.impl.ViewController,KSP.Game.GameInstance)">
+  ViewDataProvider(ViewController, GameInstance)
   
   </h3>
 
@@ -188,12 +199,14 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ViewDataProvider(ViewController dataSource)</code></pre>
+    <pre><code class="lang-csharp hljs">public ViewDataProvider(ViewController dataSource, GameInstance game)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>dataSource</code> <a class="xref" href="KSP.Sim.impl.ViewController.html">ViewController</a></dt>
+    <dd></dd>
+    <dt><code>game</code> <a class="xref" href="KSP.Game.GameInstance.html">GameInstance</a></dt>
     <dd></dd>
   </dl>
 
@@ -472,6 +485,37 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PropertyExternal&lt;bool&gt; IsMissionTrackerTooltipVisible { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="KSP.Api.CoreTypes.PropertyExternal-1.html">PropertyExternal</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_ViewDataProvider_IsNavballVisible_" data-uid="KSP.Game.ViewDataProvider.IsNavballVisible*"></a>
+
+  <h3 id="KSP_Game_ViewDataProvider_IsNavballVisible" data-uid="KSP.Game.ViewDataProvider.IsNavballVisible">
+  IsNavballVisible
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PropertyExternal&lt;bool&gt; IsNavballVisible { get; }</code></pre>
   </div>
 
 
@@ -1022,6 +1066,37 @@
 
 
 
+  <a id="KSP_Game_ViewDataProvider_GetNavballVisible_" data-uid="KSP.Game.ViewDataProvider.GetNavballVisible*"></a>
+
+  <h3 id="KSP_Game_ViewDataProvider_GetNavballVisible" data-uid="KSP.Game.ViewDataProvider.GetNavballVisible">
+  GetNavballVisible()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetNavballVisible()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="KSP_Game_ViewDataProvider_GetNonStageableResourcesVisible_" data-uid="KSP.Game.ViewDataProvider.GetNonStageableResourcesVisible*"></a>
 
   <h3 id="KSP_Game_ViewDataProvider_GetNonStageableResourcesVisible" data-uid="KSP.Game.ViewDataProvider.GetNonStageableResourcesVisible">
@@ -1135,32 +1210,6 @@
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Game_ViewDataProvider_InitializeData_" data-uid="KSP.Game.ViewDataProvider.InitializeData*"></a>
-
-  <h3 id="KSP_Game_ViewDataProvider_InitializeData" data-uid="KSP.Game.ViewDataProvider.InitializeData">
-  InitializeData()
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void InitializeData()</code></pre>
-  </div>
-
-
 
 
 
@@ -1619,6 +1668,32 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ValidateMissionTrackerIsVisible()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_ViewDataProvider_ValidateNavballIsVisible_" data-uid="KSP.Game.ViewDataProvider.ValidateNavballIsVisible*"></a>
+
+  <h3 id="KSP_Game_ViewDataProvider_ValidateNavballIsVisible" data-uid="KSP.Game.ViewDataProvider.ValidateNavballIsVisible">
+  ValidateNavballIsVisible()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ValidateNavballIsVisible()</code></pre>
   </div>
 
 

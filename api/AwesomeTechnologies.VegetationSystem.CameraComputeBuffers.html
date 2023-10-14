@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -137,13 +148,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -212,7 +223,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly List&lt;ComputeBuffer&gt;[] ArgsBuffers</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly List&lt;GraphicsBuffer&gt;[] ArgsBuffers</code></pre>
   </div>
 
 
@@ -220,7 +231,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">ComputeBuffer</span>&gt;[]</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">GraphicsBuffer</span>&gt;[]</dt>
     <dd></dd>
   </dl>
 
@@ -242,7 +253,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ComputeBuffer BillboardArgsBuffer</code></pre>
+    <pre><code class="lang-csharp hljs">public GraphicsBuffer BillboardArgsBuffer</code></pre>
   </div>
 
 
@@ -250,7 +261,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">ComputeBuffer</span></dt>
+    <dt><span class="xref">GraphicsBuffer</span></dt>
     <dd></dd>
   </dl>
 
@@ -272,7 +283,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ComputeBuffer BillboardMergeBuffer</code></pre>
+    <pre><code class="lang-csharp hljs">public GraphicsBuffer BillboardMergeBuffer</code></pre>
   </div>
 
 
@@ -280,7 +291,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">ComputeBuffer</span></dt>
+    <dt><span class="xref">GraphicsBuffer</span></dt>
     <dd></dd>
   </dl>
 
@@ -303,6 +314,66 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const int DefaultComputeBufferSize = 5000</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="AwesomeTechnologies_VegetationSystem_CameraComputeBuffers_FramesSinceLastRendered" data-uid="AwesomeTechnologies.VegetationSystem.CameraComputeBuffers.FramesSinceLastRendered">
+  FramesSinceLastRendered
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FramesSinceLastRendered</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="AwesomeTechnologies_VegetationSystem_CameraComputeBuffers_FramesSinceLastRenderedBillboard" data-uid="AwesomeTechnologies.VegetationSystem.CameraComputeBuffers.FramesSinceLastRenderedBillboard">
+  FramesSinceLastRenderedBillboard
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FramesSinceLastRenderedBillboard</code></pre>
   </div>
 
 
@@ -362,7 +433,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly List&lt;ComputeBuffer&gt;[] ShadowArgsBuffers</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly List&lt;GraphicsBuffer&gt;[] ShadowArgsBuffers</code></pre>
   </div>
 
 
@@ -370,7 +441,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">ComputeBuffer</span>&gt;[]</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">GraphicsBuffer</span>&gt;[]</dt>
     <dd></dd>
   </dl>
 
@@ -392,7 +463,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly ComputeBuffer[] ShadowBuffers</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly GraphicsBuffer[] ShadowBuffers</code></pre>
   </div>
 
 
@@ -400,7 +471,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">ComputeBuffer</span>[]</dt>
+    <dt><span class="xref">GraphicsBuffer</span>[]</dt>
     <dd></dd>
   </dl>
 
@@ -422,7 +493,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly ComputeBuffer[] VisibleBuffers</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly GraphicsBuffer[] VisibleBuffers</code></pre>
   </div>
 
 
@@ -430,7 +501,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">ComputeBuffer</span>[]</dt>
+    <dt><span class="xref">GraphicsBuffer</span>[]</dt>
     <dd></dd>
   </dl>
 
@@ -529,6 +600,37 @@
 
 
 
+  <a id="AwesomeTechnologies_VegetationSystem_CameraComputeBuffers_EnsureBillboardBufferLargeEnough_" data-uid="AwesomeTechnologies.VegetationSystem.CameraComputeBuffers.EnsureBillboardBufferLargeEnough*"></a>
+
+  <h3 id="AwesomeTechnologies_VegetationSystem_CameraComputeBuffers_EnsureBillboardBufferLargeEnough_System_Int32_" data-uid="AwesomeTechnologies.VegetationSystem.CameraComputeBuffers.EnsureBillboardBufferLargeEnough(System.Int32)">
+  EnsureBillboardBufferLargeEnough(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnsureBillboardBufferLargeEnough(int requiredCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requiredCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="AwesomeTechnologies_VegetationSystem_CameraComputeBuffers_EnsureRenderBuffersAreLargeEnough_" data-uid="AwesomeTechnologies.VegetationSystem.CameraComputeBuffers.EnsureRenderBuffersAreLargeEnough*"></a>
 
   <h3 id="AwesomeTechnologies_VegetationSystem_CameraComputeBuffers_EnsureRenderBuffersAreLargeEnough_System_Int32_System_Int32_System_Boolean_System_Int32_" data-uid="AwesomeTechnologies.VegetationSystem.CameraComputeBuffers.EnsureRenderBuffersAreLargeEnough(System.Int32,System.Int32,System.Boolean,System.Int32)">
@@ -577,7 +679,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ComputeBuffer GetShadowBufferForLOD(int lod)</code></pre>
+    <pre><code class="lang-csharp hljs">public GraphicsBuffer GetShadowBufferForLOD(int lod)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -588,7 +690,7 @@
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">ComputeBuffer</span></dt>
+    <dt><span class="xref">GraphicsBuffer</span></dt>
     <dd></dd>
   </dl>
 
@@ -613,7 +715,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ComputeBuffer GetVisibleBufferForLOD(int lod)</code></pre>
+    <pre><code class="lang-csharp hljs">public GraphicsBuffer GetVisibleBufferForLOD(int lod)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -624,9 +726,71 @@
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">ComputeBuffer</span></dt>
+    <dt><span class="xref">GraphicsBuffer</span></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AwesomeTechnologies_VegetationSystem_CameraComputeBuffers_MaybeCleanUpIfNoRenderThisFrame_" data-uid="AwesomeTechnologies.VegetationSystem.CameraComputeBuffers.MaybeCleanUpIfNoRenderThisFrame*"></a>
+
+  <h3 id="AwesomeTechnologies_VegetationSystem_CameraComputeBuffers_MaybeCleanUpIfNoRenderThisFrame_System_Boolean_" data-uid="AwesomeTechnologies.VegetationSystem.CameraComputeBuffers.MaybeCleanUpIfNoRenderThisFrame(System.Boolean)">
+  MaybeCleanUpIfNoRenderThisFrame(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MaybeCleanUpIfNoRenderThisFrame(bool anythingRendered)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anythingRendered</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AwesomeTechnologies_VegetationSystem_CameraComputeBuffers_MaybeCleanupIfNoRenderBillboardThisFrame_" data-uid="AwesomeTechnologies.VegetationSystem.CameraComputeBuffers.MaybeCleanupIfNoRenderBillboardThisFrame*"></a>
+
+  <h3 id="AwesomeTechnologies_VegetationSystem_CameraComputeBuffers_MaybeCleanupIfNoRenderBillboardThisFrame_System_Boolean_" data-uid="AwesomeTechnologies.VegetationSystem.CameraComputeBuffers.MaybeCleanupIfNoRenderBillboardThisFrame(System.Boolean)">
+  MaybeCleanupIfNoRenderBillboardThisFrame(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MaybeCleanupIfNoRenderBillboardThisFrame(bool anythingRendered)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anythingRendered</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
 
 
 
@@ -652,37 +816,6 @@
     <pre><code class="lang-csharp hljs">public void ResetAppendBufferCounters()</code></pre>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="AwesomeTechnologies_VegetationSystem_CameraComputeBuffers_UpdateBillboardComputeBufferSize_" data-uid="AwesomeTechnologies.VegetationSystem.CameraComputeBuffers.UpdateBillboardComputeBufferSize*"></a>
-
-  <h3 id="AwesomeTechnologies_VegetationSystem_CameraComputeBuffers_UpdateBillboardComputeBufferSize_System_Int32_" data-uid="AwesomeTechnologies.VegetationSystem.CameraComputeBuffers.UpdateBillboardComputeBufferSize(System.Int32)">
-  UpdateBillboardComputeBufferSize(int)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateBillboardComputeBufferSize(int newInstanceCount)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>newInstanceCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
 
 
 

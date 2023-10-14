@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -91,7 +102,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ObjectAssemblyUIEngineeringReport : KerbalMonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class ObjectAssemblyUIEngineeringReport : PopUpUIManagerBase</code></pre>
   </div>
 
 
@@ -102,6 +113,7 @@
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="KSP.Game.KerbalMonoBehaviour.html">KerbalMonoBehaviour</a></div>
+      <div><a class="xref" href="PopUpUIManagerBase.html">PopUpUIManagerBase</a></div>
       <div><span class="xref">ObjectAssemblyUIEngineeringReport</span></div>
     </dd>
   </dl>
@@ -112,7 +124,28 @@
     <dt>Inherited Members</dt>
     <dd>
     <div>
+      <a class="xref" href="PopUpUIManagerBase.html#PopUpUIManagerBase__trainingCenterLoadHandle">PopUpUIManagerBase._trainingCenterLoadHandle</a>
+    </div>
+    <div>
+      <a class="xref" href="PopUpUIManagerBase.html#PopUpUIManagerBase__gameStateChangedHandle">PopUpUIManagerBase._gameStateChangedHandle</a>
+    </div>
+    <div>
+      <a class="xref" href="PopUpUIManagerBase.html#PopUpUIManagerBase_GetVisibleStatus">PopUpUIManagerBase.GetVisibleStatus()</a>
+    </div>
+    <div>
+      <a class="xref" href="PopUpUIManagerBase.html#PopUpUIManagerBase_OnTrainingCenterLoad_KSP_Messages_MessageCenterMessage_">PopUpUIManagerBase.OnTrainingCenterLoad(MessageCenterMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="PopUpUIManagerBase.html#PopUpUIManagerBase_OnGameStateChanged_KSP_Messages_MessageCenterMessage_">PopUpUIManagerBase.OnGameStateChanged(MessageCenterMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="PopUpUIManagerBase.html#PopUpUIManagerBase_IsVisible">PopUpUIManagerBase.IsVisible</a>
+    </div>
+    <div>
       <a class="xref" href="KSP.Game.KerbalMonoBehaviour.html#KSP_Game_KerbalMonoBehaviour_Game">KerbalMonoBehaviour.Game</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.Game.KerbalMonoBehaviour.html#KSP_Game_KerbalMonoBehaviour_Assets">KerbalMonoBehaviour.Assets</a>
     </div>
     <div>
       <a class="xref" href="KSP.Game.KerbalMonoBehaviour.html#KSP_Game_KerbalMonoBehaviour_Messages">KerbalMonoBehaviour.Messages</a>
@@ -129,13 +162,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -247,10 +280,10 @@
 </h2>
 
 
-  <a id="KSP_OAB_ObjectAssemblyUIEngineeringReport_Initialize_" data-uid="KSP.OAB.ObjectAssemblyUIEngineeringReport.Initialize*"></a>
+  <a id="KSP_OAB_ObjectAssemblyUIEngineeringReport_Awake_" data-uid="KSP.OAB.ObjectAssemblyUIEngineeringReport.Awake*"></a>
 
-  <h3 id="KSP_OAB_ObjectAssemblyUIEngineeringReport_Initialize_KSP_OAB_OABSessionInformation_KSP_OAB_ObjectAssemblyBuilderEvents_KSP_OAB_ObjectAssemblyUIEvents_KSP_OAB_AssemblyPartsPicker_" data-uid="KSP.OAB.ObjectAssemblyUIEngineeringReport.Initialize(KSP.OAB.OABSessionInformation,KSP.OAB.ObjectAssemblyBuilderEvents,KSP.OAB.ObjectAssemblyUIEvents,KSP.OAB.AssemblyPartsPicker)">
-  Initialize(OABSessionInformation, ObjectAssemblyBuilderEvents, ObjectAssemblyUIEvents, AssemblyPartsPicker)
+  <h3 id="KSP_OAB_ObjectAssemblyUIEngineeringReport_Awake" data-uid="KSP.OAB.ObjectAssemblyUIEngineeringReport.Awake">
+  Awake()
   
   </h3>
 
@@ -258,7 +291,33 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Initialize(OABSessionInformation stats, ObjectAssemblyBuilderEvents eventsBuilder, ObjectAssemblyUIEvents eventsUI, AssemblyPartsPicker assemblyPartsPicker)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_OAB_ObjectAssemblyUIEngineeringReport_Initialize_" data-uid="KSP.OAB.ObjectAssemblyUIEngineeringReport.Initialize*"></a>
+
+  <h3 id="KSP_OAB_ObjectAssemblyUIEngineeringReport_Initialize_KSP_OAB_OABSessionInformation_KSP_OAB_ObjectAssemblyBuilderEvents_KSP_OAB_ObjectAssemblyUIEvents_KSP_OAB_AssemblyPartsPicker_OABSideBar_" data-uid="KSP.OAB.ObjectAssemblyUIEngineeringReport.Initialize(KSP.OAB.OABSessionInformation,KSP.OAB.ObjectAssemblyBuilderEvents,KSP.OAB.ObjectAssemblyUIEvents,KSP.OAB.AssemblyPartsPicker,OABSideBar)">
+  Initialize(OABSessionInformation, ObjectAssemblyBuilderEvents, ObjectAssemblyUIEvents, AssemblyPartsPicker, OABSideBar)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(OABSessionInformation stats, ObjectAssemblyBuilderEvents eventsBuilder, ObjectAssemblyUIEvents eventsUI, AssemblyPartsPicker assemblyPartsPicker, OABSideBar sideBar)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -271,7 +330,35 @@
     <dd></dd>
     <dt><code>assemblyPartsPicker</code> <a class="xref" href="KSP.OAB.AssemblyPartsPicker.html">AssemblyPartsPicker</a></dt>
     <dd></dd>
+    <dt><code>sideBar</code> <a class="xref" href="OABSideBar.html">OABSideBar</a></dt>
+    <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_OAB_ObjectAssemblyUIEngineeringReport_OnDestroy_" data-uid="KSP.OAB.ObjectAssemblyUIEngineeringReport.OnDestroy*"></a>
+
+  <h3 id="KSP_OAB_ObjectAssemblyUIEngineeringReport_OnDestroy" data-uid="KSP.OAB.ObjectAssemblyUIEngineeringReport.OnDestroy">
+  OnDestroy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDestroy()</code></pre>
+  </div>
+
 
 
 
@@ -309,6 +396,37 @@
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_OAB_ObjectAssemblyUIEngineeringReport_SetVisibilityOfManager_" data-uid="KSP.OAB.ObjectAssemblyUIEngineeringReport.SetVisibilityOfManager*"></a>
+
+  <h3 id="KSP_OAB_ObjectAssemblyUIEngineeringReport_SetVisibilityOfManager_System_Boolean_" data-uid="KSP.OAB.ObjectAssemblyUIEngineeringReport.SetVisibilityOfManager(System.Boolean)">
+  SetVisibilityOfManager(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SetVisibilityOfManager(bool val)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>val</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
 
 
 

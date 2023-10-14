@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -137,13 +148,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -551,41 +562,6 @@
 
 
 
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
-  <a id="KSP_Networking_MP_Utils_SimUtil_Game_" data-uid="KSP.Networking.MP.Utils.SimUtil.Game*"></a>
-
-  <h3 id="KSP_Networking_MP_Utils_SimUtil_Game" data-uid="KSP.Networking.MP.Utils.SimUtil.Game">
-  Game
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GameInstance Game { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.GameInstance.html">GameInstance</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -688,6 +664,101 @@
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Networking_MP_Utils_SimUtil_DeleteAllSimObjectModelsInList_" data-uid="KSP.Networking.MP.Utils.SimUtil.DeleteAllSimObjectModelsInList*"></a>
+
+  <h3 id="KSP_Networking_MP_Utils_SimUtil_DeleteAllSimObjectModelsInList_System_Collections_Generic_List_KSP_Sim_impl_SimulationObjectModel__" data-uid="KSP.Networking.MP.Utils.SimUtil.DeleteAllSimObjectModelsInList(System.Collections.Generic.List{KSP.Sim.impl.SimulationObjectModel})">
+  DeleteAllSimObjectModelsInList(List&lt;SimulationObjectModel&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DeleteAllSimObjectModelsInList(List&lt;SimulationObjectModel&gt; simObjectModelList)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>simObjectModelList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="KSP.Sim.impl.SimulationObjectModel.html">SimulationObjectModel</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Networking_MP_Utils_SimUtil_DeletePlayerOwnedObjectsForAllPlayers_" data-uid="KSP.Networking.MP.Utils.SimUtil.DeletePlayerOwnedObjectsForAllPlayers*"></a>
+
+  <h3 id="KSP_Networking_MP_Utils_SimUtil_DeletePlayerOwnedObjectsForAllPlayers_System_Boolean_" data-uid="KSP.Networking.MP.Utils.SimUtil.DeletePlayerOwnedObjectsForAllPlayers(System.Boolean)">
+  DeletePlayerOwnedObjectsForAllPlayers(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DeletePlayerOwnedObjectsForAllPlayers(bool propagate = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propagate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Networking_MP_Utils_SimUtil_DeletePlayerOwnedObjectsForSpecificPlayer_" data-uid="KSP.Networking.MP.Utils.SimUtil.DeletePlayerOwnedObjectsForSpecificPlayer*"></a>
+
+  <h3 id="KSP_Networking_MP_Utils_SimUtil_DeletePlayerOwnedObjectsForSpecificPlayer_System_String_System_Boolean_" data-uid="KSP.Networking.MP.Utils.SimUtil.DeletePlayerOwnedObjectsForSpecificPlayer(System.String,System.Boolean)">
+  DeletePlayerOwnedObjectsForSpecificPlayer(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DeletePlayerOwnedObjectsForSpecificPlayer(string playerGuidString, bool propagate = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerGuidString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>propagate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
 
 
 

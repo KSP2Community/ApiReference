@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -137,13 +148,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -189,8 +200,8 @@
 
   <a id="KSP_Game_NewGameSetupInfo__ctor_" data-uid="KSP.Game.NewGameSetupInfo.#ctor*"></a>
 
-  <h3 id="KSP_Game_NewGameSetupInfo__ctor_KSP_Game_DifficultyOptionsData_KSP_Game_DifficultyOptionsData_KSP_Game_DifficultyLevel_" data-uid="KSP.Game.NewGameSetupInfo.#ctor(KSP.Game.DifficultyOptionsData,KSP.Game.DifficultyOptionsData,KSP.Game.DifficultyLevel)">
-  NewGameSetupInfo(DifficultyOptionsData, DifficultyOptionsData, DifficultyLevel)
+  <h3 id="KSP_Game_NewGameSetupInfo__ctor_KSP_Game_DifficultyOptionsData_" data-uid="KSP.Game.NewGameSetupInfo.#ctor(KSP.Game.DifficultyOptionsData)">
+  NewGameSetupInfo(DifficultyOptionsData)
   
   </h3>
 
@@ -198,16 +209,12 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NewGameSetupInfo(DifficultyOptionsData defaultDifficultyOptionsData, DifficultyOptionsData initialDifficultyOptionsData, DifficultyLevel difficultyLevel)</code></pre>
+    <pre><code class="lang-csharp hljs">public NewGameSetupInfo(DifficultyOptionsData initialDifficultyOptionsData)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>defaultDifficultyOptionsData</code> <a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
-    <dd></dd>
     <dt><code>initialDifficultyOptionsData</code> <a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
-    <dd></dd>
-    <dt><code>difficultyLevel</code> <a class="xref" href="KSP.Game.DifficultyLevel.html">DifficultyLevel</a></dt>
     <dd></dd>
   </dl>
 
@@ -253,104 +260,8 @@
 
 
 
-  <h2 class="section" id="fields">Fields
-</h2>
-
-
-
-  <h3 id="KSP_Game_NewGameSetupInfo_DEFAULT_DIFFICULTY_LEVEL" data-uid="KSP.Game.NewGameSetupInfo.DEFAULT_DIFFICULTY_LEVEL">
-  DEFAULT_DIFFICULTY_LEVEL
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const DifficultyLevel DEFAULT_DIFFICULTY_LEVEL = Normal</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.DifficultyLevel.html">DifficultyLevel</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="properties">Properties
 </h2>
-
-
-  <a id="KSP_Game_NewGameSetupInfo_DefaultDifficultyOptionsData_" data-uid="KSP.Game.NewGameSetupInfo.DefaultDifficultyOptionsData*"></a>
-
-  <h3 id="KSP_Game_NewGameSetupInfo_DefaultDifficultyOptionsData" data-uid="KSP.Game.NewGameSetupInfo.DefaultDifficultyOptionsData">
-  DefaultDifficultyOptionsData
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DifficultyOptionsData DefaultDifficultyOptionsData { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="KSP_Game_NewGameSetupInfo_DifficultyLevel_" data-uid="KSP.Game.NewGameSetupInfo.DifficultyLevel*"></a>
-
-  <h3 id="KSP_Game_NewGameSetupInfo_DifficultyLevel" data-uid="KSP.Game.NewGameSetupInfo.DifficultyLevel">
-  DifficultyLevel
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DifficultyLevel DifficultyLevel { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.DifficultyLevel.html">DifficultyLevel</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
 
 
   <a id="KSP_Game_NewGameSetupInfo_InitialDifficultyOptionsData_" data-uid="KSP.Game.NewGameSetupInfo.InitialDifficultyOptionsData*"></a>
@@ -478,8 +389,8 @@
 
   <a id="KSP_Game_NewGameSetupInfo_Init_" data-uid="KSP.Game.NewGameSetupInfo.Init*"></a>
 
-  <h3 id="KSP_Game_NewGameSetupInfo_Init_KSP_Game_DifficultyOptionsData_KSP_Game_DifficultyOptionsData_KSP_Game_DifficultyLevel_" data-uid="KSP.Game.NewGameSetupInfo.Init(KSP.Game.DifficultyOptionsData,KSP.Game.DifficultyOptionsData,KSP.Game.DifficultyLevel)">
-  Init(DifficultyOptionsData, DifficultyOptionsData, DifficultyLevel)
+  <h3 id="KSP_Game_NewGameSetupInfo_Init_KSP_Game_DifficultyOptionsData_" data-uid="KSP.Game.NewGameSetupInfo.Init(KSP.Game.DifficultyOptionsData)">
+  Init(DifficultyOptionsData)
   
   </h3>
 
@@ -487,16 +398,12 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Init(DifficultyOptionsData defaultDifficultyOptionsData, DifficultyOptionsData initialDifficultyOptionsData, DifficultyLevel difficultyLevel)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Init(DifficultyOptionsData initialDifficultyOptionsData)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>defaultDifficultyOptionsData</code> <a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
-    <dd></dd>
     <dt><code>initialDifficultyOptionsData</code> <a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
-    <dd></dd>
-    <dt><code>difficultyLevel</code> <a class="xref" href="KSP.Game.DifficultyLevel.html">DifficultyLevel</a></dt>
     <dd></dd>
   </dl>
 
@@ -632,8 +539,8 @@
 
   <a id="KSP_Game_NewGameSetupInfo_Set_" data-uid="KSP.Game.NewGameSetupInfo.Set*"></a>
 
-  <h3 id="KSP_Game_NewGameSetupInfo_Set_KSP_Game_DifficultyOptionsData_KSP_Game_DifficultyOptionsData_KSP_Game_DifficultyLevel_" data-uid="KSP.Game.NewGameSetupInfo.Set(KSP.Game.DifficultyOptionsData,KSP.Game.DifficultyOptionsData,KSP.Game.DifficultyLevel)">
-  Set(DifficultyOptionsData, DifficultyOptionsData, DifficultyLevel)
+  <h3 id="KSP_Game_NewGameSetupInfo_Set_KSP_Game_DifficultyOptionsData_" data-uid="KSP.Game.NewGameSetupInfo.Set(KSP.Game.DifficultyOptionsData)">
+  Set(DifficultyOptionsData)
   
   </h3>
 
@@ -641,16 +548,12 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Set(DifficultyOptionsData defaultDifficultyOptionsData, DifficultyOptionsData initialDifficultyOptionsData, DifficultyLevel difficultyLevel)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Set(DifficultyOptionsData initialDifficultyOptionsData)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>defaultDifficultyOptionsData</code> <a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
-    <dd></dd>
     <dt><code>initialDifficultyOptionsData</code> <a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
-    <dd></dd>
-    <dt><code>difficultyLevel</code> <a class="xref" href="KSP.Game.DifficultyLevel.html">DifficultyLevel</a></dt>
     <dd></dd>
   </dl>
 
@@ -682,68 +585,6 @@
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>src</code> <a class="xref" href="KSP.Game.NewGameSetupInfo.html">NewGameSetupInfo</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Game_NewGameSetupInfo_SetDefaultDifficultyOptionsData_" data-uid="KSP.Game.NewGameSetupInfo.SetDefaultDifficultyOptionsData*"></a>
-
-  <h3 id="KSP_Game_NewGameSetupInfo_SetDefaultDifficultyOptionsData_KSP_Game_DifficultyOptionsData_" data-uid="KSP.Game.NewGameSetupInfo.SetDefaultDifficultyOptionsData(KSP.Game.DifficultyOptionsData)">
-  SetDefaultDifficultyOptionsData(DifficultyOptionsData)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetDefaultDifficultyOptionsData(DifficultyOptionsData defaultDifficultyOptionsData)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>defaultDifficultyOptionsData</code> <a class="xref" href="KSP.Game.DifficultyOptionsData.html">DifficultyOptionsData</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Game_NewGameSetupInfo_SetDifficultyLevel_" data-uid="KSP.Game.NewGameSetupInfo.SetDifficultyLevel*"></a>
-
-  <h3 id="KSP_Game_NewGameSetupInfo_SetDifficultyLevel_KSP_Game_DifficultyLevel_" data-uid="KSP.Game.NewGameSetupInfo.SetDifficultyLevel(KSP.Game.DifficultyLevel)">
-  SetDifficultyLevel(DifficultyLevel)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetDifficultyLevel(DifficultyLevel difficultyLevel)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>difficultyLevel</code> <a class="xref" href="KSP.Game.DifficultyLevel.html">DifficultyLevel</a></dt>
     <dd></dd>
   </dl>
 

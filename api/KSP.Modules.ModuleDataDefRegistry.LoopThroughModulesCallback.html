@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -91,12 +102,14 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void ModuleDataDefRegistry.LoopThroughModulesCallback(ModuleData moduleData)</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void ModuleDataDefRegistry.LoopThroughModulesCallback(ModuleData moduleData, int moduleDataIndex)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>moduleData</code> <a class="xref" href="KSP.Sim.Definitions.ModuleData.html">ModuleData</a></dt>
+    <dd></dd>
+    <dt><code>moduleDataIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -110,13 +123,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -173,8 +186,8 @@
 
   <a id="KSP_Modules_ModuleDataDefRegistry_LoopThroughModulesCallback_BeginInvoke_" data-uid="KSP.Modules.ModuleDataDefRegistry.LoopThroughModulesCallback.BeginInvoke*"></a>
 
-  <h3 id="KSP_Modules_ModuleDataDefRegistry_LoopThroughModulesCallback_BeginInvoke_KSP_Sim_Definitions_ModuleData_System_AsyncCallback_System_Object_" data-uid="KSP.Modules.ModuleDataDefRegistry.LoopThroughModulesCallback.BeginInvoke(KSP.Sim.Definitions.ModuleData,System.AsyncCallback,System.Object)">
-  BeginInvoke(ModuleData, AsyncCallback, object)
+  <h3 id="KSP_Modules_ModuleDataDefRegistry_LoopThroughModulesCallback_BeginInvoke_KSP_Sim_Definitions_ModuleData_System_Int32_System_AsyncCallback_System_Object_" data-uid="KSP.Modules.ModuleDataDefRegistry.LoopThroughModulesCallback.BeginInvoke(KSP.Sim.Definitions.ModuleData,System.Int32,System.AsyncCallback,System.Object)">
+  BeginInvoke(ModuleData, int, AsyncCallback, object)
   
   </h3>
 
@@ -182,12 +195,14 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IAsyncResult BeginInvoke(ModuleData moduleData, AsyncCallback callback, object @object)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual IAsyncResult BeginInvoke(ModuleData moduleData, int moduleDataIndex, AsyncCallback callback, object @object)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>moduleData</code> <a class="xref" href="KSP.Sim.Definitions.ModuleData.html">ModuleData</a></dt>
+    <dd></dd>
+    <dt><code>moduleDataIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
     <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.asynccallback">AsyncCallback</a></dt>
     <dd></dd>
@@ -244,8 +259,8 @@
 
   <a id="KSP_Modules_ModuleDataDefRegistry_LoopThroughModulesCallback_Invoke_" data-uid="KSP.Modules.ModuleDataDefRegistry.LoopThroughModulesCallback.Invoke*"></a>
 
-  <h3 id="KSP_Modules_ModuleDataDefRegistry_LoopThroughModulesCallback_Invoke_KSP_Sim_Definitions_ModuleData_" data-uid="KSP.Modules.ModuleDataDefRegistry.LoopThroughModulesCallback.Invoke(KSP.Sim.Definitions.ModuleData)">
-  Invoke(ModuleData)
+  <h3 id="KSP_Modules_ModuleDataDefRegistry_LoopThroughModulesCallback_Invoke_KSP_Sim_Definitions_ModuleData_System_Int32_" data-uid="KSP.Modules.ModuleDataDefRegistry.LoopThroughModulesCallback.Invoke(KSP.Sim.Definitions.ModuleData,System.Int32)">
+  Invoke(ModuleData, int)
   
   </h3>
 
@@ -253,12 +268,14 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void Invoke(ModuleData moduleData)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Invoke(ModuleData moduleData, int moduleDataIndex)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>moduleData</code> <a class="xref" href="KSP.Sim.Definitions.ModuleData.html">ModuleData</a></dt>
+    <dd></dd>
+    <dt><code>moduleDataIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 

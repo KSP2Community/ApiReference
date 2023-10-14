@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -231,13 +242,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -295,9 +306,9 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/RCS/AdvancedSettings&quot;)]
-[KSPState]
+    <pre><code class="lang-csharp hljs">[KSPState]
 [PAMDisplayControl(SortIndex = 4)]
+[LocalizedField(&quot;PartModules/RCS/AdvancedSettings&quot;)]
 public ModuleProperty&lt;bool&gt; IsAdvancedSettingsShown</code></pre>
   </div>
 
@@ -389,9 +400,9 @@ public PropellantDefinition Propellant</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 1)]
+    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/RCS/Status&quot;)]
 [KSPState]
-[LocalizedField(&quot;PartModules/RCS/Status&quot;)]
+[PAMDisplayControl(SortIndex = 1)]
 public ModuleProperty&lt;string&gt; ThrustStatus</code></pre>
   </div>
 
@@ -484,9 +495,9 @@ public bool disableUnderwater</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/RCS/Pitch&quot;)]
+    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 5)]
 [KSPState(CopyToSymmetrySet = true)]
-[PAMDisplayControl(SortIndex = 5)]
+[LocalizedField(&quot;PartModules/RCS/Pitch&quot;)]
 public ModuleProperty&lt;bool&gt; enablePitch</code></pre>
   </div>
 
@@ -518,8 +529,8 @@ public ModuleProperty&lt;bool&gt; enablePitch</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/RCS/Roll&quot;)]
-[KSPState(CopyToSymmetrySet = true)]
 [PAMDisplayControl(SortIndex = 7)]
+[KSPState(CopyToSymmetrySet = true)]
 public ModuleProperty&lt;bool&gt; enableRoll</code></pre>
   </div>
 
@@ -550,9 +561,9 @@ public ModuleProperty&lt;bool&gt; enableRoll</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/RCS/PortStarboard&quot;)]
-[KSPState(CopyToSymmetrySet = true)]
+    <pre><code class="lang-csharp hljs">[KSPState(CopyToSymmetrySet = true)]
 [PAMDisplayControl(SortIndex = 8)]
+[LocalizedField(&quot;PartModules/RCS/PortStarboard&quot;)]
 public ModuleProperty&lt;bool&gt; enableX</code></pre>
   </div>
 
@@ -583,8 +594,8 @@ public ModuleProperty&lt;bool&gt; enableX</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[KSPState(CopyToSymmetrySet = true)]
-[LocalizedField(&quot;PartModules/RCS/DorsalVentral&quot;)]
+    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/RCS/DorsalVentral&quot;)]
+[KSPState(CopyToSymmetrySet = true)]
 [PAMDisplayControl(SortIndex = 9)]
 public ModuleProperty&lt;bool&gt; enableY</code></pre>
   </div>
@@ -616,8 +627,8 @@ public ModuleProperty&lt;bool&gt; enableY</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/RCS/Yaw&quot;)]
-[PAMDisplayControl(SortIndex = 6)]
+    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 6)]
+[LocalizedField(&quot;PartModules/RCS/Yaw&quot;)]
 [KSPState(CopyToSymmetrySet = true)]
 public ModuleProperty&lt;bool&gt; enableYaw</code></pre>
   </div>
@@ -682,9 +693,9 @@ public ModuleProperty&lt;bool&gt; enableZ</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/RCS/ForeByThrottle&quot;)]
+    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 11)]
 [KSPState(CopyToSymmetrySet = true)]
-[PAMDisplayControl(SortIndex = 11)]
+[LocalizedField(&quot;PartModules/RCS/ForeByThrottle&quot;)]
 public ModuleProperty&lt;bool&gt; foreByThrottle</code></pre>
   </div>
 
@@ -715,8 +726,8 @@ public ModuleProperty&lt;bool&gt; foreByThrottle</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/RCS/AlwaysFullAction&quot;)]
-[KSPState(CopyToSymmetrySet = true)]
+    <pre><code class="lang-csharp hljs">[KSPState(CopyToSymmetrySet = true)]
+[LocalizedField(&quot;PartModules/RCS/AlwaysFullAction&quot;)]
 [PAMDisplayControl(SortIndex = 12)]
 public ModuleProperty&lt;bool&gt; fullThrust</code></pre>
   </div>
@@ -780,8 +791,8 @@ public float fullThrustMin</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/RCS/IsEnabled&quot;)]
-[KSPState(CopyToSymmetrySet = true)]
 [PAMDisplayControl(SortIndex = 2)]
+[KSPState(CopyToSymmetrySet = true)]
 public ModuleProperty&lt;bool&gt; isEnabled</code></pre>
   </div>
 
@@ -905,8 +916,8 @@ public FloatCurve thrustCurve</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[KSPState(CopyToSymmetrySet = true)]
-[PAMDisplayControl(SortIndex = 3)]
+    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 3)]
+[KSPState(CopyToSymmetrySet = true)]
 [LocalizedField(&quot;PartModules/RCS/RCSThrust&quot;)]
 [SteppedRange(0, 100, 1)]
 public ModuleProperty&lt;float&gt; thrustPercentage</code></pre>

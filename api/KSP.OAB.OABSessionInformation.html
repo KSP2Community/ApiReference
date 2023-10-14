@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -137,13 +148,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -788,6 +799,99 @@
 
 
 
+  <a id="KSP_OAB_OABSessionInformation_GetCurrentWorkspaceDescription_" data-uid="KSP.OAB.OABSessionInformation.GetCurrentWorkspaceDescription*"></a>
+
+  <h3 id="KSP_OAB_OABSessionInformation_GetCurrentWorkspaceDescription" data-uid="KSP.OAB.OABSessionInformation.GetCurrentWorkspaceDescription">
+  GetCurrentWorkspaceDescription
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetCurrentWorkspaceDescription { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="KSP_OAB_OABSessionInformation_GetCurrentWorkspaceName_" data-uid="KSP.OAB.OABSessionInformation.GetCurrentWorkspaceName*"></a>
+
+  <h3 id="KSP_OAB_OABSessionInformation_GetCurrentWorkspaceName" data-uid="KSP.OAB.OABSessionInformation.GetCurrentWorkspaceName">
+  GetCurrentWorkspaceName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetCurrentWorkspaceName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="KSP_OAB_OABSessionInformation_GetCurrentWorkspaceVehicleDisplayName_" data-uid="KSP.OAB.OABSessionInformation.GetCurrentWorkspaceVehicleDisplayName*"></a>
+
+  <h3 id="KSP_OAB_OABSessionInformation_GetCurrentWorkspaceVehicleDisplayName" data-uid="KSP.OAB.OABSessionInformation.GetCurrentWorkspaceVehicleDisplayName">
+  GetCurrentWorkspaceVehicleDisplayName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetCurrentWorkspaceVehicleDisplayName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="KSP_OAB_OABSessionInformation_GrabbedAssembly_" data-uid="KSP.OAB.OABSessionInformation.GrabbedAssembly*"></a>
 
   <h3 id="KSP_OAB_OABSessionInformation_GrabbedAssembly" data-uid="KSP.OAB.OABSessionInformation.GrabbedAssembly">
@@ -1212,6 +1316,37 @@
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="KSP_OAB_OABSessionInformation_PartsRequiringHeatShieldCheck_" data-uid="KSP.OAB.OABSessionInformation.PartsRequiringHeatShieldCheck*"></a>
+
+  <h3 id="KSP_OAB_OABSessionInformation_PartsRequiringHeatShieldCheck" data-uid="KSP.OAB.OABSessionInformation.PartsRequiringHeatShieldCheck">
+  PartsRequiringHeatShieldCheck
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; PartsRequiringHeatShieldCheck { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd></dd>
   </dl>
 

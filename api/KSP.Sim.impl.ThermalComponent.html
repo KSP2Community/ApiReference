@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -91,7 +102,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ThermalComponent : ObjectComponent, IGuidIdentity</code></pre>
+    <pre><code class="lang-csharp hljs">public class ThermalComponent : ObjectComponent, IGuidIdentity, IDisposable</code></pre>
   </div>
 
 
@@ -110,6 +121,7 @@
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="KSP.Sim.IGuidIdentity.html">IGuidIdentity</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     </dd>
   </dl>
 
@@ -128,6 +140,15 @@
     </div>
     <div>
       <a class="xref" href="KSP.Sim.impl.ObjectComponent.html#KSP_Sim_impl_ObjectComponent_OnAdded_KSP_Sim_impl_SimulationObjectModel_System_Double_">ObjectComponent.OnAdded(SimulationObjectModel, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.Sim.impl.ObjectComponent.html#KSP_Sim_impl_ObjectComponent_OnRemoved_KSP_Sim_impl_SimulationObjectModel_System_Double_">ObjectComponent.OnRemoved(SimulationObjectModel, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.Sim.impl.ObjectComponent.html#KSP_Sim_impl_ObjectComponent_OnStart_System_Double_">ObjectComponent.OnStart(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.Sim.impl.ObjectComponent.html#KSP_Sim_impl_ObjectComponent_OnFixedUpdate_System_Double_System_Double_">ObjectComponent.OnFixedUpdate(double, double)</a>
     </div>
     <div>
       <a class="xref" href="KSP.Sim.impl.ObjectComponent.html#KSP_Sim_impl_ObjectComponent_OnUpdate_System_Double_System_Double_">ObjectComponent.OnUpdate(double, double)</a>
@@ -204,13 +225,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -259,8 +280,8 @@
 
 
 
-  <h3 id="KSP_Sim_impl_ThermalComponent_TotalCoolingDemand" data-uid="KSP.Sim.impl.ThermalComponent.TotalCoolingDemand">
-  TotalCoolingDemand
+  <h3 id="KSP_Sim_impl_ThermalComponent_CurrentCBData" data-uid="KSP.Sim.impl.ThermalComponent.CurrentCBData">
+  CurrentCBData
   
   </h3>
 
@@ -268,7 +289,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double TotalCoolingDemand</code></pre>
+    <pre><code class="lang-csharp hljs">public CelestialBodyComponent CurrentCBData</code></pre>
   </div>
 
 
@@ -276,7 +297,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dt><a class="xref" href="KSP.Sim.impl.CelestialBodyComponent.html">CelestialBodyComponent</a></dt>
     <dd></dd>
   </dl>
 
@@ -424,6 +445,58 @@ public override Type ViewObjectComponentType { get; }</code></pre>
 </h2>
 
 
+  <a id="KSP_Sim_impl_ThermalComponent_Dispose_" data-uid="KSP.Sim.impl.ThermalComponent.Dispose*"></a>
+
+  <h3 id="KSP_Sim_impl_ThermalComponent_Dispose" data-uid="KSP.Sim.impl.ThermalComponent.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Sim_impl_ThermalComponent_Finalize_" data-uid="KSP.Sim.impl.ThermalComponent.Finalize*"></a>
+
+  <h3 id="KSP_Sim_impl_ThermalComponent_Finalize" data-uid="KSP.Sim.impl.ThermalComponent.Finalize">
+  ~ThermalComponent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ~ThermalComponent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="KSP_Sim_impl_ThermalComponent_GetDefinition_" data-uid="KSP.Sim.impl.ThermalComponent.GetDefinition*"></a>
 
   <h3 id="KSP_Sim_impl_ThermalComponent_GetDefinition" data-uid="KSP.Sim.impl.ThermalComponent.GetDefinition">
@@ -486,139 +559,6 @@ public override Type ViewObjectComponentType { get; }</code></pre>
 
 
 
-  <a id="KSP_Sim_impl_ThermalComponent_GetThermalConductivity_" data-uid="KSP.Sim.impl.ThermalComponent.GetThermalConductivity*"></a>
-
-  <h3 id="KSP_Sim_impl_ThermalComponent_GetThermalConductivity_System_Double_" data-uid="KSP.Sim.impl.ThermalComponent.GetThermalConductivity(System.Double)">
-  GetThermalConductivity(double)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double GetThermalConductivity(double altitude)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>altitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Sim_impl_ThermalComponent_OnFixedUpdate_" data-uid="KSP.Sim.impl.ThermalComponent.OnFixedUpdate*"></a>
-
-  <h3 id="KSP_Sim_impl_ThermalComponent_OnFixedUpdate_System_Double_System_Double_" data-uid="KSP.Sim.impl.ThermalComponent.OnFixedUpdate(System.Double,System.Double)">
-  OnFixedUpdate(double, double)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void OnFixedUpdate(double universalTime, double deltaUniversalTime)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>universalTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-    <dt><code>deltaUniversalTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Sim_impl_ThermalComponent_OnRemoved_" data-uid="KSP.Sim.impl.ThermalComponent.OnRemoved*"></a>
-
-  <h3 id="KSP_Sim_impl_ThermalComponent_OnRemoved_KSP_Sim_impl_SimulationObjectModel_System_Double_" data-uid="KSP.Sim.impl.ThermalComponent.OnRemoved(KSP.Sim.impl.SimulationObjectModel,System.Double)">
-  OnRemoved(SimulationObjectModel, double)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void OnRemoved(SimulationObjectModel simulationObject, double universalTime)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>simulationObject</code> <a class="xref" href="KSP.Sim.impl.SimulationObjectModel.html">SimulationObjectModel</a></dt>
-    <dd></dd>
-    <dt><code>universalTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Sim_impl_ThermalComponent_OnStart_" data-uid="KSP.Sim.impl.ThermalComponent.OnStart*"></a>
-
-  <h3 id="KSP_Sim_impl_ThermalComponent_OnStart_System_Double_" data-uid="KSP.Sim.impl.ThermalComponent.OnStart(System.Double)">
-  OnStart(double)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void OnStart(double universalTime)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>universalTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="KSP_Sim_impl_ThermalComponent_SetState_" data-uid="KSP.Sim.impl.ThermalComponent.SetState*"></a>
 
   <h3 id="KSP_Sim_impl_ThermalComponent_SetState_System_Object_KSP_Sim_ISimulationModelMap_" data-uid="KSP.Sim.impl.ThermalComponent.SetState(System.Object,KSP.Sim.ISimulationModelMap)">
@@ -646,101 +586,6 @@ public override Type ViewObjectComponentType { get; }</code></pre>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
     <dd></dd>
   </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Sim_impl_ThermalComponent_UpdateCooling_" data-uid="KSP.Sim.impl.ThermalComponent.UpdateCooling*"></a>
-
-  <h3 id="KSP_Sim_impl_ThermalComponent_UpdateCooling_KSP_Sim_impl_PartComponent_System_Double_" data-uid="KSP.Sim.impl.ThermalComponent.UpdateCooling(KSP.Sim.impl.PartComponent,System.Double)">
-  UpdateCooling(PartComponent, double)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateCooling(PartComponent part, double energy)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>part</code> <a class="xref" href="KSP.Sim.impl.PartComponent.html">PartComponent</a></dt>
-    <dd></dd>
-    <dt><code>energy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Sim_impl_ThermalComponent_UpdateEnvironmentFlux_" data-uid="KSP.Sim.impl.ThermalComponent.UpdateEnvironmentFlux*"></a>
-
-  <h3 id="KSP_Sim_impl_ThermalComponent_UpdateEnvironmentFlux_KSP_Sim_impl_PartComponent_" data-uid="KSP.Sim.impl.ThermalComponent.UpdateEnvironmentFlux(KSP.Sim.impl.PartComponent)">
-  UpdateEnvironmentFlux(PartComponent)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateEnvironmentFlux(PartComponent part)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>part</code> <a class="xref" href="KSP.Sim.impl.PartComponent.html">PartComponent</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Sim_impl_ThermalComponent_UpdateSolarFlux_" data-uid="KSP.Sim.impl.ThermalComponent.UpdateSolarFlux*"></a>
-
-  <h3 id="KSP_Sim_impl_ThermalComponent_UpdateSolarFlux_KSP_Sim_impl_PartComponent_" data-uid="KSP.Sim.impl.ThermalComponent.UpdateSolarFlux(KSP.Sim.impl.PartComponent)">
-  UpdateSolarFlux(PartComponent)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateSolarFlux(PartComponent part)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>part</code> <a class="xref" href="KSP.Sim.impl.PartComponent.html">PartComponent</a></dt>
-    <dd></dd>
-  </dl>
-
 
 
 

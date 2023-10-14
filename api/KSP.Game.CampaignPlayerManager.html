@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -137,13 +148,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -192,8 +203,8 @@
 
 
 
-  <h3 id="KSP_Game_CampaignPlayerManager_DEFAULT_ON_CAMPAIGN_PLAYER_ENTRY_EVENT_CALLBACK" data-uid="KSP.Game.CampaignPlayerManager.DEFAULT_ON_CAMPAIGN_PLAYER_ENTRY_EVENT_CALLBACK">
-  DEFAULT_ON_CAMPAIGN_PLAYER_ENTRY_EVENT_CALLBACK
+  <h3 id="KSP_Game_CampaignPlayerManager_DEFAULT_ON_CAMPAIGN_PLAYER_MP_ACTION_CALLBACK" data-uid="KSP.Game.CampaignPlayerManager.DEFAULT_ON_CAMPAIGN_PLAYER_MP_ACTION_CALLBACK">
+  DEFAULT_ON_CAMPAIGN_PLAYER_MP_ACTION_CALLBACK
   
   </h3>
 
@@ -201,7 +212,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const OnCampaignPlayerEntryEventCallback DEFAULT_ON_CAMPAIGN_PLAYER_ENTRY_EVENT_CALLBACK = null</code></pre>
+    <pre><code class="lang-csharp hljs">public const OnCampaignPlayerMPActionCallback DEFAULT_ON_CAMPAIGN_PLAYER_MP_ACTION_CALLBACK = null</code></pre>
   </div>
 
 
@@ -209,7 +220,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.OnCampaignPlayerEntryEventCallback.html">OnCampaignPlayerEntryEventCallback</a></dt>
+    <dt><a class="xref" href="KSP.Game.OnCampaignPlayerMPActionCallback.html">OnCampaignPlayerMPActionCallback</a></dt>
     <dd></dd>
   </dl>
 
@@ -317,10 +328,10 @@
 
 
 
-  <a id="KSP_Game_CampaignPlayerManager_OnCampaignPlayerEntryEventCallback_" data-uid="KSP.Game.CampaignPlayerManager.OnCampaignPlayerEntryEventCallback*"></a>
+  <a id="KSP_Game_CampaignPlayerManager_OnCampaignPlayerMPActionCallback_" data-uid="KSP.Game.CampaignPlayerManager.OnCampaignPlayerMPActionCallback*"></a>
 
-  <h3 id="KSP_Game_CampaignPlayerManager_OnCampaignPlayerEntryEventCallback" data-uid="KSP.Game.CampaignPlayerManager.OnCampaignPlayerEntryEventCallback">
-  OnCampaignPlayerEntryEventCallback
+  <h3 id="KSP_Game_CampaignPlayerManager_OnCampaignPlayerMPActionCallback" data-uid="KSP.Game.CampaignPlayerManager.OnCampaignPlayerMPActionCallback">
+  OnCampaignPlayerMPActionCallback
   
   </h3>
 
@@ -328,7 +339,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OnCampaignPlayerEntryEventCallback OnCampaignPlayerEntryEventCallback { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public OnCampaignPlayerMPActionCallback OnCampaignPlayerMPActionCallback { get; }</code></pre>
   </div>
 
 
@@ -337,7 +348,7 @@
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.OnCampaignPlayerEntryEventCallback.html">OnCampaignPlayerEntryEventCallback</a></dt>
+    <dt><a class="xref" href="KSP.Game.OnCampaignPlayerMPActionCallback.html">OnCampaignPlayerMPActionCallback</a></dt>
     <dd></dd>
   </dl>
 
@@ -414,32 +425,6 @@
 
 
 
-  <a id="KSP_Game_CampaignPlayerManager_ClearAllFoundFlags_" data-uid="KSP.Game.CampaignPlayerManager.ClearAllFoundFlags*"></a>
-
-  <h3 id="KSP_Game_CampaignPlayerManager_ClearAllFoundFlags" data-uid="KSP.Game.CampaignPlayerManager.ClearAllFoundFlags">
-  ClearAllFoundFlags()
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ClearAllFoundFlags()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="KSP_Game_CampaignPlayerManager_CreateCampaignPlayerEntry_" data-uid="KSP.Game.CampaignPlayerManager.CreateCampaignPlayerEntry*"></a>
 
   <h3 id="KSP_Game_CampaignPlayerManager_CreateCampaignPlayerEntry_KSP_Game_SerializedCampaignPlayerEntry_" data-uid="KSP.Game.CampaignPlayerManager.CreateCampaignPlayerEntry(KSP.Game.SerializedCampaignPlayerEntry)">
@@ -478,8 +463,8 @@
 
   <a id="KSP_Game_CampaignPlayerManager_CreateCampaignPlayerEntry_" data-uid="KSP.Game.CampaignPlayerManager.CreateCampaignPlayerEntry*"></a>
 
-  <h3 id="KSP_Game_CampaignPlayerManager_CreateCampaignPlayerEntry_System_String_System_String_System_Byte_KSP_Game_GameState_KSP_Game_GameState_System_Int32_System_String_KSP_Sim_impl_IGGuid_System_String_KSP_Sim_impl_IGGuid_KSP_Game_ActiveCameraGroup_KSP_Sim_SerializedActiveCameraInfo_KSP_Sim_SerializedFlightControlState_KSP_OAB_OABHistoricalSnapshot_KSP_Sim_SerializedOABConfig_System_String_System_Collections_Generic_Dictionary_System_String_System_UInt32__System_Boolean_System_Collections_Generic_List_KSP_Game_Missions_Definitions_MissionData__System_String_UnityEngine_Color_UnityEngine_Color_" data-uid="KSP.Game.CampaignPlayerManager.CreateCampaignPlayerEntry(System.String,System.String,System.Byte,KSP.Game.GameState,KSP.Game.GameState,System.Int32,System.String,KSP.Sim.impl.IGGuid,System.String,KSP.Sim.impl.IGGuid,KSP.Game.ActiveCameraGroup,KSP.Sim.SerializedActiveCameraInfo,KSP.Sim.SerializedFlightControlState,KSP.OAB.OABHistoricalSnapshot,KSP.Sim.SerializedOABConfig,System.String,System.Collections.Generic.Dictionary{System.String,System.UInt32},System.Boolean,System.Collections.Generic.List{KSP.Game.Missions.Definitions.MissionData},System.String,UnityEngine.Color,UnityEngine.Color)">
-  CreateCampaignPlayerEntry(string, string, byte, GameState, GameState, int, string, IGGuid, string, IGGuid, ActiveCameraGroup, SerializedActiveCameraInfo, SerializedFlightControlState, OABHistoricalSnapshot, SerializedOABConfig, string, Dictionary&lt;string, uint&gt;, bool, List&lt;MissionData&gt;, string, Color, Color)
+  <h3 id="KSP_Game_CampaignPlayerManager_CreateCampaignPlayerEntry_System_String_System_String_System_Byte_KSP_Game_GameState_KSP_Game_GameState_System_Int32_System_String_KSP_Sim_impl_IGGuid_System_String_KSP_Sim_impl_IGGuid_KSP_Game_ActiveCameraGroup_KSP_Sim_SerializedActiveCameraInfo_KSP_Sim_SerializedFlightControlState_KSP_OAB_OABHistoricalSnapshot_KSP_Sim_SerializedOABConfig_System_String_System_Collections_Generic_Dictionary_System_String_System_UInt32__System_Boolean_System_Collections_Generic_List_KSP_Game_Missions_Definitions_MissionSaveData__System_Collections_Generic_List_System_String__System_Collections_Generic_List_System_String__System_Collections_Generic_List_KSP_Game_Missions_Definitions_TrackedMissions__UnityEngine_Color_UnityEngine_Color_" data-uid="KSP.Game.CampaignPlayerManager.CreateCampaignPlayerEntry(System.String,System.String,System.Byte,KSP.Game.GameState,KSP.Game.GameState,System.Int32,System.String,KSP.Sim.impl.IGGuid,System.String,KSP.Sim.impl.IGGuid,KSP.Game.ActiveCameraGroup,KSP.Sim.SerializedActiveCameraInfo,KSP.Sim.SerializedFlightControlState,KSP.OAB.OABHistoricalSnapshot,KSP.Sim.SerializedOABConfig,System.String,System.Collections.Generic.Dictionary{System.String,System.UInt32},System.Boolean,System.Collections.Generic.List{KSP.Game.Missions.Definitions.MissionSaveData},System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.Collections.Generic.List{KSP.Game.Missions.Definitions.TrackedMissions},UnityEngine.Color,UnityEngine.Color)">
+  CreateCampaignPlayerEntry(string, string, byte, GameState, GameState, int, string, IGGuid, string, IGGuid, ActiveCameraGroup, SerializedActiveCameraInfo, SerializedFlightControlState, OABHistoricalSnapshot, SerializedOABConfig, string, Dictionary&lt;string, uint&gt;, bool, List&lt;MissionSaveData&gt;, List&lt;string&gt;, List&lt;string&gt;, List&lt;TrackedMissions&gt;, Color, Color)
   
   </h3>
 
@@ -487,7 +472,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CampaignPlayerEntry CreateCampaignPlayerEntry(string playerNameString, string playerGuidString, byte playerId, GameState startingGameState, GameState historicalGameState, int agencyId, string activeVesselName, IGGuid activeVesselGuid, string activeLocalSpaceCB, IGGuid observedSimObjectGuid, ActiveCameraGroup activeCameraGroup, SerializedActiveCameraInfo activeCameraInfo, SerializedFlightControlState flightControlState, OABHistoricalSnapshot lastOABWorkspaceSnapshot, SerializedOABConfig lastOABConfig, string copyLocationString, Dictionary&lt;string, uint&gt; favoritedParts, bool isFTUEEnabled, List&lt;MissionData&gt; missions, string completedTutorials, Color partColorBase, Color partColorAccent)</code></pre>
+    <pre><code class="lang-csharp hljs">public CampaignPlayerEntry CreateCampaignPlayerEntry(string playerNameString, string playerGuidString, byte playerId, GameState startingGameState, GameState historicalGameState, int agencyId, string activeLocalSpaceCB, IGGuid observedSimObjectGuid, string activeVesselName, IGGuid activeVesselGuid, ActiveCameraGroup activeCameraGroup, SerializedActiveCameraInfo activeCameraInfo, SerializedFlightControlState flightControlState, OABHistoricalSnapshot lastOABWorkspaceSnapshot, SerializedOABConfig lastOABConfig, string copyLocationString, Dictionary&lt;string, uint&gt; favoritedParts, bool isFTUEEnabled, List&lt;MissionSaveData&gt; missionSaveData, List&lt;string&gt; completedTutorials, List&lt;string&gt; completedFTUEs, List&lt;TrackedMissions&gt; trackedMissions, Color partColorBase, Color partColorAccent)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -504,13 +489,13 @@
     <dd></dd>
     <dt><code>agencyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
-    <dt><code>activeVesselName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>activeVesselGuid</code> <a class="xref" href="KSP.Sim.impl.IGGuid.html">IGGuid</a></dt>
-    <dd></dd>
     <dt><code>activeLocalSpaceCB</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>observedSimObjectGuid</code> <a class="xref" href="KSP.Sim.impl.IGGuid.html">IGGuid</a></dt>
+    <dd></dd>
+    <dt><code>activeVesselName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>activeVesselGuid</code> <a class="xref" href="KSP.Sim.impl.IGGuid.html">IGGuid</a></dt>
     <dd></dd>
     <dt><code>activeCameraGroup</code> <a class="xref" href="KSP.Game.ActiveCameraGroup.html">ActiveCameraGroup</a></dt>
     <dd></dd>
@@ -528,9 +513,13 @@
     <dd></dd>
     <dt><code>isFTUEEnabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
-    <dt><code>missions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="KSP.Game.Missions.Definitions.MissionData.html">MissionData</a>&gt;</dt>
+    <dt><code>missionSaveData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="KSP.Game.Missions.Definitions.MissionSaveData.html">MissionSaveData</a>&gt;</dt>
     <dd></dd>
-    <dt><code>completedTutorials</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>completedTutorials</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>completedFTUEs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>trackedMissions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="KSP.Game.Missions.Definitions.TrackedMissions.html">TrackedMissions</a>&gt;</dt>
     <dd></dd>
     <dt><code>partColorBase</code> <span class="xref">Color</span></dt>
     <dd></dd>
@@ -865,37 +854,6 @@
 
 
 
-  <a id="KSP_Game_CampaignPlayerManager_FindCampaignPlayerEntryFirstNotFound_" data-uid="KSP.Game.CampaignPlayerManager.FindCampaignPlayerEntryFirstNotFound*"></a>
-
-  <h3 id="KSP_Game_CampaignPlayerManager_FindCampaignPlayerEntryFirstNotFound" data-uid="KSP.Game.CampaignPlayerManager.FindCampaignPlayerEntryFirstNotFound">
-  FindCampaignPlayerEntryFirstNotFound()
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CampaignPlayerEntry FindCampaignPlayerEntryFirstNotFound()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="KSP.Game.CampaignPlayerEntry.html">CampaignPlayerEntry</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="KSP_Game_CampaignPlayerManager_ImportSerializedCampaignPlayerEntries_" data-uid="KSP.Game.CampaignPlayerManager.ImportSerializedCampaignPlayerEntries*"></a>
 
   <h3 id="KSP_Game_CampaignPlayerManager_ImportSerializedCampaignPlayerEntries_KSP_Game_SerializedCampaignPlayerEntry___" data-uid="KSP.Game.CampaignPlayerManager.ImportSerializedCampaignPlayerEntries(KSP.Game.SerializedCampaignPlayerEntry[])">
@@ -1118,6 +1076,44 @@
 
 
 
+  <a id="KSP_Game_CampaignPlayerManager_MoveCampaignPlayerEntryToIndex_" data-uid="KSP.Game.CampaignPlayerManager.MoveCampaignPlayerEntryToIndex*"></a>
+
+  <h3 id="KSP_Game_CampaignPlayerManager_MoveCampaignPlayerEntryToIndex_KSP_Game_CampaignPlayerEntry_System_Int32_" data-uid="KSP.Game.CampaignPlayerManager.MoveCampaignPlayerEntryToIndex(KSP.Game.CampaignPlayerEntry,System.Int32)">
+  MoveCampaignPlayerEntryToIndex(CampaignPlayerEntry, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MoveCampaignPlayerEntryToIndex(CampaignPlayerEntry campaignPlayerEntry, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>campaignPlayerEntry</code> <a class="xref" href="KSP.Game.CampaignPlayerEntry.html">CampaignPlayerEntry</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="KSP_Game_CampaignPlayerManager_RemoveCampaignPlayerEntry_" data-uid="KSP.Game.CampaignPlayerManager.RemoveCampaignPlayerEntry*"></a>
 
   <h3 id="KSP_Game_CampaignPlayerManager_RemoveCampaignPlayerEntry_KSP_Game_CampaignPlayerEntry_" data-uid="KSP.Game.CampaignPlayerManager.RemoveCampaignPlayerEntry(KSP.Game.CampaignPlayerEntry)">
@@ -1180,10 +1176,10 @@
 
 
 
-  <a id="KSP_Game_CampaignPlayerManager_SetAllFoundFlags_" data-uid="KSP.Game.CampaignPlayerManager.SetAllFoundFlags*"></a>
+  <a id="KSP_Game_CampaignPlayerManager_SetOnCampaignPlayerMPActionCallback_" data-uid="KSP.Game.CampaignPlayerManager.SetOnCampaignPlayerMPActionCallback*"></a>
 
-  <h3 id="KSP_Game_CampaignPlayerManager_SetAllFoundFlags" data-uid="KSP.Game.CampaignPlayerManager.SetAllFoundFlags">
-  SetAllFoundFlags()
+  <h3 id="KSP_Game_CampaignPlayerManager_SetOnCampaignPlayerMPActionCallback_KSP_Game_OnCampaignPlayerMPActionCallback_" data-uid="KSP.Game.CampaignPlayerManager.SetOnCampaignPlayerMPActionCallback(KSP.Game.OnCampaignPlayerMPActionCallback)">
+  SetOnCampaignPlayerMPActionCallback(OnCampaignPlayerMPActionCallback)
   
   </h3>
 
@@ -1191,69 +1187,12 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetAllFoundFlags()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Game_CampaignPlayerManager_SetAllFoundFlags_" data-uid="KSP.Game.CampaignPlayerManager.SetAllFoundFlags*"></a>
-
-  <h3 id="KSP_Game_CampaignPlayerManager_SetAllFoundFlags_System_Boolean_" data-uid="KSP.Game.CampaignPlayerManager.SetAllFoundFlags(System.Boolean)">
-  SetAllFoundFlags(bool)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetAllFoundFlags(bool foundFlag)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetOnCampaignPlayerMPActionCallback(OnCampaignPlayerMPActionCallback onCampaignPlayerMPActionCallback)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>foundFlag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Game_CampaignPlayerManager_SetOnCampaignPlayerEntryEventCallback_" data-uid="KSP.Game.CampaignPlayerManager.SetOnCampaignPlayerEntryEventCallback*"></a>
-
-  <h3 id="KSP_Game_CampaignPlayerManager_SetOnCampaignPlayerEntryEventCallback_KSP_Game_OnCampaignPlayerEntryEventCallback_" data-uid="KSP.Game.CampaignPlayerManager.SetOnCampaignPlayerEntryEventCallback(KSP.Game.OnCampaignPlayerEntryEventCallback)">
-  SetOnCampaignPlayerEntryEventCallback(OnCampaignPlayerEntryEventCallback)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetOnCampaignPlayerEntryEventCallback(OnCampaignPlayerEntryEventCallback onCampaignPlayerEntryEventCallback)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>onCampaignPlayerEntryEventCallback</code> <a class="xref" href="KSP.Game.OnCampaignPlayerEntryEventCallback.html">OnCampaignPlayerEntryEventCallback</a></dt>
+    <dt><code>onCampaignPlayerMPActionCallback</code> <a class="xref" href="KSP.Game.OnCampaignPlayerMPActionCallback.html">OnCampaignPlayerMPActionCallback</a></dt>
     <dd></dd>
   </dl>
 
@@ -1444,6 +1383,120 @@
   </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_CampaignPlayerManager_UpdatePlayerGuidStringDict_" data-uid="KSP.Game.CampaignPlayerManager.UpdatePlayerGuidStringDict*"></a>
+
+  <h3 id="KSP_Game_CampaignPlayerManager_UpdatePlayerGuidStringDict_KSP_Game_CampaignPlayerEntry_System_Boolean_" data-uid="KSP.Game.CampaignPlayerManager.UpdatePlayerGuidStringDict(KSP.Game.CampaignPlayerEntry,System.Boolean)">
+  UpdatePlayerGuidStringDict(CampaignPlayerEntry, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdatePlayerGuidStringDict(CampaignPlayerEntry campaignPlayerEntry, bool add)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>campaignPlayerEntry</code> <a class="xref" href="KSP.Game.CampaignPlayerEntry.html">CampaignPlayerEntry</a></dt>
+    <dd></dd>
+    <dt><code>add</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_CampaignPlayerManager_UpdatePlayerIdDict_" data-uid="KSP.Game.CampaignPlayerManager.UpdatePlayerIdDict*"></a>
+
+  <h3 id="KSP_Game_CampaignPlayerManager_UpdatePlayerIdDict_KSP_Game_CampaignPlayerEntry_System_Boolean_" data-uid="KSP.Game.CampaignPlayerManager.UpdatePlayerIdDict(KSP.Game.CampaignPlayerEntry,System.Boolean)">
+  UpdatePlayerIdDict(CampaignPlayerEntry, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdatePlayerIdDict(CampaignPlayerEntry campaignPlayerEntry, bool add)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>campaignPlayerEntry</code> <a class="xref" href="KSP.Game.CampaignPlayerEntry.html">CampaignPlayerEntry</a></dt>
+    <dd></dd>
+    <dt><code>add</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Game_CampaignPlayerManager_UpdatePlayerNameStringDict_" data-uid="KSP.Game.CampaignPlayerManager.UpdatePlayerNameStringDict*"></a>
+
+  <h3 id="KSP_Game_CampaignPlayerManager_UpdatePlayerNameStringDict_KSP_Game_CampaignPlayerEntry_System_Boolean_" data-uid="KSP.Game.CampaignPlayerManager.UpdatePlayerNameStringDict(KSP.Game.CampaignPlayerEntry,System.Boolean)">
+  UpdatePlayerNameStringDict(CampaignPlayerEntry, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdatePlayerNameStringDict(CampaignPlayerEntry campaignPlayerEntry, bool add)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>campaignPlayerEntry</code> <a class="xref" href="KSP.Game.CampaignPlayerEntry.html">CampaignPlayerEntry</a></dt>
+    <dd></dd>
+    <dt><code>add</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

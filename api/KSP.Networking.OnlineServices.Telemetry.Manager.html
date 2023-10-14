@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -137,13 +148,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -735,6 +746,39 @@
 
 
 
+  <a id="KSP_Networking_OnlineServices_Telemetry_Manager_SendPlayerLoggedInEvent_" data-uid="KSP.Networking.OnlineServices.Telemetry.Manager.SendPlayerLoggedInEvent*"></a>
+
+  <h3 id="KSP_Networking_OnlineServices_Telemetry_Manager_SendPlayerLoggedInEvent_System_String_System_String_" data-uid="KSP.Networking.OnlineServices.Telemetry.Manager.SendPlayerLoggedInEvent(System.String,System.String)">
+  SendPlayerLoggedInEvent(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendPlayerLoggedInEvent(string entityKey, string playFabTelemetrySessionTicket)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entityKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>playFabTelemetrySessionTicket</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="KSP_Networking_OnlineServices_Telemetry_Manager_SendSettingsTelemetryEvent_" data-uid="KSP.Networking.OnlineServices.Telemetry.Manager.SendSettingsTelemetryEvent*"></a>
 
   <h3 id="KSP_Networking_OnlineServices_Telemetry_Manager_SendSettingsTelemetryEvent_KSP_Game_PersistentSettings_" data-uid="KSP.Networking.OnlineServices.Telemetry.Manager.SendSettingsTelemetryEvent(KSP.Game.PersistentSettings)">
@@ -768,8 +812,8 @@
 
   <a id="KSP_Networking_OnlineServices_Telemetry_Manager_SendVesselDestroyedEvent_" data-uid="KSP.Networking.OnlineServices.Telemetry.Manager.SendVesselDestroyedEvent*"></a>
 
-  <h3 id="KSP_Networking_OnlineServices_Telemetry_Manager_SendVesselDestroyedEvent_KSP_Sim_impl_IGGuid_System_Double_System_Double_System_Double_KSP_Sim_impl_IGGuid_" data-uid="KSP.Networking.OnlineServices.Telemetry.Manager.SendVesselDestroyedEvent(KSP.Sim.impl.IGGuid,System.Double,System.Double,System.Double,KSP.Sim.impl.IGGuid)">
-  SendVesselDestroyedEvent(IGGuid, double, double, double, IGGuid)
+  <h3 id="KSP_Networking_OnlineServices_Telemetry_Manager_SendVesselDestroyedEvent_System_String_System_Double_System_Double_System_Double_KSP_Sim_impl_IGGuid_" data-uid="KSP.Networking.OnlineServices.Telemetry.Manager.SendVesselDestroyedEvent(System.String,System.Double,System.Double,System.Double,KSP.Sim.impl.IGGuid)">
+  SendVesselDestroyedEvent(string, double, double, double, IGGuid)
   
   </h3>
 
@@ -777,51 +821,12 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SendVesselDestroyedEvent(IGGuid celestialBodyID, double latitude, double longitude, double altitude, IGGuid vesselID)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SendVesselDestroyedEvent(string celestialBodyName, double latitude, double longitude, double altitude, IGGuid vesselID)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>celestialBodyID</code> <a class="xref" href="KSP.Sim.impl.IGGuid.html">IGGuid</a></dt>
-    <dd></dd>
-    <dt><code>latitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-    <dt><code>longitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-    <dt><code>altitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
-    <dd></dd>
-    <dt><code>vesselID</code> <a class="xref" href="KSP.Sim.impl.IGGuid.html">IGGuid</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Networking_OnlineServices_Telemetry_Manager_SendVesselEnteredSOI_" data-uid="KSP.Networking.OnlineServices.Telemetry.Manager.SendVesselEnteredSOI*"></a>
-
-  <h3 id="KSP_Networking_OnlineServices_Telemetry_Manager_SendVesselEnteredSOI_KSP_Sim_impl_IGGuid_System_Double_System_Double_System_Double_KSP_Sim_impl_IGGuid_" data-uid="KSP.Networking.OnlineServices.Telemetry.Manager.SendVesselEnteredSOI(KSP.Sim.impl.IGGuid,System.Double,System.Double,System.Double,KSP.Sim.impl.IGGuid)">
-  SendVesselEnteredSOI(IGGuid, double, double, double, IGGuid)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SendVesselEnteredSOI(IGGuid celestialBodyID, double latitude, double longitude, double altitude, IGGuid vesselID)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>celestialBodyID</code> <a class="xref" href="KSP.Sim.impl.IGGuid.html">IGGuid</a></dt>
+    <dt><code>celestialBodyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>latitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
     <dd></dd>

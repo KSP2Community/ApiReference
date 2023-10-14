@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -228,13 +239,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -414,8 +425,8 @@ public double ChuteThermalMassPerArea</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/Parachute/DeployMode&quot;)]
-[PAMDisplayControl(SortIndex = 8)]
 [KSPState(CopyToSymmetrySet = true)]
+[PAMDisplayControl(SortIndex = 8)]
 public ModuleProperty&lt;Data_Parachute.DeployMode&gt; DeploymentMode</code></pre>
   </div>
 
@@ -695,9 +706,9 @@ public double areaDeployed</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 2)]
+    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/Parachute/ArmedToggle&quot;)]
+[PAMDisplayControl(SortIndex = 2)]
 [KSPState(CopyToSymmetrySet = true)]
-[LocalizedField(&quot;PartModules/Parachute/ArmedToggle&quot;)]
 public ModuleProperty&lt;bool&gt; armedToggle</code></pre>
   </div>
 
@@ -976,10 +987,10 @@ public float defaultMinAirPressureToOpen</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 10)]
-[LocalizedField(&quot;PartModules/Parachute/DeployAltitude&quot;)]
+    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/Parachute/DeployAltitude&quot;)]
 [KSPState(CopyToSymmetrySet = true)]
 [SteppedRange(50, 5000, 50)]
+[PAMDisplayControl(SortIndex = 10)]
 public ModuleProperty&lt;float&gt; deployAltitude</code></pre>
   </div>
 
@@ -1041,9 +1052,9 @@ public ModuleProperty&lt;Data_Parachute.DeploymentStates&gt; deployState</code><
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 1)]
+    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/Parachute/ChuteSafety&quot;)]
+[PAMDisplayControl(SortIndex = 1)]
 [KSPState]
-[LocalizedField(&quot;PartModules/Parachute/ChuteSafety&quot;)]
 public ModuleProperty&lt;Data_Parachute.DeploymentSafeStates&gt; deploymentSafetyState</code></pre>
   </div>
 
@@ -1136,9 +1147,9 @@ public bool invertCanopy</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[PAMDisplayControl(SortIndex = 9)]
+    <pre><code class="lang-csharp hljs">[SteppedRange(0.01, 0.75, 0.01)]
 [KSPState(CopyToSymmetrySet = true)]
-[SteppedRange(0.01, 0.75, 0.01)]
+[PAMDisplayControl(SortIndex = 9)]
 [LocalizedField(&quot;PartModules/Parachute/MinPressure&quot;)]
 public ModuleProperty&lt;float&gt; minAirPressureToOpen</code></pre>
   </div>
@@ -1387,10 +1398,10 @@ public bool shieldedCanDeploy</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[SteppedRange(0, 10, 1)]
-[KSPState(CopyToSymmetrySet = true)]
+    <pre><code class="lang-csharp hljs">[LocalizedField(&quot;PartModules/Parachute/SpreadAngle&quot;)]
 [PAMDisplayControl(SortIndex = 11)]
-[LocalizedField(&quot;PartModules/Parachute/SpreadAngle&quot;)]
+[KSPState(CopyToSymmetrySet = true)]
+[SteppedRange(0, 10, 1)]
 public ModuleProperty&lt;float&gt; spreadAngle</code></pre>
   </div>
 

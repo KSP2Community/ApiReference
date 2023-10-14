@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>How This Site is Made </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="How This Site is Made ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/KSP2Community/ksp2community.github.io/blob/main/docfx_project/articles/HowMade.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="how-this-site-is-made">How This Site is Made</h1>
+
+<p>This site is the direct result of necessity, ingenuity, perseverance, and curiosity. Apparently, with enough of those four ingredients you can do just about anything...</p>
+<p>OK, seriously. There are only two ways a site like this is possible. First, and this would be our strong preference, if there is support for modding and the game developers were to make their XML docs available, then making a site like this largely comes down to processing a stripped version of the DLL in conjunction with the XML docs - and Bingo! you have a site far better than this! Sadly, that's not the story of this site...</p>
+<p>Fortunately, there's another way to get a site like this - exactly like this, in fact - and it doesn't require the game developers to share their XML documentation, nor does it require decompiling the actual source of the game. Instead, the basic process is this.</p>
+<ol>
+<li><strong>Produce a Stripped DLL</strong>. Using the Assembly-CSharp.dll that ships with the game it's possible to produce a stripped version of the original in which all the internal code has been removed leaving only the external interface the DLL exposes naturally. There are a number of tools that can be used for this. We chose to use the <a href="https://github.com/BepInEx/BepInEx.AssemblyPublicizer">BepInEx Publicizer</a> (assembly-publicizer), and we used it like this.</li>
+</ol>
+<pre><code>dotnet tool install -g BepInEx.AssemblyPublicizer.Cli
+assembly-publicizer ./Assembly-CSharp.dll --strip-only
+</code></pre>
+<ol start="2">
+<li><strong>Produce a Stripped Project</strong>. Using the stripped version of the Assembly-CSharp.dll generated in Step 1 it's possible to create a C# project from that DLL. This is the step that produces the initial set of .cs files to which we may manually add triple slash (///) comments. There are several ways to do this, one being to load the stripped DLL into <a href="https://www.jetbrains.com/decompiler/">JetBrains dotPeek</a> and use that tool to create a new Visual Studio project. <strong>NOTE</strong>: As the input is a <em>stripped DLL</em>, we're not in fact decompiling the game, and thus the output does not contain any actual internal game code. What we do capture are namespaces, method interfaces, class definitions, etc. Everything we need for the API documentation and nothing we're forbidden from sharing.</li>
+<li><strong>Manually add triple slash comments</strong>. Using the stripped .cs files produced in Step 2 manually add triple slash comments to the code capturing insights gleaned from modding to clarify the understood purpose and use of API objects. You can skip this step the first time you do this and you'll still get a useful set of API documentation, however on subsequent iterations this is the point where you will want to merge in any manually inserted comments which were added to the previous iteration to preserve that knowledge. If, at some point, the devs share their own XML docs, then this would be the point to merge those in.</li>
+<li><strong>Generate an XML Documentation File</strong>. Using the stripped project generated in Step 3 it's possible to produce an Assembly-CSharp.xml file that is useful both for IntelliSense documentation while modding and as an input to DocFX to supply the unofficial comments to go with the stripped DLL. This can be done using a variety of methods, one being <a href="https://github.com/jan-bures/GenDoc">GenDoc</a>, which is an open-source Roslyn API tool that can open a .sln file you point it to, and for each project that's in it, it goes through all the types and members and generates their XML documentation into a file per project.
+GenDoc is called from the command line and takes two arguments, the path to the .sln file and the output folder in which to deposit the resulting XML files. In this case, there will be just one XML file, Assembly-CSharp.xml, and we want it to be located in the same folder along with the stripped version of Assembly-CSharp.dll. Here is the command used to do this which looks for the stripped project from Step 2 in the src_stripped folder and will place the resulting Assembly-CSharp.xml file in the DLL_stripped folder. If any of the stripped .cs files have been modified to include documentation-generating comments (///), then those will be captured in the Assembly-CSharp.xml file.</li>
+</ol>
+<pre><code>GenDoc src_stripped\Assembly-CSharp_stripped.sln DLL_Stripped
+</code></pre>
+<ol start="4">
+<li><strong>Generate DocFX API Documentation Site</strong>. Using the stripped DLL from Step 1 and the resulting XMl from Step 4, it's possible to generate useful API documentation using <a href="https://dotnet.github.io/docfx/index.html">DocFX</a>. This process requires 4 sub-steps. 1. Install DocFx, 2. Build a docfx_project, 3. Edit the docfx.json file, and 4. Generate the DocFX site files. The first two steps are as follows.</li>
+</ol>
+<pre><code>dotnet tool update -g docfx
+docfx init --quiet
+</code></pre>
+<p>This creates a docfx_project folder with a number of files in it, one of which will be docfx.json. Before building the DocFX site files this file needs to be edited. Here's a copy of the version we've used which has worked.</p>
+<pre><code class="lang-json">{
+  &quot;metadata&quot;: [
+    {
+      &quot;src&quot;: [
+        {
+          &quot;files&quot;: [&quot;Assembly-CSharp.dll&quot;,
+                    &quot;Assembly-CSharp.xml&quot;],
+          &quot;src&quot;: &quot;../DLL_stripped&quot;
+        }
+      ],
+      &quot;dest&quot;: &quot;api&quot;,
+      &quot;includePrivateMembers&quot;: false,
+      &quot;disableGitFeatures&quot;: false,
+      &quot;disableDefaultFilter&quot;: false,
+      &quot;noRestore&quot;: false,
+      &quot;namespaceLayout&quot;: &quot;flattened&quot;,
+      &quot;memberLayout&quot;: &quot;samePage&quot;,
+      &quot;allowCompilationErrors&quot;: false
+    }
+  ],
+  &quot;build&quot;: {
+    &quot;content&quot;: [
+      {
+        &quot;files&quot;: [
+          &quot;api/**.yml&quot;,
+          &quot;api/index.md&quot;
+        ]
+      },
+      {
+        &quot;files&quot;: [
+          &quot;articles/**.md&quot;,
+          &quot;articles/**/toc.yml&quot;,
+          &quot;toc.yml&quot;,
+          &quot;*.md&quot;
+        ]
+      }
+    ],
+    &quot;resource&quot;: [
+      {
+        &quot;files&quot;: [
+          &quot;images/**&quot;
+        ]
+      }
+    ],
+    &quot;output&quot;: &quot;_site&quot;,
+    &quot;globalMetadataFiles&quot;: [],
+    &quot;fileMetadataFiles&quot;: [],
+    &quot;template&quot;: [
+      &quot;default&quot;,
+      &quot;modern&quot;
+    ],
+    &quot;postProcessors&quot;: [],
+    &quot;keepFileLink&quot;: false,
+    &quot;disableGitFeatures&quot;: false
+  }
+}
+</code></pre>
+<p>The important things to know are the (a) DocFX is looking for relative paths, so with the &quot;src&quot; parameter set to &quot;../DLL_stripped&quot; that means it will look for the &quot;files&quot; in a folder named DLL_stripped that is located beside the &quot;docfx_project&quot; folder. Place the stripped DLL and resulting XML there, and then you're ready to generate site files using this command.</p>
+<pre><code>docfx docfx_project/docfx.json --serve
+</code></pre>
+<p>Note that when DocFX processes the stripped DLL it will report that there are many missing references. These don't matter and won't interfere with the process, so you can ignore those warnings.</p>
+<p>The --serve command line argument will cause DocFX to serve up the resulting documentation site on your local machine at http://localhost:8080. This is useful for testing to make sure things are working OK and what you got from DocFX was good, but obviously, this will not get the site served to the masses!
+5. <strong>Build a GitHub Pages Site</strong>. At this point, the process moves to working with a GitHub repo and making a GitHub Pages site. GitHub provides ample documentation for this, and also DocFX documents things too. The key to getting this working is actually in GitHub Actions, which is where the automation takes place. If all we did was place a static copy of the DocFX-generated site online, it wouldn't be nearly as useful. Any community additions to it would require rebuilding and pushing it back up manually. Instead, we've developed a GitHub action that automatically triggers when new content is pushed to certain folders in the repo. The GitHub action takes care of re-running GenDoc to rebuild the Assembly-CSharp.xml file (in case any of the .cs files have changed) and then it re-runs DocFX to rebuild the site (to incorporate any new XML comments from GenDoc and in case any article or site template files have changed). The GitHub action is the yaml script shown here.</p>
+<pre><code class="lang-yml"># Simple workflow for generating DocFx Content and publishing to GitHub Pages
+name: Generate and Publish DocFx Content
+
+on:
+  # Runs on pushes targeting the default branch and impacting either the src_stripped, docfx_project, public, or DLL_stripped folders
+  push:
+    branches: [&quot;main&quot;]
+    paths: [&quot;src_stripped/**&quot;, &quot;docfx_project/**&quot;, &quot;public/**&quot;, &quot;DLL_stripped/**&quot;]
+    
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: &quot;pages&quot;
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Generate XML Documentation Directly
+        run: GenDoc\GenDoc.exe src_stripped\Assembly-CSharp-Stripped.sln DLL_stripped
+        shell: cmd
+      - name: Upload Assembly-CSharp.xml Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Assembly-CSharp.xml
+          path: DLL_stripped/Assembly-CSharp.xml
+  publish-docs:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Chekout
+        uses: actions/checkout@v3
+      - name: Remove old Assembly-CSharp.xml
+        run: rm DLL_stripped/Assembly-CSharp.xml
+      - name: Download Assembly-CSharp.xml Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: Assembly-CSharp.xml
+          path: DLL_stripped/Assembly-CSharp.xml
+      - name: Dotnet Setup
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.x
+
+      - run: dotnet tool update -g docfx
+      - run: docfx docfx_project/docfx.json
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+</code></pre>
+<p>There you have it. Now you know exactly how this site is built, which may give you some confidence (or not) as to the quality of the information you'll find here.</p>
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/KSP2Community/ksp2community.github.io/blob/main/docfx_project/articles/HowMade.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

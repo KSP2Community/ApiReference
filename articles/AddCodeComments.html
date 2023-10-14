@@ -15,7 +15,18 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/schlosrat/schlosrat.github.io/blob/main/docfx_project/articles/AddCodeComments.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/KSP2Community/ksp2community.github.io/blob/main/docfx_project/articles/AddCodeComments.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -74,16 +85,16 @@
         <article data-uid="">
 <h1 id="how-to-add-documenting-xml-comments-to-code">How to Add Documenting (XML) Comments to Code</h1>
 
-<p>The first thing you need to do if you've not done this already is to fork this GitHub repo. All the changes you make will be made on your local fork. To incorporate them simply use a Pull Request (PR) from your frok to the main branch of this repo. That said, adding documentng comments is a simple process that goes pretty quickly once you get the hang of it.</p>
+<p>The first thing you need to do if you've not done this already is to fork this GitHub repo. All the changes you make will be made on your local fork. To incorporate them simply use a Pull Request (PR) from your fork to the main branch of this repo. That said, adding documenting comments is a simple process that goes pretty quickly once you get the hang of it.</p>
 <ol>
-<li>Locate the .cs file in the <strong>src_stripped</strong> folder containg the code to which you'd like to add or modify <em>documentaition generating comments</em>. Documentation generating comments are those that begin with a tripple slash (///), and they inform the generation of the XML file, so they include XML tags that enable them to be parsed to generate the XML file.</li>
-<li>Open that file in the editor of your choice. Note that editing in Visual Studio or other similarly capable coding oriented editors may make the following steps easier and automate generation of some basic comments and structure.</li>
+<li>Locate the .cs file in the <strong>src_stripped</strong> folder containing the code to which you'd like to add or modify <em>documentation generating comments</em>. Documentation-generating comments are those that begin with a triple slash (///), and they inform the generation of the XML file, so they include XML tags that enable them to be parsed to generate the XML file.</li>
+<li>Open that file in the editor of your choice. Note that editing in Visual Studio or other similarly capable coding-oriented editors may make the following steps easier and automate the generation of some basic comments and structure.</li>
 <li>Navigate to the start of the method or the definition line for the object you would like to document.</li>
-<li>Insert a new blank line directly above and start a tripple slash (///) comment. If your editor is a sufficiently smart coding-aware editor it may detect that you've started a tripple slash comment and start you out with some comments, but it may also start you out with some misinformation based on the stripped nature of the cs file. The bare minimum for documentation generating comments is a summary block like this. All you need to do is to populate the /// comment line(s) between the <code>&lt;summary&gt;&lt;/summary&gt;</code> tags with information that summarizes what this object is used for or what this method does.</li>
+<li>Insert a new blank line directly above and start a triple slash (///) comment. If your editor is a sufficiently smart coding-aware editor it may detect that you've started a triple-slash comment and start you out with some comments, but it may also start you out with some misinformation based on the stripped nature of the cs file. The bare minimum for documentation-generating comments is a summary block like this. All you need to do is to populate the /// comment line(s) between the <code>&lt;summary&gt;&lt;/summary&gt;</code> tags with information that summarizes what this object is used for or what this method does.</li>
 </ol>
 <pre><code class="lang-cs">    /// &lt;summary&gt;
     /// Your helpful comments documenting what this is used for or what this does go here!
-    /// You can have as many lines as you like. Each line defines one paragrah of documentation.
+    /// You can have as many lines as you like. Each line defines one paragraph of documentation.
     /// &lt;/summary&gt;
 </code></pre>
 <ol start="5">
@@ -93,12 +104,12 @@
     /// &lt;param name=&quot;newVelocity&quot;&gt;&lt;/param&gt;
 </code></pre>
 <ol start="6">
-<li>If the code you're adding <em>documentation generating comments</em> to is a method that returns a result you can document them like this example for a method that returns a <em>stateData</em> object.</li>
+<li>If the code you're adding <em>documentation generating comments</em> to is a method or function that returns a result there is generally no need to add that to the <code>&lt;return&gt;&lt;/return&gt;</code> block as the method has to declare its return type so this will already be apparent in the autogenerated documentation. if you really need to reiterate what it is, the technically correct way would be like the example shown below. Typically in C# documentation comments you rarely ever have to specify the type because that's always known.</li>
 </ol>
-<pre><code class="lang-cs">    /// &lt;returns stateData&gt;&lt;/returns&gt;
+<pre><code class="lang-cs">    /// &lt;returns&gt;&lt;see cref=&quot;List{ManeuverNodeData}&quot;/&gt;&lt;/returns&gt;
 </code></pre>
 <ol start="7">
-<li>NOTE: All methods in the <strong>src_stripped</strong> folder have been stripped to only <code>throw null;</code> consequently, if you're using a code-aware editior it may automatically add a line like this, which <strong>you should delete</strong> as the real code doesn't do this, so it would be incorrect to document it as doing so. DocFx will ignore these lines, but it will also report warnings for them, so please remove them as this aids in making sure the DocFX results are correct.</li>
+<li>NOTE: All methods in the <strong>src_stripped</strong> folder have been stripped to only <code>throw null;</code> consequently if you're using a code-aware editor it may automatically add a line like this, which <strong>you should delete</strong> as the real code doesn't do this, so it would be incorrect to document it as doing so. DocFx will ignore these lines, but it will also report warnings for them, so please remove them as this aids in making sure the DocFX results are correct.</li>
 </ol>
 <pre><code class="lang-cs">    /// &lt;exception cref=&quot;NullReferenceException&quot;&gt;&lt;/exception&gt;
 </code></pre>
@@ -106,7 +117,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/schlosrat/schlosrat.github.io/blob/main/docfx_project/articles/AddCodeComments.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/KSP2Community/ksp2community.github.io/blob/main/docfx_project/articles/AddCodeComments.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

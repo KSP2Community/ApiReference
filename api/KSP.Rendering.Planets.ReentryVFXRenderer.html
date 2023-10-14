@@ -1,0 +1,486 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ReentryVFXRenderer
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ReentryVFXRenderer
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="KSP.Rendering.Planets.ReentryVFXRenderer">
+
+
+
+  <h1 id="KSP_Rendering_Planets_ReentryVFXRenderer" data-uid="KSP.Rendering.Planets.ReentryVFXRenderer" class="text-break">
+    Class ReentryVFXRenderer
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="KSP.html">KSP</a>.<a class="xref" href="KSP.Rendering.html">Rendering</a>.<a class="xref" href="KSP.Rendering.Planets.html">Planets</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ReentryVFXRenderer : VesselVFXManagerBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="KSP.VFX.VesselVFXManagerBase.html">VesselVFXManagerBase</a></div>
+      <div><span class="xref">ReentryVFXRenderer</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__vfxIntensity">VesselVFXManagerBase._vfxIntensity</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_Vessel">VesselVFXManagerBase.Vessel</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_Game">VesselVFXManagerBase.Game</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_VfxPrefabPath">VesselVFXManagerBase.VfxPrefabPath</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_MaterialPath">VesselVFXManagerBase.MaterialPath</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_VfxQuality">VesselVFXManagerBase.VfxQuality</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_VfxBufferSize">VesselVFXManagerBase.VfxBufferSize</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_MeshScale">VesselVFXManagerBase.MeshScale</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_MeshScaleFactor">VesselVFXManagerBase.MeshScaleFactor</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_CmdBufferName">VesselVFXManagerBase.CmdBufferName</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_DepthCamNearMult">VesselVFXManagerBase.DepthCamNearMult</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_DepthCamBoundsMult">VesselVFXManagerBase.DepthCamBoundsMult</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_DepthCamScale">VesselVFXManagerBase.DepthCamScale</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_ComputeThreadSize">VesselVFXManagerBase.ComputeThreadSize</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_MeshDepthScale">VesselVFXManagerBase.MeshDepthScale</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_DepthOnlyShaderPath">VesselVFXManagerBase.DepthOnlyShaderPath</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_DepthBlurShaderPath">VesselVFXManagerBase.DepthBlurShaderPath</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_JumpFloodAlgoShaderPath">VesselVFXManagerBase.JumpFloodAlgoShaderPath</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_VFXCameraLayer">VesselVFXManagerBase.VFXCameraLayer</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__currentQuality">VesselVFXManagerBase._currentQuality</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__vesselBounds">VesselVFXManagerBase._vesselBounds</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__vesselBoundsMaxSize">VesselVFXManagerBase._vesselBoundsMaxSize</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__vesselBoundsMaxExtent">VesselVFXManagerBase._vesselBoundsMaxExtent</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__cmdBuffer">VesselVFXManagerBase._cmdBuffer</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__vfxDepthTexture">VesselVFXManagerBase._vfxDepthTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__depthOnlyMat">VesselVFXManagerBase._depthOnlyMat</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__depthBlurMat">VesselVFXManagerBase._depthBlurMat</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__jumpFloodMaterial">VesselVFXManagerBase._jumpFloodMaterial</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__vfxMesh">VesselVFXManagerBase._vfxMesh</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__meshVertices">VesselVFXManagerBase._meshVertices</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__vfxMeshGO">VesselVFXManagerBase._vfxMeshGO</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__vfxMaterial">VesselVFXManagerBase._vfxMaterial</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__vfxMeshScale">VesselVFXManagerBase._vfxMeshScale</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__vfxCamTransform">VesselVFXManagerBase._vfxCamTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__particleSystem">VesselVFXManagerBase._particleSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_EnableDownscaleBlur">VesselVFXManagerBase.EnableDownscaleBlur</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_MeshDepthMuliplier">VesselVFXManagerBase.MeshDepthMuliplier</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_MeshDistanceOffset">VesselVFXManagerBase.MeshDistanceOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_MeshScaleMultiplier">VesselVFXManagerBase.MeshScaleMultiplier</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_ComputeDepthMult">VesselVFXManagerBase.ComputeDepthMult</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_EnableParticleFX">VesselVFXManagerBase.EnableParticleFX</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__vesselDir">VesselVFXManagerBase._vesselDir</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_VFXGameObject">VesselVFXManagerBase.VFXGameObject</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__debugFX">VesselVFXManagerBase._debugFX</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase__debugResetMesh">VesselVFXManagerBase._debugResetMesh</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_SpawnVFX_UnityEngine_GameObject_">VesselVFXManagerBase.SpawnVFX(GameObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_Reset">VesselVFXManagerBase.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_UpdateVFX_KSP_VFX_VesselVFXManagerBase_EffectQuality_KSP_Rendering_Planets_PQS_">VesselVFXManagerBase.UpdateVFX(VesselVFXManagerBase.EffectQuality, PQS)</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_PositionCameraAndMesh">VesselVFXManagerBase.PositionCameraAndMesh()</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_CalculateSetIntensity">VesselVFXManagerBase.CalculateSetIntensity()</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_CheckCondition_KSP_VFX_FXContextData_">VesselVFXManagerBase.CheckCondition(FXContextData)</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_UpdateEvent_KSP_VFX_FXContextData_">VesselVFXManagerBase.UpdateEvent(FXContextData)</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_CreateEvent_KSP_VFX_FXContextualEventParams_KSP_VFX_FXPartContextData_KSP_Sim_impl_VesselBehavior_">VesselVFXManagerBase.CreateEvent(FXContextualEventParams, FXPartContextData, VesselBehavior)</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_GenerateMesh">VesselVFXManagerBase.GenerateMesh()</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_CreateComputeResources">VesselVFXManagerBase.CreateComputeResources()</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_SetupParticleSystem_UnityEngine_GameObject_">VesselVFXManagerBase.SetupParticleSystem(GameObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_SetParameters">VesselVFXManagerBase.SetParameters()</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_GUIDraw">VesselVFXManagerBase.GUIDraw()</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_DrawGizmos">VesselVFXManagerBase.DrawGizmos()</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_IsActive">VesselVFXManagerBase.IsActive</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_VFXIntensity">VesselVFXManagerBase.VFXIntensity</a>
+    </div>
+    <div>
+      <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html#KSP_VFX_VesselVFXManagerBase_IsSpawning">VesselVFXManagerBase.IsSpawning</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromProperties_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromProperties(object, object, bool)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="KSP_Rendering_Planets_ReentryVFXRenderer__ctor_" data-uid="KSP.Rendering.Planets.ReentryVFXRenderer.#ctor*"></a>
+
+  <h3 id="KSP_Rendering_Planets_ReentryVFXRenderer__ctor_KSP_VFX_VesselVFXManagerBase_EffectQuality_KSP_Sim_impl_VesselBehavior_UnityEngine_Material_" data-uid="KSP.Rendering.Planets.ReentryVFXRenderer.#ctor(KSP.VFX.VesselVFXManagerBase.EffectQuality,KSP.Sim.impl.VesselBehavior,UnityEngine.Material)">
+  ReentryVFXRenderer(EffectQuality, VesselBehavior, Material)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReentryVFXRenderer(VesselVFXManagerBase.EffectQuality effectQuality, VesselBehavior vessel, Material reentryMaterial)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>effectQuality</code> <a class="xref" href="KSP.VFX.VesselVFXManagerBase.html">VesselVFXManagerBase</a>.<a class="xref" href="KSP.VFX.VesselVFXManagerBase.EffectQuality.html">EffectQuality</a></dt>
+    <dd></dd>
+    <dt><code>vessel</code> <a class="xref" href="KSP.Sim.impl.VesselBehavior.html">VesselBehavior</a></dt>
+    <dd></dd>
+    <dt><code>reentryMaterial</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="KSP_Rendering_Planets_ReentryVFXRenderer_IsMainVessel_" data-uid="KSP.Rendering.Planets.ReentryVFXRenderer.IsMainVessel*"></a>
+
+  <h3 id="KSP_Rendering_Planets_ReentryVFXRenderer_IsMainVessel" data-uid="KSP.Rendering.Planets.ReentryVFXRenderer.IsMainVessel">
+  IsMainVessel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMainVessel { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="KSP_Rendering_Planets_ReentryVFXRenderer_VesselComponent_" data-uid="KSP.Rendering.Planets.ReentryVFXRenderer.VesselComponent*"></a>
+
+  <h3 id="KSP_Rendering_Planets_ReentryVFXRenderer_VesselComponent" data-uid="KSP.Rendering.Planets.ReentryVFXRenderer.VesselComponent">
+  VesselComponent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VesselComponent VesselComponent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="KSP.Sim.impl.VesselComponent.html">VesselComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

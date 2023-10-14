@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -263,7 +274,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CreateKerbalSimObject(Position spawnPos, Rotation spawnRot, KerbalInfo kerbalInfo, int seatIdx, Action&lt;IGGuid&gt; createdCallback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static SimulationObjectModel CreateKerbalSimObject(Position spawnPos, Rotation spawnRot, KerbalInfo kerbalInfo, int seatIdx, Action&lt;IGGuid&gt; createdCallback)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -280,6 +291,11 @@
     <dd></dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="KSP.Sim.impl.SimulationObjectModel.html">SimulationObjectModel</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -302,7 +318,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CreateKerbalSimObject(SerializedLocation location, KerbalInfo kerbalInfo, int seatIdx, Action&lt;IGGuid&gt; createdCallback, bool createdFromEVA = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static SimulationObjectModel CreateKerbalSimObject(SerializedLocation location, KerbalInfo kerbalInfo, int seatIdx, Action&lt;IGGuid&gt; createdCallback, bool createdFromEVA = false)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -319,6 +335,11 @@
     <dd></dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="KSP.Sim.impl.SimulationObjectModel.html">SimulationObjectModel</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -341,7 +362,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CreateKerbalSimObject(SimulationObjectModel vesselSimObject, PartBehavior vesselPartBehavior, KerbalInfo kerbalInfo, int seatIdx, Action&lt;IGGuid&gt; createdCallback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static SimulationObjectModel CreateKerbalSimObject(SimulationObjectModel vesselSimObject, PartBehavior vesselPartBehavior, KerbalInfo kerbalInfo, int seatIdx, Action&lt;IGGuid&gt; createdCallback)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -358,6 +379,11 @@
     <dd></dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="KSP.Sim.impl.SimulationObjectModel.html">SimulationObjectModel</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

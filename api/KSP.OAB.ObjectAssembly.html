@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -144,13 +155,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -1268,32 +1279,6 @@
 
 
 
-  <a id="KSP_OAB_ObjectAssembly_RebuildActionGroups_" data-uid="KSP.OAB.ObjectAssembly.RebuildActionGroups*"></a>
-
-  <h3 id="KSP_OAB_ObjectAssembly_RebuildActionGroups" data-uid="KSP.OAB.ObjectAssembly.RebuildActionGroups">
-  RebuildActionGroups()
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RebuildActionGroups()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="KSP_OAB_ObjectAssembly_RemoveActionFromActionGroup_" data-uid="KSP.OAB.ObjectAssembly.RemoveActionFromActionGroup*"></a>
 
   <h3 id="KSP_OAB_ObjectAssembly_RemoveActionFromActionGroup_KSP_Sim_Definitions_ModuleActionGroupAction_KSP_Sim_KSPActionGroup_" data-uid="KSP.OAB.ObjectAssembly.RemoveActionFromActionGroup(KSP.Sim.Definitions.ModuleActionGroupAction,KSP.Sim.KSPActionGroup)">
@@ -1396,6 +1381,39 @@
 
 
 
+  <a id="KSP_OAB_ObjectAssembly_SetAnchorExternal_" data-uid="KSP.OAB.ObjectAssembly.SetAnchorExternal*"></a>
+
+  <h3 id="KSP_OAB_ObjectAssembly_SetAnchorExternal_KSP_OAB_IObjectAssemblyPart_System_Boolean_" data-uid="KSP.OAB.ObjectAssembly.SetAnchorExternal(KSP.OAB.IObjectAssemblyPart,System.Boolean)">
+  SetAnchorExternal(IObjectAssemblyPart, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAnchorExternal(IObjectAssemblyPart anchor, bool resetResourceSolvers = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anchor</code> <a class="xref" href="KSP.OAB.IObjectAssemblyPart.html">IObjectAssemblyPart</a></dt>
+    <dd></dd>
+    <dt><code>resetResourceSolvers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="KSP_OAB_ObjectAssembly_SetAssemblyBounds_" data-uid="KSP.OAB.ObjectAssembly.SetAssemblyBounds*"></a>
 
   <h3 id="KSP_OAB_ObjectAssembly_SetAssemblyBounds" data-uid="KSP.OAB.ObjectAssembly.SetAssemblyBounds">
@@ -1453,10 +1471,10 @@
 
 
 
-  <a id="KSP_OAB_ObjectAssembly_ToggleAnchorIcons_" data-uid="KSP.OAB.ObjectAssembly.ToggleAnchorIcons*"></a>
+  <a id="KSP_OAB_ObjectAssembly_SetResourceSolversDirty_" data-uid="KSP.OAB.ObjectAssembly.SetResourceSolversDirty*"></a>
 
-  <h3 id="KSP_OAB_ObjectAssembly_ToggleAnchorIcons_KSP_OAB_IObjectAssemblyPart_" data-uid="KSP.OAB.ObjectAssembly.ToggleAnchorIcons(KSP.OAB.IObjectAssemblyPart)">
-  ToggleAnchorIcons(IObjectAssemblyPart)
+  <h3 id="KSP_OAB_ObjectAssembly_SetResourceSolversDirty" data-uid="KSP.OAB.ObjectAssembly.SetResourceSolversDirty">
+  SetResourceSolversDirty()
   
   </h3>
 
@@ -1464,14 +1482,35 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ToggleAnchorIcons(IObjectAssemblyPart anchor)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetResourceSolversDirty()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>anchor</code> <a class="xref" href="KSP.OAB.IObjectAssemblyPart.html">IObjectAssemblyPart</a></dt>
-    <dd></dd>
-  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_OAB_ObjectAssembly_ToggleAnchorIcons_" data-uid="KSP.OAB.ObjectAssembly.ToggleAnchorIcons*"></a>
+
+  <h3 id="KSP_OAB_ObjectAssembly_ToggleAnchorIcons" data-uid="KSP.OAB.ObjectAssembly.ToggleAnchorIcons">
+  ToggleAnchorIcons()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToggleAnchorIcons()</code></pre>
+  </div>
+
 
 
 

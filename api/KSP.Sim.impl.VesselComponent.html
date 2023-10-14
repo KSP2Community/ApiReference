@@ -18,6 +18,17 @@
       
       
       
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
   </head>
 
   <script type="module">
@@ -91,7 +102,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VesselComponent : ObjectComponent, IGuidIdentity, IPhysicsOwner</code></pre>
+    <pre><code class="lang-csharp hljs">public class VesselComponent : ObjectComponent, IGuidIdentity, IPhysicsOwner, IWorldLabelData</code></pre>
   </div>
 
 
@@ -111,6 +122,7 @@
     <dd>
       <div><a class="xref" href="KSP.Sim.IGuidIdentity.html">IGuidIdentity</a></div>
       <div><a class="xref" href="KSP.Sim.IPhysicsOwner.html">IPhysicsOwner</a></div>
+      <div><a class="xref" href="KSP.Sim.impl.IWorldLabelData.html">IWorldLabelData</a></div>
     </dd>
   </dl>
 
@@ -190,13 +202,13 @@
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Apply``1(``0,System.Action{``0})">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Apply__1___0_System_Action___0__">ObjectExtensions.Apply&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Let``2(``0,System.Func{``0,``1})">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Let__2___0_System_Func___0___1__">ObjectExtensions.Let&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="ObjectExtensions.html#ObjectExtensions.Use``1(``0,System.Action{``0})">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
+      <a class="xref" href="ObjectExtensions.html#ObjectExtensions_Use__1___0_System_Action___0__">ObjectExtensions.Use&lt;T&gt;(T, Action&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="KSP.Sim.Converters.TypeConverters.html#KSP_Sim_Converters_TypeConverters_CopyPropertiesFromFields_System_Object_System_Object_System_Boolean_">TypeConverters.CopyPropertiesFromFields(object, object, bool)</a>
@@ -690,6 +702,37 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double AltitudeFromSeaLevel { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="KSP_Sim_impl_VesselComponent_AltitudeFromSurface_" data-uid="KSP.Sim.impl.VesselComponent.AltitudeFromSurface*"></a>
+
+  <h3 id="KSP_Sim_impl_VesselComponent_AltitudeFromSurface" data-uid="KSP.Sim.impl.VesselComponent.AltitudeFromSurface">
+  AltitudeFromSurface
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double AltitudeFromSurface { get; }</code></pre>
   </div>
 
 
@@ -1723,6 +1766,68 @@ public override Type DefinitionType { get; }</code></pre>
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="KSP_Sim_impl_VesselComponent_LabelCategory_" data-uid="KSP.Sim.impl.VesselComponent.LabelCategory*"></a>
+
+  <h3 id="KSP_Sim_impl_VesselComponent_LabelCategory" data-uid="KSP.Sim.impl.VesselComponent.LabelCategory">
+  LabelCategory
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LabelCategory LabelCategory { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="KSP.Sim.impl.LabelCategory.html">LabelCategory</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="KSP_Sim_impl_VesselComponent_LabelPosition_" data-uid="KSP.Sim.impl.VesselComponent.LabelPosition*"></a>
+
+  <h3 id="KSP_Sim_impl_VesselComponent_LabelPosition" data-uid="KSP.Sim.impl.VesselComponent.LabelPosition">
+  LabelPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Position LabelPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="KSP.Sim.Position.html">Position</a></dt>
     <dd></dd>
   </dl>
 
@@ -4532,6 +4637,37 @@ public override Type ViewObjectComponentType { get; }</code></pre>
 
 
 
+  <a id="KSP_Sim_impl_VesselComponent_GetDecouplerCount_" data-uid="KSP.Sim.impl.VesselComponent.GetDecouplerCount*"></a>
+
+  <h3 id="KSP_Sim_impl_VesselComponent_GetDecouplerCount" data-uid="KSP.Sim.impl.VesselComponent.GetDecouplerCount">
+  GetDecouplerCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDecouplerCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="KSP_Sim_impl_VesselComponent_GetDefinition_" data-uid="KSP.Sim.impl.VesselComponent.GetDefinition*"></a>
 
   <h3 id="KSP_Sim_impl_VesselComponent_GetDefinition" data-uid="KSP.Sim.impl.VesselComponent.GetDefinition">
@@ -4612,37 +4748,6 @@ public override Type ViewObjectComponentType { get; }</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="KSP_Sim_impl_VesselComponent_GetVesselCrew_" data-uid="KSP.Sim.impl.VesselComponent.GetVesselCrew*"></a>
-
-  <h3 id="KSP_Sim_impl_VesselComponent_GetVesselCrew" data-uid="KSP.Sim.impl.VesselComponent.GetVesselCrew">
-  GetVesselCrew()
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;CrewMemberComponent&gt; GetVesselCrew()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="KSP.Sim.impl.CrewMemberComponent.html">CrewMemberComponent</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -4873,10 +4978,10 @@ public override Type ViewObjectComponentType { get; }</code></pre>
 
 
 
-  <a id="KSP_Sim_impl_VesselComponent_IsUnderThrust_" data-uid="KSP.Sim.impl.VesselComponent.IsUnderThrust*"></a>
+  <a id="KSP_Sim_impl_VesselComponent_IsUnderAcceleration_" data-uid="KSP.Sim.impl.VesselComponent.IsUnderAcceleration*"></a>
 
-  <h3 id="KSP_Sim_impl_VesselComponent_IsUnderThrust" data-uid="KSP.Sim.impl.VesselComponent.IsUnderThrust">
-  IsUnderThrust()
+  <h3 id="KSP_Sim_impl_VesselComponent_IsUnderAcceleration" data-uid="KSP.Sim.impl.VesselComponent.IsUnderAcceleration">
+  IsUnderAcceleration()
   
   </h3>
 
@@ -4884,7 +4989,38 @@ public override Type ViewObjectComponentType { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsUnderThrust()</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsUnderAcceleration()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Sim_impl_VesselComponent_IsUnderEngineThrust_" data-uid="KSP.Sim.impl.VesselComponent.IsUnderEngineThrust*"></a>
+
+  <h3 id="KSP_Sim_impl_VesselComponent_IsUnderEngineThrust" data-uid="KSP.Sim.impl.VesselComponent.IsUnderEngineThrust">
+  IsUnderEngineThrust()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUnderEngineThrust()</code></pre>
   </div>
 
 
@@ -5831,6 +5967,32 @@ public override Type ViewObjectComponentType { get; }</code></pre>
 
 
 
+  <a id="KSP_Sim_impl_VesselComponent_SetControlOwnerToDefault_" data-uid="KSP.Sim.impl.VesselComponent.SetControlOwnerToDefault*"></a>
+
+  <h3 id="KSP_Sim_impl_VesselComponent_SetControlOwnerToDefault" data-uid="KSP.Sim.impl.VesselComponent.SetControlOwnerToDefault">
+  SetControlOwnerToDefault()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetControlOwnerToDefault()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="KSP_Sim_impl_VesselComponent_SetDefinition_" data-uid="KSP.Sim.impl.VesselComponent.SetDefinition*"></a>
 
   <h3 id="KSP_Sim_impl_VesselComponent_SetDefinition_System_Object_" data-uid="KSP.Sim.impl.VesselComponent.SetDefinition(System.Object)">
@@ -6020,6 +6182,39 @@ public override Type ViewObjectComponentType { get; }</code></pre>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="KSP_Sim_impl_VesselComponent_SyncFlightControlState_" data-uid="KSP.Sim.impl.VesselComponent.SyncFlightControlState*"></a>
+
+  <h3 id="KSP_Sim_impl_VesselComponent_SyncFlightControlState_KSP_Sim_State_FlightCtrlState_System_Boolean_" data-uid="KSP.Sim.impl.VesselComponent.SyncFlightControlState(KSP.Sim.State.FlightCtrlState,System.Boolean)">
+  SyncFlightControlState(FlightCtrlState, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SyncFlightControlState(FlightCtrlState state, bool isRemote = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="KSP.Sim.State.FlightCtrlState.html">FlightCtrlState</a></dt>
+    <dd></dd>
+    <dt><code>isRemote</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
 
 
 
