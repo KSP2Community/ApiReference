@@ -1,16 +1,16 @@
-# Unofficial **KSP2 Modding Documentation**
+# Unofficial **KSP2 API Documentation**
+
+For the KSP2 Community modding wiki, go here: [https://wiki.spacewarp.org](https://wiki.spacewarp.org).
 
 ## Site Contents
 
-This site is split into multiple sections: Articles, Tutorials and API Documentation. These sections are available in the top bar of any page within this site, and from the Left Side Table of Contents (ToC) menu of this page.
+This site is split into multiple sections: Articles and API Documentation. These sections are available in the top bar of any page within this site, and from the Left Side Table of Contents (ToC) menu of this page.
 
 The Left Side ToC menu for any page on this site includes a search field that filters the results displayed in the ToC based on what you're looking for. When in the Articles section, the ToC lists the articles available by title, and when in the API Documentation, the ToC shows all the API topic pages relevant to your current search terms. Each API topic page is hyperlinked to other relevant pages to aid site navigation.
 
 ### Articles
 
-This section contains general information about contributing to this site and modding KSP2.
-
-### Tutorials
+This section contains general information about contributing to this site and articles related to the game's API.
 
 ### API Documentation
 
